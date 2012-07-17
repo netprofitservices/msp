@@ -1,0 +1,247 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+	<head>
+		<base href="<?= $this->baseUrl ?>" />
+		
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title><?= $this->metaTitle ?></title>
+
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<meta name="title" content="<?= $this->metaTitle ?>">
+		<meta name="keywords" content="<?= $this->metaKeywords ?>">
+		<meta name="description" content="<?= $this->metaDescription ?>">
+
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/inside.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+
+		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+
+		<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-31234979-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+			</script>
+		
+
+	</head>
+
+
+
+	<body>
+		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+
+		<div id="trial">
+			Pre-Sale until September 4th, 2012.  <a href="blaze">Blaze the Trail with Us</a>  
+		</div><!-- end trial -->
+
+
+
+
+		<header id="topbanner" role="banner">
+			<div class="content">
+				<nav id="top-links">
+					<ul>
+						<li><a href="index">Home</a></li>
+						<li><a href="plans">Plans</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="blog">Blog</a></li>					
+						<!--<li><a href="newsletter/signup" data-fancybox-type="iframe" class="fancybox">About</a></li>
+						<li><a href="application/request" data-fancybox-type="iframe" class="fancybox">Application</a></li>-->
+						<li><a href="faq">FAQ</a></li>
+						<li><a href="overlay" data-fancybox-type="iframe" class="fancybox-small">(overlay)</a></li>      
+						<li><a href="contact" data-fancybox-type="iframe" class="fancybox">Contact</a></li>                       
+					</ul><!-- end top-links -->
+				</nav><!-- end top-links -->
+
+
+				<a href="index.php" id="logo">
+					<img src="images/mainstream-preppers-logo.png" title="Mainstreatm Preppers" />
+				</a>
+
+
+
+
+
+
+
+
+
+                  <nav id="main-nav" role="navigation">
+                			<ul>
+                			
+                        	<li id="join-free-network"><a href="network"><img src="images/free-small-nav-icon.png" class="free-flag-small" />Join Network </a></li>
+                    		<li>
+                           		 <a href="prepschool"  data-fancybox-type="iframe" class="parent">PREP School</a>
+                                 <ul class="children">
+                                 	<li><a href="prepschool">What is "Prep School"?</a></li>
+                                 	<li><a href="#">Instructors (aka the Preparedness Dream Team)</a></li>
+                                 	<li><a href="#">Upcoming LIVE Events</a></li>
+                                 	<li><a href="#"> - The Viking Program ** (live!)</a></li>
+                                 	<li><a href="#"> - The Homestead Engineer Program</a></li>
+                                 	<li><a href="#">The Permaculture Program</a></li>
+                                 	<li><a href="#">The Aquaponics Program</a></li>
+                                 	<li><a href="#">The Medical Training Program</a></li>
+                                 	<li><a href="#">>> Pricing & Signup</a></li>
+                                 	<!--Article Stuff Removed for Now
+                                 	<li>FREE Prep School Series:</li>
+                                 	<li><a href="#">The 10 Layers of Preparedness</a></li>
+                                 	<li><a href="#">The 7 G's you've Got to Have</a></li>
+                                 	<li><a href="#">We Wrote the Book on Prepping</a></li>-->
+                                 </ul>                           
+                            </li>
+                        	<li>
+                            	<a href="retreats"  data-fancybox-type="iframe" class="parent">Retreats</a>
+                                <ul class="children">
+                                 	<li><a href="retreats">What is a "Bug Out" Retreat?</a></li>
+                                 	<!--
+                                 	<li><a href="retreats#types">Types of Bug out Retreats</a></li>
+                                 	<li><a href="retreat1#reasons">10 Reasons you'd Beg for a BOL</a></li>
+                                 	-->
+                                 	<li><a href="retreat3">** Shelter in Place (SIP): Can it Work?</a></li>
+                                 	<li><a href="retreatpros">But Out Retreat: Pros & Cons</a></li>
+                                 	<li><a href="retreatpros">But Out Locations (BOL) vs Shelter in Place (SIP)</a></li>
+                                 	<!--
+                                 	<li><a href="retreat4">The Loan Wolf: Predator or Prey?</a></li>
+                                 	<li><a href="retreat5">Are you a Sheep, Wolf, or Shepherd?</a></li>
+                                 	-->
+                                 	<li><a href="retreatgroup">Strength in Numbers</a></li>
+                                 	<li><a href="retreatideal">The Ideal Bug Out Location</a></li>
+                                 	<li><a href="retreatlocation">Current / Future Locations</a></li>
+                                 	<li><a href="retreat2">** Retreat Cost Estimate: Build your Own</a></li>
+                                 	<li><a href="retreatfaq">FAQ. <i>What's the 1 Stupid Question?</i></a></li>                           	                                 
+                                 	<!--
+                                 	<li><a href="retreatsurvey">Help Us Help You</a></li> 
+                                 	-->                          	                                 
+                                 	<li><a href="retreatmaterial">Are you Mainstream Material?</a></li>
+                                 	<li><a href="retreatcosts">Pricing Detail$ & How to Join</a></li>
+                                 	<!--
+                                 	<li><a href="application/request" class="fancybox">>> Join a Retreat</a></li> 
+                                 	-->                          	                                 
+                                 </ul>                             
+                            </li>
+                        	<li>
+                            	<a href="paradise" class="parent">Homesteads</a>
+                            	<ul class="children">
+                                 	<li><a href="paradise">What is a Homestead?</a></li>
+                                 	<li><a href="paradise">Self Sufficiency vs. Self Reliance</a></li>
+                                 	<li><a href="paradise">Permaculture, Aquaponics, & Off Grid</a></li>
+                                 	<li><a href="paradise">Modern Convenience or Necessity?</a></li>
+                                 	<li><a href="paradise">The Lone Wolf: Predator or Prey?</a></li>
+                                 	<li><a href="paradise">Self Sufficient or Self Dependent?</a></li>
+                                 	<li><a href="paradise">Create your Prepper Paradise</a></li>
+                                 	<li><a href="paradise">>> Get Started</a></li>                           	                                 
+                                 </ul>
+                                 
+                            </li>
+                        	<li>
+                            	<a href="blaze" class="parent">July Special</a>   
+                            	<ul class="children">
+                                 	<li><a href="retreats">What is a "Bug Out" Retreat?</a></li>
+                                 	<li><a href="#">Ingredients of Quality Retreat</a></li>
+                                 	<li><a href="retreats2#why">Why you might need a BOL</a></li>
+                                 	<li><a href="retreats2#city">Retreat vs SIP (City)</a></li>
+                                 	<li><a href="retreats2#rural">Retreat vs Rural House</a></li>
+                                 	<li><a href="#"> Mainstream Prepper Retreats</a></li>
+                                 	<li><a href="#">Current / Future Locations</a></li>
+                                 	<li><a href="#">Membership Requirements</a></li>
+                                 	<li><a href="retreatfaq">Retreat FAQ</a></li>  
+                                	<li><a href="#">Submit a Retreat Survey</a></li>
+                                 	<li><a href="#">Join a Retreat (Application)</a></li>                           	                                 
+                                 </ul>                              
+                            </li>
+                            <!--
+                            <li id="join-free-network"><a href="blog" class="parent"><img src="images/free-small-nav-icon.png" class="free-flag-small" />Articles</a>
+                    		<ul class="children">
+                                 	--><!--Article Stuff Removed for Now
+                                 	<li>FREE Prep School Series:</li>
+                                 	<li><a href="#">The 10 Layers of Preparedness</a></li>
+                                 	<li><a href="#">The 7 G's you've Got to Have</a></li>
+                                 	<li><a href="#">We Wrote the Book on Prepping</a></li>
+                                 </ul>
+                                 </li>-->
+                                                      
+                                 
+                         </ul>
+                </nav>
+
+
+
+
+					<ul class="right-bullet">
+						<li><a href="quiz">Take the Preparedness Quiz</a></li>
+						<li><a href="whyprepare">Why Should You Prep?</a></li>
+					</ul> <!-- end right-bullet -->
+
+				</div><!-- end content -->
+
+
+			</header><!-- end topbanner -->
+
+
+
+			<?php echo $this->layout()->content; ?>
+
+
+
+			<section id="privacy">
+
+				<header>
+					<h3>Privacy &amp; Safety</h3>
+				</header>
+
+				<nav>
+					<ul>
+						<li><a href="#">Privacy <br>Policy</a></li>
+						<li><a href="#">Confidentiality <br>Agreement</a></li>
+						<li><a href="#">Security <br>Agreement</a></li>
+						<li><a href="#">Safety <br>Requirements</a></li>
+						<li class="last"><a href="#">Release <br>Waiver</a></li>
+					</ul>
+
+				</nav>
+
+
+			</section><!-- end privacy -->
+
+
+			<footer id="main-footer">
+				<small>&copy; 2012 Mainstream Preppers, LLC. All Rights Reserved.</small>
+				<div class="nps"><a href="http://www.netprofitservices.com" target="_blank"><img src="images/nps-logo.gif" title="Web site by Net Profit Services, Inc." /></a> | <a href="mailto:info@netprofitservices.com" title="">Send us a note</a></div>
+
+			</footer><!-- end main-footer -->
+
+
+
+
+			<script src="js/libs/jquery-1.7.1.min.js"></script>
+			<script src="js/libs/jquery-ui-1.8.19.custom.min.js"></script>
+
+			<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+			<script src="js/plugins.js"></script>
+			<script src="js/script.js"></script>
+
+		</body>
+	</html>

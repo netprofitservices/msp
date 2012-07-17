@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<base href="<?= $this->baseUrl ?>" />
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Mainstream Preppers - Newsletter Signup</title>
+		<meta name="description" content="">
+
+
+
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/overlay.css">
+
+		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+		<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-31234979-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+			</script>
+
+	</head>
+
+	<body>
+		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+		<div id="overlay-content" role="main">
+
+
+			<?php echo $this->layout()->content; ?>
+
+
+			<footer id="main-footer">
+				<small>&copy; 2012 <a href="index.php" target="_parent">Mainstream Preppers, LLC</a>. All Rights Reserved.</small>
+				<div class="nps"><a href="http://www.netprofitservices.com" target="_parent"><img src="images/nps-logo.gif" title="Web site by Net Profit Services, Inc." /></a> | <a href="mailto:info@netprofitservices.com" title="">Send us a note</a></div>
+
+			</footer>
+
+		</div><!-- end overlay-content-->
+
+
+
+
+
+
+		<script src="js/libs/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+		<script src="js/plugins.js"></script>
+		<script src="js/form.js?v=<?= microtime(1) ?>"></script>
+
+	</body>
+</html>
+

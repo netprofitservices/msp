@@ -1,0 +1,24 @@
+
+
+.blue-bg > section#home-banner.fb-landing{
+	background: #000 url(../images/home-replace-fear-banner.jpg) top center no-repeat;
+	width: 100%	;
+	height: 480px;
+}
+
+.blue-bg > section#home-banner.fb-landing h1{
+	background:none;
+}
+
+.blue-bg > section#home-banner.fb-landing #plan-options{
+	width: 940px;
+	margin: 220px auto 0 auto;	
+}
+
+#home-banner #plan-options h3, #home-banner #plan-options nav, #home-banner #plan-options nav li   {
+	border-color:#bebebe;	
+}
+
+#home-banner #plan-options nav li a:hover{
+	color: #fef500
+}	

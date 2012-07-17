@@ -1,0 +1,188 @@
+
+
+
+
+#overlay-content{
+	padding: 20px;	
+}
+
+ #main-footer{
+	padding: 20px;
+	margin: 10px 0 0 0;	
+}
+
+
+/* ##############
+
+form stuff
+
+################*/
+
+.form{
+	margin-top: 20px;
+}
+
+
+.form input, .form textarea{
+	display:block;
+	margin: 3px;	
+}
+
+.form input, .form textarea, .form select{
+	width: 400px;	
+	color:#5B5B5B;
+	border:1px solid #999999;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:5px;
+}
+
+.form select{
+	width: 410px;	
+}
+
+
+.form input:hover, .form input:focus, textarea:hover, textarea:focus{
+	color:#191919;
+	background:#fffbc2;	
+}
+
+.form label{
+	display:block;
+	font-size: 16px;	
+	margin:15px 0 0px 0;
+	font-weight: bold;
+	ciolor:#363636;
+	clear:both;
+}
+
+.form .checkboxes{
+	margin-bottom: 10px;
+	overflow:auto;	
+	min-width: 600px;
+}
+
+.form .checkboxes div{
+	width: 33%;
+	float:left;
+	margin: 3px 0;	
+}
+
+
+.form .checkboxes label{
+	display:block;
+	float:none;
+	font-weight:normal;
+	clear:none;
+	margin-top: 0;
+}
+
+.form input[type="checkbox"]{
+	width:auto;
+	margin-right: 10px;
+	border:0;
+	display:block;
+	float:left;
+}
+
+
+.form input.form-btn{
+
+}
+
+
+
+
+.form input.form-btn{	
+	background:#0b4694;
+	border:1px solid #1072f4;
+	display:block;
+	color:#fff;
+	font-size: 20px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding: 5px 15px;
+	width: 150px;
+	margin-top: 10px;
+	text-align:center;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	clear:both;
+	cursor:pointer;
+}
+
+.form input.form-btn:hover{
+		background:	#d20000;
+	color:#fff;
+	border:1px solid #bc0000;
+}
+
+
+
+
+.form label.error, .form textarea.error{
+	color:#d50000;
+	font-weight:normal;
+	margin-top: 0;
+	font-weight:bold;
+	display:block;
+	padding-left: 10px;
+	float:left;
+	padding-top: 7px;
+	clear:none;
+}
+	
+.form input.error{
+	border-color:#d50000;	
+	float:left;
+	display:inline;
+	margin-bottom: 10px;
+}
+	
+
+.form  input.zip{
+	width: 20px;
+}
+
+.form input.disabled, .form input.disabled:hover, .form input.disabled:focus{
+	background:#cbcbcb !important;
+	color:#9b9b9b !important;	
+	border-color:transparent !important;
+	cursor:normal !important;
+}
+
+
+	
+#form-message{
+	text-align:center;
+	padding: 10px;
+	border:3px solid #d9d9d9;	
+	display:none;
+	font-size: 18px;
+	text-transform:uppercase;
+	margin-top: 30px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

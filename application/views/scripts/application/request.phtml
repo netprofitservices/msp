@@ -1,0 +1,91 @@
+<header>
+		<h1 class="red underline">Retreat Group Inquiry</h1>
+</header>
+
+
+
+<section class="form">
+
+  <div id="form-message"></div>
+
+	<form action="application/request" method="post" id="request-application" class="myform">
+   
+           <label for="firstname">First Name:</label>
+   		<input name="firstname" id="firstname" type="text" class="firstname required" />
+           
+           <label for="lastname">Last Name (optional):</label>
+   		<input name="lastname" id="lastname"  class="lastname"  />                
+   
+           <label for="emailaddress">Email Address:</label>
+           <input name="emailaddress" id="emailaddress" type="email"  class="required" />       
+           
+           <label for="phone">Phone (optional):</label>
+			<input name="phone" id="phone" type="tel" maxlength="10" />
+           
+            <label for="zip">Current Zip Code:</label>
+			<input name="zip" id="zip" type="text" class="zipcode required" maxlength="10"  />
+           
+           <label for="primary">Primary Motivation for Preparedness: </label>
+           <select name="primary" id="primary">
+				<option>--Select--</option>
+				<option>Develop Self Sufficiency Skills</option>
+				<option>Job Loss / Bankruptcy</option>
+				<option>House Fire / Tornado</option>
+				<option>Area Flood / Earthquake / Other Disaster</option>
+				<option>Drought / Crop Failures / Food Supply Disruption</option>
+				<option>Sustained Power Outage</option>
+				<option>Social Unrest / Riots</option>
+				<option>Economic Collapse</option>
+				<option>Hyperinflation</option>
+				<option>Martial Law</option>
+				<option>EMP  </option>
+				<option>Solar Flare/CME</option>
+				<option>Nuclear Power Plant Meltdown</option>
+				<option>Nuclear or Biological Warfare</option>
+				<option>Terrorist Attack</option>
+				<option>Virus / Pandemic</option>
+				<option>Zombie Apocalypse (just kidding!)</option>
+           </select>
+          
+          
+            <label>Secondary Motivations(s) for Preparedness: </label> 
+            <div class="checkboxes">
+				<? $options = array(
+					'Develop Self Sufficiency Skills',
+					'Job Loss / Bankruptcy',
+					'House Fire / Tornado',
+					'Area Flood / Earthquake / Other Disaster',
+					'Drought / Crop Failures / Food Supply Disruption',
+					'Sustained Power Outage',
+					'Social Unrest / Riots',
+					'Economic Collapse',
+					'Hyperinflation',
+					'Martial Law',
+					'EMP',
+					'Solar Flare/CME',
+					'Nuclear Power Plant Meltdown',
+					'Nuclear or Biological Warfare',
+					'Terrorist Attack',
+					'Virus / Pandemic',
+					'Zombie Apocalypse (just kidding!)',
+					'Simpler Lifestyle',
+					'Like Minded Friends/Neighbors'
+				); ?>
+				
+				<? $i = 1 ?>
+				<? foreach ($options as $option): ?>
+            		<div>
+                       <input name="secondary[]" id="secondary-<?= $i ?>" value="<?= $option ?>" type="checkbox" />
+                       <label for="secondary-<?= $i++ ?>"><?= $option ?></label>
+                   </div>
+				<? endforeach ?>
+            </div><!-- end checkboxes -->
+           
+           
+           <label for="comments">Questions/Concerns</label>
+           <textarea  name="comments" id="comments" class="commments required"></textarea>
+
+           <input type="submit" class="form-btn " value="Submit" name="submit" id="submit"/>        
+   </form>
+
+</section>

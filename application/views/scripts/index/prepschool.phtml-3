@@ -1,0 +1,389 @@
+
+
+ <div class="sticky">
+
+	<a href="application/signup" class="fancybox red-button">
+		Sign Up Today
+	</a>
+    
+    
+    <div class="social">
+	    <h5>Share this:</h5>
+		<a href="https://twitter.com/#!/PrepperSkills" class="twitter">Twitter</a>
+		<a href="http://www.facebook.com/MainstreamPreppers" class="facebook">Follow us on Facebook</a>
+    </div><!-- end social -->
+    
+	<a class="fancybox ask-questions" href="contact">
+		Ask a question
+    </a>
+
+ </div><!-- end sticky -->
+
+
+
+
+
+
+	<div id="main-content" role="main">
+
+
+		<div class="blue-bg clear">
+
+					<section id="prep-school-banner">   
+
+				
+						<a href="prepschool#signup">
+                            <header>
+                                <h1>WE TEACH SELF RELIANCE</h1>                      
+                            </header>
+							</a>
+
+
+					</section> <!-- end prep-school-banner -->           
+
+					<div class="clear"></div>
+
+
+				</div><!-- end blue-bg -->    
+
+
+				<section>
+				
+				
+				<!--<div class="box">
+
+				<h2>Prep School Offers:</h2>
+								<div class="col">
+								<ul class="decorated">
+								<li>Volumes of in depth, expert skill development</li>
+								<li>Top instructors from across the country</li>
+								<li>Courses cover all areas of preparedness</li>
+								<li>Follow Up Discussions & 1-on-1 Consultations</li>
+								<li>Skip the Plane/Hotel Bill - Get Trained Online</li>
+								</ul>
+								</div>
+								<div class="col">							
+								<ul class="decorated">
+								<li>Every lesson organized into detailed notes</li>
+								<li>The Encyclopedia of Preparedness - FREE</li>
+								<li>FREE Entry & VIP Access at Preparedness Expos</li>
+								<li>Want Awesome Live Instruction?  Members Save 50%</li>
+								<li>Training Fees Saved To Date:  $812,400!</li>
+								</ul>
+								</div>
+								
+							<br><br>
+							
+					</div>-->
+					<!-- end box -->     
+
+
+					<!--
+					<div class="box">
+
+						<h1 class="large">
+							<span>Why</span> 
+							improve your preparedness?<br>
+							Have you taken our <a href="quiz">Prepper Quiz</a>?
+						</h1>
+								<div class="clear"></div>
+						
+
+					</div>--><!-- end box -->   
+
+					<div class="box">
+					
+						<h1 class="large">
+							<span>What SKILLS </span> 
+							do we cover in our 'Prep School'?
+						</h1>
+
+
+						<div class="clear speech">
+							<div class="speech-corner-r"></div>
+
+					<h2>PHASE ONE Curriculum:</h2>
+								
+								<div class="col">
+								<h4 class="black">Food Production / Storage</h4>
+								<ul>
+								<li>Food Production</li><!--$160-->
+								<li>Permaculture</li><!--$160-->
+								<li>Aquaponics</li><!--$160-->
+								<li>Water Systems</li>
+								
+								<li>Cooking w Food Storage</li>
+								<li>Cooking w Wild Edibles</li>
+								<li>Dehydrating</li>
+								<li>Canning/Preserving</li>
+								<li>DIY Food Storage Tips</li>
+								</ul>
+								
+								</div>
+								<div class="col">							
+								
+								<h4 class="black">Survival</h4>
+								<ul>
+									<li>Woods Walkers (Survival 101)</li><!--$150-->
+									<li>Survival (level 2)</li><!--$160-->
+									<li>Survival (level 3)</li><!--$160-->
+									<li>Bugging Out (BoB / BoV)</li><!--$100-->
+									<li>Wilderness Survival (3 day)</li><!--$300-->
+									<li>Wild Edibles</li><!--??-->
+									<li>Winter Survival</li><!--??-->
+									<li>Treating Cuts, Bites, Wounds</li>
+									
+									<!--Total Survival: 5 @ $870 + 3 ??-->
+								</ul>
+								
+								
+								</div>
+								<div class="clear"></div>
+								
+								<div class="col">	
+								<h4 class="black">Homesteading:</h4>
+								<ul>
+								
+									<li>Preparedness Basics</li><!--$160-->
+									<li>Shelter in Place (SIP) Strategies</li><!--$160-->
+									<li>Bug Out Location Consult</li><!--$160-->
+									<li>Off Grid Systems</li><!--$160-->
+									<li>Security / Surveillance</li><!--$160-->
+									<li>Homestead Design</li><!--$160-->
+									<li>Securing your Homestead</li><!--$160-->
+									<li>OPSEC Strategies</li><!--$160-->
+									<li>Medical / Health</li><!--$160-->
+									<li>Forming a Group - Consult</li><!--$160-->
+																
+									<!--Total Homesteading: 13x160=$2080-->
+								</ul>
+								
+								</div>
+								<div class="col">
+								
+								
+								<h4 class="black">Defense / Tactical:</h4>
+								
+								<ul>
+									<li>Fitness / Combatives</li><!--$??-->
+									<li>Emergency Medical</li><!--??-->
+									<li>Self Defense</li><!--$20-->
+									<li>Knife Defense</li><!--??-->
+									<li>Self Defense Shotgun</li><!--$70-->
+									<li>Beginner Handgun</li><!--$70-->
+									<li>Camouflage and Concealment</li><!--$60-->
+									<li>Evasion (level 1)</li><!--$250-->
+									<li>Tactical Patrolling (level 1)</li><!--$250-->
+									<!--Resistance-->
+									<!--Escape-->
+									<!--Tactical Rifle-->
+									<!--total: 6 $720  + 5 ?? -->
+									
+								</ul>
+								
+								</div>
+								<div class="clear"></div>
+								
+								<h2>We're just getting warmed up.<br>
+								Instructors and Training Dates Will be Announced Soon</h2>
+					
+								<div class="clear"></div>
+								</div>
+								<br><br>
+								
+					
+					
+					<!--
+					<h2>Plus, We Have the BEST Instructors, Period.</h2>
+					<div class="col">
+					<strong>We built the preparedness dream team. Seriously.</strong>
+					<ul class="decorated">
+								<li>US Army Special Forces Officer</li>
+								<li>Survival, Evasion, Resistance, Escape Instructor</li>
+								<li>Electrical Engineer, specialized in off grid technologies</li>
+								<li>Authors of Preparedness books like "Survivalist Family"</li>
+								<li>US Marine Veteran with combat experience</li>
+								<li>Food Production Expert (Soil Development / etc)</li>
+								<li>Self Defence Specialist (Krav Maga)</li>
+								<li>
+							</ul>    
+						</div>
+						<div class="col">
+						<strong>Instructor Profiles:</strong>
+						<ul class="decorated">
+								<li>Instructor 1</li>
+								<li>Instructor 2</li>
+								<li>Instructor 3</li>
+								<li>Instructor 4</li>
+								<li>Instructor 5 - currently open</li>
+							</ul>                      
+
+						</div>-->
+
+					</div> <!-- end box -->
+
+
+
+				
+                    <!--<div class="box" style="padding-top:0">
+                    <a name="new"></a>
+                    <img src="images/prepshool-new-events-box.gif" title="Prep School New Courses and Upcoming Events" width="934" height="598" />
+                    </div>-->
+                    
+                   
+					<div class="box">
+
+
+						<div class="col">
+							<article class="content">
+								<header>
+									<h3 class="red">How to Keep your Membership FREE</h3>
+								</header>
+
+								<ul class="decorated">
+										<li>Members Get 50% Off ALL Live Trainings</li>
+										<li>Refer 3*, yours is FREE</li>
+										
+										<li>Save via special vendor discounts</li>
+										<!--<li>Simply cannot afford a membership?  <br>
+										<a href="contact" class="fancybox">Drop us a line</a> and we'll try to help.</li>-->
+										</ul>
+
+
+
+									<p>* 3 <u>active</u> referral memberships keeps yours free.</p>
+							</article><!-- end content -->
+
+						
+
+
+						</div><!-- end col -->
+						<div class="col">
+
+							<a href="comingsoon" class="fancybox cboxElement">
+
+								<!--h3>Meet our Instructors</h3>
+								<span>Key Instructors Announced July 31</span>
+								<span class="arrow">></span-->
+                                
+                                <img src="images/mark-your-calendar.jpg" title="Meet Our Instructors on July 31st" />
+							</a>
+							
+                            
+                            
+                            </div><!-- end col -->
+
+
+
+						<div class="clear"></div>
+
+					</div><!-- end box -->
+
+
+
+
+
+
+
+
+
+
+			
+
+	<div class="box"><a name="signup"></a>
+
+						<h1 class="large red" style="text-align:center;">
+							<i>CLASSES START ON SUNDAY, AUG 12<sup>th</sup></i>
+						</h1>
+						<div class="clear speech">
+
+							<div class="speech-corner"></div>
+
+							<h1 style="margin: 5px 0;" class="large">Enroll Early & Get FREE Access</h1>
+                            
+                            <div class="bar"></div>
+
+								<div class="col">
+
+
+								<img src="images/limited-offer-first-500.png" title="Special Offer Limited to First 500 Members ONlY" />
+
+								<div class="blue-ribbon">
+									<a href="application/signup">
+									<h3 class="normal-weight">Member Fee:<strike>$60.00/mo</strike></h3>
+									<h1>FREE TRIAL</h1>
+									<p class="notice">- Free 3 Month Trial for First 500 Members Only! -<br>
+									- In October, you'll be offered a DISCOUNT price of $15/mo -<br>
+									</p>
+                                    </a>
+								</div><!-- end blue-ribbon -->
+								
+								
+								<!-- 20/mo
+								<div class="col">
+								<div class="blue-ribbon">
+									<h3>Monthly Member Fee</h3>
+									<h3>Member Fee:<strike>$60.00/mo</strike></h3>
+									<h1>Special Price: $20</h1>
+									<p class="notice">- subject to change after 50 members join! -</p>
+								</div> end of $20/mo -->
+								
+								
+								<!-- 30/mo
+								<div class="col">
+								<div class="blue-ribbon">
+									<h3>Monthly Member Fee</h3>
+									<h3>Member Fee:<strike>$60.00/mo</strike></h3>
+									<h1>Special Price: $30</h1>
+									<p class="notice">- subject to change after 50 members join! -</p>
+								</div> end of $30/mo -->
+								
+								
+								
+
+
+
+							</div><!-- end col -->
+
+							<div class="col">
+								<h4 class="black">Why You Should to Enroll Today:</h4>
+
+						<ul class="red-bullets">
+						<!--<li>Your Special Price is Grandfathered in, Forever!</li>				<li>100% Satisfaction Guarantee</li>
+						<li>Earn a special thank you in our upcoming book!</li>-->
+						<li><p>FREE 3 Mo Trial (First 500 Only)</p></li>
+						<li><p>Risk Free - No Obligation</p></li>
+						<li><p>Share it with a Friend while it's FREE</p></li>
+						<li><p>Cancel Anytime - No Hassles</p></li>
+						<li><p>First 500 Members will be offered an AMAZING member price after the trial ends - Save 75%!</p></li>
+                        <li><p>First Adopter Discounts are Grandfathered FOREVER!</p></li>
+						<li><p>Help Us Make the Prep School the Best It can Be - We'll Forever be Thankful for your Help!</p></li>
+
+									                       
+								</ul>
+
+							</div><!-- end col-->
+
+							
+							<a href="application/signup" class="blue-rounded-btn animate-hover right cboxElement fancybox">Enroll for Free Trial</a>
+<div class="clear"></div>
+						<br><br>
+						
+                                   <a href="prepschool#topbanner" class="back-to-top"><span>Go</span> Back to Top</a>
+						</div><!-- end speech -->
+
+					</div><!-- end box -->
+
+
+
+
+
+
+
+
+				</section><!-- end main-content -->
+
+
+
+
+			</div><!-- end middle-content -->

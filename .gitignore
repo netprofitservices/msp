@@ -1,0 +1,13 @@
+htdocs-bak
+htdocs/beta
+.cshrc
+.history
+.gitconfig
+.login
+.login_conf
+.mail_aliases
+.mailrc
+.profile
+.rhosts
+.shrc
+access_codes.csv
