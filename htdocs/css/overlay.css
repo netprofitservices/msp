@@ -92,7 +92,15 @@ form stuff
 }
 
 
+.form input.radio {
+	width: 20px;
+	display: inline;
+}
 
+.form label.radioLabel {
+	display: inline;
+	padding-right: 50px;
+}
 
 .form input.form-btn{	
 	background:#0b4694;

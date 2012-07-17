@@ -1,0 +1,66 @@
+<header>
+	<h1 class="red underline">Instructor Inquiry</h1>
+
+	<p><em>Inquire about joining as an instructor with Mainstream Preppers.
+		Instructors work with us in a non-exclusive, win-win relationship.</em></p>
+	</header>
+
+
+
+	<section class="form">
+
+		<div id="form-message"></div>
+
+		<form action="application/instructor" method="post" id="request-application" class="myform">
+
+			<label for="firstname">First Name:</label>
+			<input name="firstname" id="firstname" type="text" class="firstname required" />
+
+			<label for="lastname">Last Name:</label>
+			<input name="lastname" id="lastname"  class="lastname required" />                
+
+			<label for="company">Company Name (optional):</label>
+			<input name="company" id="company"  class="lastname" />                
+
+			<label for="emailaddress">Email Address:</label>
+			<input name="emailaddress" id="emailaddress" type="email"  class="required" />       
+
+			<label for="phone">Phone (optional):</label>
+			<input name="phone" id="phone" type="tel" maxlength="10" />
+
+			<label for="zip">Current Zip Code:</label>
+			<input name="zip" id="zip" type="text" class="zipcode required" maxlength="10"  />
+
+			<label for="training_url">Training Website (optional):</label>
+			<input name="training_url" id="training_url" type="text" class="url" />
+
+			<label for="youtube_url">YouTube Channel (optional):</label>
+			<input name="youtube_url" id="youtube_url" type="text" class="url" />
+
+			<label for="other_url">Other Website (optional):</label>
+			<input name="other_url" id="other_url" type="text" class="url" />
+
+			<label for="experience">Please give us a BRIEF overview of your instructing experience</label>
+			<textarea name="experience" id="experience"></textarea>
+
+			<label for="what_teach">Please give us a BRIEF overview of what you'd like to teach</label>
+			<textarea name="what_teach" id="what_teach"></textarea>
+
+			<label for="willing_submit_video">If asked, would you be willing to submit a sample 30 minute training?
+			<p><em>We would NOT post the video, we'd only view it to evaluate you as a  potential instructor</em></p>
+			<label class="radioLabel" for="willing_submit_video_yes">
+				<input type="radio" class="radio required" name="willing_submit_video" value="yes" id="willing_submit_video_yes" /> YES
+			</label>
+			<label class="radioLabel" for="willing_submit_video_no">
+				<input type="radio" class="radio required" name="willing_submit_video" value="no" id="willing_submit_video_no" /> NO
+			</label>
+
+			        
+
+			<label for="comments">Questions/Concerns</label>
+			<textarea  name="comments" id="comments" class="commments"></textarea>
+
+			<input type="submit" class="form-btn " value="Sign Up" name="submit" id="submit"/>        
+		</form>
+
+	</section>
