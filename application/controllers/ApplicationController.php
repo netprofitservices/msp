@@ -228,7 +228,6 @@ class ApplicationController extends Zend_Controller_Action
 		if ($this->getRequest()->isPost()) {
 			$configOptions = new Zend_Config($this->getInvokeArg('bootstrap')->getOptions());
 			$emailTo = $configOptions->email->to;
-			$emailTo = 'personman2@gmail.com';
 			
 			$firstname = $this->_getParam('firstname');
 			$lastname = $this->_getParam('lastname');
