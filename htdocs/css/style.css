@@ -75,6 +75,21 @@ ul li a:hover{
 	
 }
 
+blockquote{
+	font-style:italic;
+	font-size: 26px;
+	line-height: 1.2;
+	font-weight:bold;
+	width: 325px;
+	margin: 10px 0 10px 10px;
+	color:#0B4694;	
+}
+
+blockquote span{
+	font-size: 32px;	
+	line-height: 28px;
+}
+
 article{
 	
 }
@@ -93,8 +108,18 @@ ul.red-bullets p{
 	color:#222222;	
 }
 
+ul.blue-bullets{
+	color:#0B4694;
+	margin-left: 25px;
+}
 
-ul.decorated , ul.checkedmark{
+ul.blue-bullets p{
+	color:#222222;	
+}
+
+
+
+ul.decorated , ul.checkedmark, ul.arrow {
 	list-style:none;	
 }
 
@@ -106,6 +131,14 @@ ul.decorated{
 ul.decorated li{
 	background:url(../images/ul-decor.gif) 0px 5px no-repeat;
 	padding-left: 35px;
+	margin-bottom: 8px;
+
+}
+
+
+ul.arrow li{
+	background:url(../images/bullet-arrow.png) 0px 5px no-repeat;
+	padding-left: 15px;
 	margin-bottom: 8px;
 
 }
@@ -1036,6 +1069,17 @@ a.blue-rounded-btn:hover{
 	border:1px solid #bc0000;
 }
 
+.blue-rounded-btn.smaller{
+	width: 60%; 
+	margin:15px auto;
+}
+
+
+.blue-rounded-btn.smaller h3{
+	font-weight:normal;
+	margin:0;	
+}
+
 
 a.red-rounded-btn{
 
@@ -1225,17 +1269,17 @@ top trial sign up bar
 }
 
 
-.sticky .twitter{
+.sticky .twitter,  .twitter{
 	background-image:url(../images/twitter-icon.gif);
 }
 
 
-.sticky .facebook{
+.sticky .facebook, facebook{
 	background-image:url(../images/facebook-icon.gif);
 }
 
 
-.sticky .twitter, .sticky .facebook{
+.sticky .twitter, .sticky .facebook, .twitter, .facebook{
 	display:block;
 	float:left;	
 	margin: 0 5px;
@@ -1246,12 +1290,12 @@ top trial sign up bar
 	text-indent: -9999px;
 }
 
-.sticky .twitter:hover{
+.sticky .twitter:hover, .twitter:hover{
 
 	background-position: center right;	
 }
 
-.sticky .facebook:hover{
+.sticky .facebook:hover, .facebook:hover{
 
 	background-position: center right;	
 }
@@ -1302,7 +1346,12 @@ misc
 }
 
 .center{
-	margin:auto;	
+	margin:auto;
+		
+}
+
+.text-center{
+	text-align:center;	
 }
 
 .grey{
@@ -1447,4 +1496,12 @@ h2.smaller{
 	font-weight:normal;	
 }
 
+.larger{
+	font-size: 1.4em;	
+}
+
+.indent{
+	padding-left: 70px;
+	display:block;	
+}
 

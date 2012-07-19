@@ -7,7 +7,7 @@ if (!empty($_POST['code'])) {
 	$Access = new AccessCode;
 	
 	if ($Access->checkCode($code)) {
-		$url = '/instructors-private.html';
+		$url = '/instructorsprivate';
 		header('Location: ' . $url);
 	} else {
 		die('Access code invalid.  Sorry.');
@@ -66,7 +66,7 @@ if (!empty($_POST['code'])) {
 	<img src="images/mainstream-preppers-logo.png" title="Mainstream Preppers" alt="Mainstream Preppers" /><br />
   	
 	<h2>MSP Instructor Program</h2>
-<h4>When/Why/How to get Involved</h4>
+
 	<h5>At this time, access to our Instructor Program is by Invitation Only</h5>
 
 	<form method="post" action="">
@@ -80,7 +80,7 @@ if (!empty($_POST['code'])) {
 	</form>
 	
 	<p>Are you a trainer/instructor/coach but don't have an access code?<br>
-	Fear Not.  We want to hear from you.  Simply <a href="contact">request an invitation</a>.
+	Fear Not.  We want to hear from you.  Simply <a href="instructors">request an invitation</a>.
 	</p>
 </body>
 </html>

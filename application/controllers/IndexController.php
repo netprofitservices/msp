@@ -6,9 +6,9 @@ class IndexController extends Zend_Controller_Action
     public function init()
     {
         /* Initialize action controller here */
-		$this->view->metaTitle = "Mainstream Preppers - Prepper Training - Bug Out Locations (BOL) - Homesteading - Intentional Community";
-		$this->view->metaKeywords = "prepper, prepardeness, bug out retreat, bug out location, prepper homestead, intentional community";
-		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, live training, bug out retreats, and a prepper homestead intentional community.";
+		$this->view->metaTitle = "Mainstream Preppers - Thriving in Good Times and Bad";
+		$this->view->metaKeywords = "prepper, prepardeness, prepper training, prepper groups, preparedness training, intentional community";
+		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, a network for forming preparedness groups, and more.";
 		
 		$this->view->baseUrl = 'http://mainstreampreppers.com/';
     }
@@ -16,17 +16,17 @@ class IndexController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
-		$this->view->metaTitle = "Mainstream Preppers - Prepper Training - Bug Out Locations (BOL) - Homesteading - Intentional Community";
-		$this->view->metaKeywords = "prepper, prepardeness, bug out retreat, bug out location, prepper homestead, intentional community";
-		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, live training, bug out retreats, and a prepper homestead intentional community.";
+		$this->view->metaTitle = "Mainstream Preppers - Thriving in Good Times and Bad";
+		$this->view->metaKeywords = "prepper, prepardeness, prepper training, prepper groups, preparedness training, intentional community";
+		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, a network for forming preparedness groups, and more.";
 		/*$this->view->showHomepageContentInHeader = true;*/
     }
     public function index2Action()
     {
         // action body
-		$this->view->metaTitle = "Mainstream Preppers - Prepper Training - Bug Out Locations (BOL) - Homesteading - Intentional Community";
-		$this->view->metaKeywords = "prepper, prepardeness, bug out retreat, bug out location, prepper homestead, intentional community";
-		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, live training, bug out retreats, and a prepper homestead intentional community.";
+		$this->view->metaTitle = "Mainstream Preppers - Thriving in Good Times and Bad";
+		$this->view->metaKeywords = "prepper, prepardeness, prepper training, prepper groups, preparedness training, intentional community";
+		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, a network for forming preparedness groups, and more.";
     }
     public function insideAction()
     {
@@ -94,6 +94,10 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+    public function instructorsprivateAction()
+    {
+        // action body
+    }
 
     public function missionAction()
     {
@@ -124,7 +128,10 @@ class IndexController extends Zend_Controller_Action
     }
     public function prepschoolAction()
     {
-        // action body
+       // action body
+		$this->view->metaTitle = "Preparedness School - We Teach Self Reliance";
+		$this->view->metaKeywords = "prepardeness school, preparedness training, prep school, self reliance, self sufficiency, self defense, intentional community";
+		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness.";
     }	
     public function retreatfaqAction()
     {

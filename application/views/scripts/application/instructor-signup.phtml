@@ -1,0 +1,40 @@
+<header>
+	<h1 class="red underline">Instructor Signup</h1>
+
+	<p><em>Inquire about joining as an instructor with Mainstream Preppers.<br />
+		Instructors work with us in a non-exclusive, win-win relationship.</em></p>
+	</header>
+
+
+
+	<section class="form">
+
+		<div id="form-message"></div>
+
+		<form action="application/instructor" method="post" id="request-application" class="myform">
+
+			<label for="firstname">First Name:</label>
+			<input name="firstname" id="firstname" type="text" class="firstname required" />
+
+			<label for="lastname">Last Name:</label>
+			<input name="lastname" id="lastname"  class="lastname required" />                
+
+			<label for="company">Company Name (optional):</label>
+			<input name="company" id="company"  class="lastname" />                
+
+			<label for="emailaddress">Email Address:</label>
+			<input name="emailaddress" id="emailaddress" type="email"  class="required" />       
+
+			<label for="phone">Phone (optional):</label>
+			<input name="phone" id="phone" type="tel" maxlength="10" />
+
+			<label for="zip">Current Zip Code:</label>
+			<input name="zip" id="zip" type="text" class="zipcode required" maxlength="10"  />
+
+			<label for="comments">Questions/Concerns</label>
+			<textarea  name="comments" id="comments" class="commments"></textarea>
+
+			<input type="submit" class="form-btn " value="Sign Up" name="submit" id="submit"/>        
+		</form>
+
+	</section>
