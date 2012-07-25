@@ -1,0 +1,653 @@
+#calcuator-warpper{
+	width: 960px;
+	margin: auto;	
+}
+
+.box{
+	width: 850px;		
+}
+
+.residual-result {
+	border:3px solid #d20000;
+	padding:10px;
+	margin-top: 20px;
+	position:relative;	
+	
+	display:none;
+}
+
+.residual-result > header{
+	display:block;
+	background:url(../images/estimate-ribbon-bg.gif) top center no-repeat;
+	width: 917px;
+	left: -34px;	
+	text-align:center;
+	position:relative;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+.residual-result > header h1{
+	color:#fff;
+	text-transform:uppercase;
+	font-size: 35px;
+		
+}
+.residual-result > header h2{
+	color:#d20000;
+	text-transform:uppercase;
+	font-size: 22px;
+			
+}
+
+.residual-result ul{
+	margin: 10px 0;
+	overflow:auto;
+	display:block;	
+}
+
+
+
+.residual-result ul li{
+	display:block;
+	background:#f6f6f6;
+	border: 1px solid #d7d7d7;
+	padding: 15px 5px;
+	float:left;
+	text-align:center;
+	margin-right: 10px;
+	width: 29%;
+}
+
+.residual-result ul li.last{
+	margin-right: 0;	
+}
+
+
+.residual-result li span{
+	text-transform: uppercase;
+	font-weight:bold;	
+}
+
+.residual-result .dollar {
+    display: inline-block;
+    font-size: 45px;
+    vertical-align: top;
+}
+
+.residual-result .amount {
+    font-size: 65px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+}
+
+.residual-result .title{
+	display:block;
+	margin-top: 5px;
+	clear:both;	
+}
+
+
+.residual-result ul li.wider{
+	width: 34%;	
+}
+
+
+
+
+#referral-results {
+	margin: 10px 0;	
+	display:none;
+}
+
+
+#referral-results > header{
+	background: #093a7f;
+	text-align:center;
+	padding: 5px;
+	margin:0;
+}
+
+
+
+#referral-results > header h2{
+	color: #fff;
+	text-transform:uppercase;
+	font-size: 19px;
+	margin: 0;
+	
+}
+
+#referral-results ul{
+	margin:0;
+	padding:0;	
+}
+
+#referral-results  li{
+	display:block;
+	width: 48.55%;
+	margin:0;
+}
+
+
+#referral-results .title {
+    float: left;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 10px;
+    text-align: left;
+    width: 140px;
+}
+
+
+
+
+.marketing-budget{
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+	padding: 15px 0;
+	margin: 5px 0;
+	text-align:center;
+	text-transform:uppercase;
+	font-size: 14px;
+	font-weight:bold;
+	overflow:auto;
+}
+
+.marketing-budget p{
+	margin-bottom: 5px;	
+}
+
+.marketing-budget div{
+	float:left;
+	font-size: 12px;		
+}
+
+
+.marketing-budget .budget{
+	padding-left: 20px;
+	margin-right: 50px;
+}	
+
+.marketing-budget .budget b, .marketing-budget .budget span{
+	color: #d20000;
+	font-size: 25px;
+	font-weight:bold;
+}
+
+
+.marketing-budget .budget b{
+	font-size: 14px;
+}
+	
+
+
+
+.growth-rate span{
+	display:block;
+	float:left;	
+	line-height: 3.4;
+}
+
+.growth-rate input{
+	width: 40px;
+	height: 30px;
+	font-weight:bold;
+	color: #093a7f;
+	padding: 2px;
+	font-size: 25px;
+	border: 1px solid #bababa;
+	float:left;	
+	text-align:center;
+}
+
+
+
+.growth-rate .value{
+	width: 105px;	
+}
+
+
+.minus, .plus, .restart{
+	float:left;	
+	margin: 10px 5px 0 5px;
+}
+
+.minus{
+	background:url(../images/minus-icon.gif) top center no-repeat;
+	width: 19px;
+	height: 19px;
+	display:block;
+	text-indent: -99999px;
+}
+.plus{
+	background:url(../images/plus-icon.gif) top center no-repeat;
+	width: 19px;
+	height: 19px;
+	display:block;
+	text-indent: -99999px;
+}
+
+.restart{
+	background:url(../images/refresh-icon.gif) top center no-repeat;
+	width: 19px;
+	height: 19px;
+	display:block;
+	text-indent: -99999px;
+}
+		
+
+.minus:hover, .plus:hover, .restart:hover{
+	background-position: bottom center;	
+}
+
+.refresh-alert{
+	
+	text-align:left;
+	font-weight:bold;
+	font-size: 20px;
+	color: #d20000;
+	text-transform:uppercase;
+	border-top: 1px solid #d20000;
+	border-bottom: 1px solid #d20000;
+	width: 500px;
+	padding: 5px 0;
+	margin: 10px auto;
+	
+	display:none;
+
+	
+}
+
+.refresh-alert a{
+		text-decoration:none;
+		color:#093A7F;
+}
+
+
+.refresh-alert .icon{
+	background:url(../images/refresh-icon.gif) top center no-repeat;
+	width: 19px;
+	height: 19px;
+	display:block;
+	float:left;
+	margin-left: 50px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.refresh-alert:hover .icon{
+	background-position: bottom center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#show-how{
+	display:block;
+	background:#d20000;
+	color:#fff;
+	text-transform: uppercase;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;		
+	-moz-border-radius: 10px;
+	width: 410px;
+	margin: 20px auto;
+	clear:both;
+	text-align:center;
+	font-size: 16px;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 10px;
+}
+
+
+#show-how:hover{
+	background: #093A7F	
+}
+
+
+.explain-calculation{
+	border-top: 3px solid #d20000;	
+	padding-top: 25px;
+	padding-left: 25px;
+	
+	display:none;
+}
+
+.explain-calculation > header h1{
+	color: #D20000;
+    display: block;
+    float: left;
+    font-size: 55px;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 450px;
+	margin-bottom: 20px;
+}
+
+
+.explain-calculation figure{
+	display:block;
+	float:right;
+	width: 365px;	
+	margin-top: -10px;
+}
+
+.explain-calculation figcaption{
+	font-size: 12px;
+	line-height: 1.2;	
+}
+
+.explain-calculation ul {
+	margin: 10px 0;
+	padding: 0;	
+	overflow:inherit;
+	width: 440px;
+}
+
+.explain-calculation ul li{
+	display:block;
+	width: auto;
+	text-align:left;
+	float:none;
+	border:none;
+	background:#f0f0f0;
+	padding: 10px 5px;	
+	border-bottom:1px solid #fff;
+}
+
+.explain-calculation ul li span{
+	display:block;
+	float:right;	
+}
+
+
+.explain-calculation ul li:nth-child(2n+2){
+	background:#fff;
+}
+
+
+
+
+.residual-calculator {
+	margin-top: 25px;	
+}
+
+
+.residual-calculator > header{
+	width: 880px;
+	margin: 20px auto 0 auto;	
+}
+
+
+.residual-calculator > header h1{
+	color: #757575;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 0;
+	padding-left: 25px;
+	
+}
+
+.residual-calculator .box{
+	
+	border:1px solid #bdbdbd;
+
+}
+
+
+.general > p {
+	display:block;
+	background: #f5f5f5;
+	padding: 5px 10px;
+	color: #858585;
+	font-size: 14px;
+}
+
+.residual-calculator ul{
+	margin: 5px 0;
+	padding: 0;	
+}
+
+
+.residual-calculator ul li{
+	padding: 15px 0;
+	background: url(../images/dotted.gif) bottom left repeat-x;
+	list-style:none;	
+	overflow:auto;
+}
+
+.residual-calculator ul li p{
+	font-size: 20px;
+	font-weight:bold;	
+	display:block;
+	float:left;
+	padding-left: 10px;
+}
+
+
+.residual-calculator ul li p span{
+	font-weight:normal;
+	font-size: 14px;
+	color:  #a2a2a2;	
+}
+
+
+.residual-calculator ul li .value{
+	float:right;
+	width: 180px;
+}
+
+#referral-first-month, #referral-year{
+    display: block;
+    float: right;
+    margin-right: 40px;
+    text-align: left;
+    width: 100px;
+}
+
+
+.residual-calculator ul li .value input{
+    border: 1px solid #9B9B9B;
+    color: #858585;
+    float: left;
+    font-size: 25px;
+    margin: 0 5px;
+    padding: 3px 0;
+    text-align: center;
+    width: 100px;
+}
+
+.residual-calculator ul li .value input:hover{
+		background: #fff9c5
+}
+
+.residual-calculator ul li .value input.percent{
+	width: 75px;	
+	
+}
+
+.residual-calculator ul li .value span{
+	display:block;
+	float: left;
+	font-size: 26px;
+    color: #858585;	
+}
+
+
+.residual-calculator ul li .value.buttons{
+	float:right;
+	overflow:auto;	
+	width: auto;
+	margin-right: 15px;
+}
+
+
+.residual-calculator ul li  .buttons a{
+	display:block;
+	border: 1px solid #9B9B9B;
+	padding: 5px 10px;
+	text-align:center;
+	float:left;
+	color:#939393;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+.residual-calculator ul li  .buttons.yes-no a{
+	padding: 5px 25px;	
+}
+
+.residual-calculator ul li .buttons a.first{
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.residual-calculator ul li .buttons a.last{
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-left:none;
+}
+
+.residual-calculator ul li .buttons a.middle{
+	border-left:none;
+}
+
+
+
+.residual-calculator ul li .buttons a:hover{
+	background:#cbcbcb;
+	color:#4b4b4b;		
+	-webkit-transition: background-color 200ms linear;
+     -moz-transition: background-color 200ms linear;
+     -o-transition: background-color 200ms linear;
+     -ms-transition: background-color 200ms linear;
+     transition: background-color 200ms linear;
+}
+
+
+.residual-calculator ul li .buttons a.selected{
+	background:#093a7f;
+	color:#fff;		
+	-webkit-transition: background-color 200ms linear;
+     -moz-transition: background-color 200ms linear;
+     -o-transition: background-color 200ms linear;
+     -ms-transition: background-color 200ms linear;
+     transition: background-color 200ms linear;
+}
+
+
+.referral-enable{
+	background: url(../images/dotted-pattern.gif) center repeat;
+	padding: 20px;
+	font-size: 20px;
+	margin: 10px 0;
+	font-style:italic;
+	
+}
+
+
+#show-referral{
+	background: #d20000;
+	color: #fff;
+	text-align: center;
+	text-transform:uppercase;
+	float: right;
+	display: block;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;		
+	-moz-border-radius: 10px;
+	padding: 5px 20px;
+	margin-top: -5px;
+	font-size: 18px;
+	text-decoration:none;
+	font-style:normal;
+	
+}
+
+#show-referral:hover{
+	background: #093A7F	
+}
+
+#residual-submit{
+	display: block;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;		
+	-moz-border-radius: 25px;
+	background: #093A7F;
+	color: #fff;
+	text-align: center;
+	text-transform:uppercase;
+	font-size: 25px;
+	width: 450px;
+	margin: 20px auto;
+	text-decoration:none;
+	padding: 5px 20px;
+	
+}
+
+#residual-submit:hover{
+	background: #d20000;	
+}
+
+
+
+
+.referral-calcuator{
+	margin-top: 40px;	
+	
+	display:none;
+}
+
+
+.referral-calcuator > p{
+    background: none repeat scroll 0 0 #F5F5F5;
+    color: #858585;
+    display: block;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+
+
+.note h3{
+	color:#585858;
+	text-transform:uppercase;
+	font-size: 14px;
+}
+
+.note ul{
+	color:#d20000;
+	list-style: disc;
+	font-size: 12px;	
+}
+
+.note p{
+	color: #777777;	
+}
+
+
+

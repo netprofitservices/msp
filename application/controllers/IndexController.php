@@ -98,6 +98,18 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+	
+    public function instructorrevenueestimatorAction()
+    {
+        // action body
+    }
+
+    public function instructorrevenueestimateAction()
+    {
+        // action body
+    }
+
+
 
     public function missionAction()
     {
@@ -200,6 +212,11 @@ class IndexController extends Zend_Controller_Action
     }
 
     public function whyprepareAction()
+    {
+        // action body
+    }
+	
+    public function privacypolicyAction()
     {
         // action body
     }

@@ -1,0 +1,335 @@
+<link href="css/estimator.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/estimator.js"></script>
+    
+
+
+
+
+
+<div id="main-content" role="main">
+                        
+  <div class="blue-bg clear">
+
+		<section class="what-is">   
+
+			<div class="wrapper">  
+
+				<header>
+					<h1 class="red">Instructor Revenue Estimator</h1>                     
+				</header>                                                                                        
+
+
+			</div>  <!-- end wrapper -->            
+
+			<div class="ribboncorners"></div>
+
+		</section> <!-- end what-is -->           
+
+		<div class="clear"></div>
+
+
+	</div>
+	
+<div id="calcuator-warpper">	
+		<section class="residual-result box">
+		
+						<header>
+							<h1>Your Estimated Income</h1>
+							<h2>Based on Your Example Figures</h2>
+						</header>
+						
+						<div class="refresh-alert">
+							 <a href="#"><div class="icon"></div>Please click to re-calculate</a></div>						
+						
+						<ul>
+							<li>
+								<div>
+									<span class="dollar">$</span>
+									<span class="amount" id="income-month"></span>
+								</div>
+									<span class="title">Per Month</span>
+
+							</li>
+							<li class="wider">
+								<div>
+								<span class="dollar">$</span>
+								<span class="amount" id="income-year"></span>
+								</div>
+								<span class="title">Per Year</span>
+							</li>
+							<li class="last">
+								<span class="dollar">$</span>
+								<span class="amount"id="income-hour"></span><br />
+								<span class="title">Per Hour</span>
+							</li>
+						</ul>
+						
+						<article id="referral-results" class="clear">
+							<header>
+								<h2>ADDITIONAL REFERRAL INCOME</h2>
+							</header>
+							<ul>
+								<li>
+									<span class="title">First year referral income</span>
+									<span class="dollar">$</span>
+									<span  class="amount" id="referral-income-year"></span>
+			
+								</li>
+								<li class="last">
+									<span class="title">Second year income per month</span>
+									<span class="dollar">$</span>
+									<span class="amount" id="referral-income-month"></span>
+								</li>
+				
+							</ul>
+						</article><!-- end referral-results -->
+						
+						<div class="marketing-budget">
+							
+							<p><b>MSP has an aggressive growth strategy. We reserve 20% of gross revenue for target marketing.</b></p>
+							<div class="budget">MSP Marketing budget: <span id="marketing-budget-amount">$6500</span> <b>Per Month</b>.</div>
+							<div class="growth-rate">
+									<span>Income is based upon a </span>
+										<div class="value">
+											<a href="#" class="minus">Minus</a>
+											<input type="numbers" value="12" id="growth-rate" autocomplete="off"/>
+											<a href="#" class="plus">Plus</a>
+										</div>
+									<span>Member Growth Rate</span>
+								<a href="#" class="restart">Refresh</a>
+								<div class="clear"></div>		
+							</div>				
+							<div class="clear"></div>		
+						
+						</div><!-- end marketing-budget -->
+						
+						
+						
+						<a href="#" id="show-how">HOW WE CaME UP WITH THese NUMBERS?</a>
+						
+						<article class="explain-calculation">
+						
+							<header>
+								<h1>How we came up With these numbers?</h1>
+							</header>
+							
+							<figure>
+								<img src="images/msp-revenue-breakdown.gif" title="MSP Revenue Breakdown" />
+								<figcaption>
+									<p>* Key ground floor instructors receive 50% of the investor dividend for first $100,000.</p>
+									<p>Marketers earn a residual 20% commission on their referrals, taken off gross.</p>
+								</figcaption>
+							</figure>
+							
+							<p><b>How we calculate your FIRST MONTH&rsquo;s income:</b></p>
+							
+							<ul>
+								<li>Total Revenue:	 	 												<span id="how-total"></span></li>
+								<li>Total Instructor Revenue Share (30%)     							<span id="how-share"></span></li>
+								<li>Ground Floor Instructor Bonus (50% of Investor Div.)				<span id="how-bonus"></span></li>
+								<li>Your % Share of Courses												<span id="how-your-share"></span></li>
+								<li>Your % share After Member Rating Adjustment	 	             	    <span id="how-your-share-rating"></span></li>
+							</ul>						
+						
+							<div class="clear"></div>
+						</article><!-- end explain-calculatio -->
+						
+						
+						
+						
+		
+		</section><!-- end residual-result -->
+	
+	
+	
+	
+	
+
+				<section class="residual-calculator ">
+				
+					<header>
+							<h1>Let&rsquo;s Begin <img src="images/calculator-icon.gif" title="Begin Calcuate Residual Income" /></h1>
+					</header>
+					
+					<div class="box">
+										<div class="general">
+											<p><b>Adjust below to project your monthly income potential:</b></p>
+											<ul>
+											
+												<li>
+													<p>Total # of Prep School Members</p>
+													<div class="value">
+														<a href="#" class="minus minus-200">Minus</a>
+														<input type="numbers" value="2000" id="members-num" autocomplete="off" />
+														<a href="#" class="plus plus-200">Plus</a>
+													</div>
+												</li>
+												
+												<li>
+													<p>Total # of Instructors<br />
+													<!--span>Starting with 6, seeking 12 for phase 1</span-->
+													</p>
+													<div class="value">
+														<a href="#" class="minus">Minus</a>
+														<input type="numbers" value="6" id="instructors-num" autocomplete="off" />
+														<a href="#" class="plus">Plus</a>
+													</div>
+												</li>
+												
+												
+												<li>
+													<p>Your Share of Courses</p>
+													<div class="value buttons">
+														<a href="#" class="first" id="share-small">Small</a>
+														<a href="#" class="middle selected" id="share-even">Even</a>
+														<a href="#" class="last" id="share-double">Double</a>
+													</div>
+												</li>
+												
+												
+												<li>
+													<p>Estimate Hours per Week You'd Spend on MSP</p>
+													<div class="value">
+														<a href="#" class="minus">Minus</a>
+														<input type="numbers" value="10" id="hours-spend"  autocomplete="off"/>
+														<a href="#" class="plus">Plus</a>
+													</div>
+												</li>
+												
+												
+												
+												<li>
+													<p>Are You One of Our 12 KEY Ground Floor Instructors?</p>
+													<div class="value buttons yes-no">
+														<a href="#" class="first selected" id="key-yes">Yes</a>
+														<a href="#" class="last" id="key-no">No</a>
+													</div>
+												</li>
+												
+												
+												<li>
+													<p>Your Average Course Rating:</p>
+													<div class="value buttons">
+														<a href="#" class="first selected" id="average">Average</a>
+														<a href="#" class="middle" id="above-average">Above Average</a>
+														<a href="#" class="last" id="superior">Superior</a>
+													</div>
+												</li>
+											
+											</ul>	
+										</div><!-- end general-->
+										
+										
+							
+											<div class="referral-enable">
+					
+											<p><i>Hey Wait&hellip;. We didn't talk about Referrals Yet! <br />
+															<a href="#" id="show-referral">Yes, Please</a>
+											<b>Do you want to include referrals revenue for this calcuation?</b></i></p>
+
+										
+										</div><!-- end referral-enable -->
+										
+										
+										<div class="referral-calcuator">
+										
+											<p><b>REFERRAL INCOME</b></p>
+											
+											<ul>
+											
+											
+												
+												<li>
+													<p>Would you consider Marketing MSP, referring members?</p>
+													<div class="value buttons yes-no">
+														<a href="#" class="first selected" id="marketReferral-yes">Yes</a>
+														<a href="#" class="last" id="marketReferral-no">No</a>
+													</div>
+												</li>
+											
+												<li>
+													<p>What is Your Monthly &ldquo;Reach&rdquo;?<br />
+														<span>Site visitors, YouTube views, Facebook fans, etc</span></p>
+													<div class="value">
+														<a href="#" class="minus minus-200">Minus</a>
+														<input type="numbers" value="6000" id="monthly-reach"  autocomplete="off"/>
+														<a href="#" class="plus plus-200">Plus</a>
+													</div>
+												</li>
+												
+											
+												<li>
+													<p>What % Would Visit MSP&rsquo;s Site on Your Suggestion/Request?</p>
+													<div class="value">
+														<a href="#" class="minus">Minus</a>
+														<input type="numbers" value="70" id="referral-sitevisit" class="percent"  autocomplete="off" />
+														<span>%</span>
+														<a href="#" class="plus">Plus</a>
+													</div>
+												</li>
+												
+											
+												<li>
+													<p>What % Would You Guess Might Enroll as Member?</p>
+													<div class="value">
+														<a href="#" class="minus">Minus</a>
+														<input type="numbers" value="1.2" id="referral-enroll" class="percent"  autocomplete="off"/>
+														<span>%</span>
+														<a href="#" class="plus">Plus</a>
+													</div>
+												</li>
+												
+												<li>
+													<p>Your Referrals the FIRST month:</p>
+													<div class="value">
+														<!--a href="#" class="plus">Plus</a>
+														<input type="numbers" value="50" id="referral-first-month" /-->
+														<span id="referral-first-month">50</span>
+														<!--a href="#" class="minus">Minus</a-->
+													</div>
+												</li>
+												
+												<li>
+													<p>Total Referrals per Year (Assuming Consistent Promotion):</p>
+													<div class="value">
+														<!--a href="#" class="plus">Plus</a>
+														<input type="numbers" value="70" id="referral-year" />
+														<!--a href="#" class="minus">Minus</a-->
+														<span id="referral-year">605</span>
+													</div>
+												</li>
+												
+											</ul>
+												
+										</div><!-- end referral-calcuator -->
+										
+										
+										<a href="#" id="residual-submit">CALCULATE MY POTENTIAL INCOME</a>
+						</div><!-- end box -->
+				</section><!-- end residual-calucator -->
+				
+				
+				
+				
+				<div class="note box">
+				
+							<h3>What this calculator does NOT account for:</h3>
+							
+							<ul>
+								<li><p>Whether your videos are on a topic that is more or less popular than others</p></li>
+								<li><p>Whether your courses are relatively new, or you haven't loaded one in a while</p></li>
+								<li><p>Based on a $20/mo membership.  First 1,000 enrollers will get a discount.</p></li>
+								<li><p>Member cancelation rate is unknown, and not factored in.</p></li>
+								<li><p>The ground floor instructor bonus is limited to $100,000.00</p></li>
+								<li><p>Estimates assume 100% are referred. Real numbers may be up to 20% higher!</p></li>
+								<li><p>Estimates do not factor in residual income in future years</p></li>
+								<li><p>Formulas for calculations are subject to change or tweaked over time</p></li>
+								<li><p>This is for estimate purposes only.  Not responsible for typographical errors</p></li>
+							</ul>
+				
+				
+				</div><!-- end note -->
+
+</div><!-- end calcuator-warpper -->
+
+	</div><!-- end main-content -->
