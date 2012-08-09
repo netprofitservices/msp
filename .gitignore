@@ -11,5 +11,6 @@ htdocs/beta2
 .profile
 .rhosts
 .shrc
+.ssh
 access_codes.csv
 files/signups.csv
