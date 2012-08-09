@@ -312,7 +312,47 @@ class IndexController extends Zend_Controller_Action
 		$this->_helper->layout->setLayout('overlay');
     }
 	
+	public function aboutquizAction()
+    {
+        // action body
+    }
+    
+	public function sharefriendAction()
+    {
+   
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    
+	public function coursepageAction()
+    {
+        // action body
+    }
+    
+    public function createprofileAction()
+    {
+        // action body
+    }
 	
+	public function instructorprogramAction()
+    {
+        // action body
+    }
+    
+	public function networkthankyouAction()
+    {
+        // action body
+    }
+    
+	public function prepschoolsignupthankyouAction()
+    {
+        // action body
+    }
+    
+    public function referralestimatorAction()
+    {
+        // action body
+    }
 
 
 }
