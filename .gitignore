@@ -14,4 +14,4 @@ htdocs/beta2
 .shrc
 .ssh
 access_codes.csv
-files/signups.csv
+files/*
