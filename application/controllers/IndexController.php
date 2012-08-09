@@ -10,7 +10,8 @@ class IndexController extends Zend_Controller_Action
 		$this->view->metaKeywords = "prepper, prepardeness, prepper training, prepper groups, preparedness training, intentional community";
 		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, a network for forming preparedness groups, and more.";
 		
-		$this->view->baseUrl = 'http://www.mainstreampreppers.com/';
+		$configOptions = new Zend_Config($this->getInvokeArg('bootstrap')->getOptions());
+		$this->view->baseUrl = $configOptions->baseUrl;
     }
 
     public function indexAction()

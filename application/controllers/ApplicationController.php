@@ -9,7 +9,9 @@ class ApplicationController extends Zend_Controller_Action
 		$this->view->metaTitle = "Mainstream Preppers";
 		$this->view->metaKeywords = "Default keywords here.";
 		$this->view->metaDescription = "Default description here.";
-		$this->view->baseUrl = 'http://www.mainstreampreppers.com/';
+
+		$configOptions = new Zend_Config($this->getInvokeArg('bootstrap')->getOptions());
+		$this->view->baseUrl = $configOptions->baseUrl;
     }
 
     public function indexAction()

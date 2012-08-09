@@ -10,7 +10,8 @@ class NewsletterController extends Zend_Controller_Action
 		$this->view->metaKeywords = "Default keywords here.";
 		$this->view->metaDescription = "Default description here.";
 
-		$this->view->baseUrl = 'http://www.mainstreampreppers.com/';
+		$configOptions = new Zend_Config($this->getInvokeArg('bootstrap')->getOptions());
+		$this->view->baseUrl = $configOptions->baseUrl;
     }
 
     public function indexAction()
