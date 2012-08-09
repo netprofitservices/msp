@@ -54,6 +54,11 @@ Layout stuff
 	
 }
 
+
+.twocol .wide-left.sixtyfive{
+	width: 66%	
+}
+
 .twocol .right-col{
 	float:right;	
 }
@@ -530,6 +535,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', end
 
 
 
+
+/* ##############
+
+	create profile banner
+
+############## */
+
+
+#create-profile-banner{
+	background:url(../images/create-profile-banner.jpg) 50% 1px no-repeat transparent;
+	height: 188px;
+	width: 960px;
+	margin: 0px auto 0 auto; 	
+	display:block;
+	border:0;
+}
+
+
+#create-profile-banner > header h1{
+	display:block;
+	text-indent: -9999px;
+
+}
+
+
+
+
+
 /* ##############
 
 	instructor program banner
@@ -707,14 +740,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', end
 
 ############## */
 
-#free-trial-banner {
+#free-trial-banner, #free-trial-banner-thankyou {
 	background: #000;
 	border-top: 10px solid #d20000;
 	margin-bottom: 50px;
 }
 
 
-#free-trial-banner > section {
+#free-trial-banner > section,  #free-trial-banner-thankyou > section {
 	background:none;
 	width: 1000px;	
 	height: 370px;
@@ -723,6 +756,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', end
 	position:relative;
 	background:url(../images/free-trial-banner.gif) 50% 0 no-repeat;
 }
+
+#free-trial-banner-thankyou > section {
+	height: 285px;
+	margin-top: -10px;
+	background:url(../images/trial-signup-thankyou-banner.png) 50% 0 no-repeat;
+}
+
+#free-trial-banner-thankyou-blue > section {
+	height: 340px;
+	background:url(../images/trial-signup-thankyou-banner.jpg) 50% 0 no-repeat;
+	border:0;
+}
+
 
 
 #free-trial-banner.sixty > section {
@@ -736,14 +782,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', end
 }
 
 
-#free-trial-banner  header h1, #free-trial-banner header h2{
+#free-trial-banner  header h1, #free-trial-banner header h2, #free-trial-banner-thankyou header *,  #free-trial-banner-thankyou-blue header *{
 	text-indent: -9999px;
 	display:block;
 
 }
 
 
-#free-trial-banner .enroll-today{
+#free-trial-banner .enroll-today, #free-trial-banner-thankyou .enroll-today{
 	background: url(../images/enroll-today-banner-ribbon.png) center no-repeat;
 	display:block;
 	position:absolute;
@@ -1618,6 +1664,15 @@ Mark your calendar box
 	text-decoration:none;
 	color:#878787;
 	font-size:18px;
+}
+
+
+
+.questions-on-signup.longer{
+	left: -9px;
+    position: relative;
+    width: 235px;
+	margin-top: 0;
 }
 
 .questions-on-signup:hover{
