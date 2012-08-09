@@ -16,14 +16,23 @@ $.validator.setDefaults({
 	submitHandler: function(form) { 
 		fields = $(form).serialize()
 		action = $(form).attr('action')
-		
+
 		$.post(action, fields, function(data, textStatus) {
 			if (data == 'ok') {
+				$("#form-message").removeClass("error");
 				$("#form-message").fadeIn();
 				$("#form-message").html(" <h2>Thank you!</h2> Your form has been submitted.");
 				$(".form form").hide();
+				$(".myform").hide();
+				
+				// Prepschool signup redirect to prepschool
+				if (action == 'prepschoolsignup') {
+					setTimeout('window.location.href = "prepschool"', 1000);
+					
+				}
 			} else {
 				$("#form-message").fadeIn();
+				$("#form-message").addClass("error");
 				$("#form-message").html("There was a problem saving your data.");
 			}
 		})
@@ -134,7 +143,6 @@ $('#join-network-form input[type="text"], #join-network-form input[type="email"]
 			
 		}
 	});
-	
 	
 	
 	

@@ -10,7 +10,7 @@ class IndexController extends Zend_Controller_Action
 		$this->view->metaKeywords = "prepper, prepardeness, prepper training, prepper groups, preparedness training, intentional community";
 		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, a network for forming preparedness groups, and more.";
 		
-		$this->view->baseUrl = 'http://mainstreampreppers.com/';
+		$this->view->baseUrl = 'http://www.mainstreampreppers.com/';
     }
 
     public function indexAction()
@@ -90,11 +90,23 @@ class IndexController extends Zend_Controller_Action
         // action body
 		$this->_helper->layout->setLayout('overlay');
     }
+    public function instructorpreviewAction()
+    {
+        // action body
+    }
+    public function instructorbioAction()
+    {
+        // action body
+    }
     public function instructorsAction()
     {
         // action body
     }
     public function instructorsprivateAction()
+    {
+        // action body
+    }
+    public function instructorsprivatekeyAction()
     {
         // action body
     }
@@ -137,14 +149,20 @@ class IndexController extends Zend_Controller_Action
     public function partnershipsAction()
     {
         // action body
-    }
-    public function prepschoolAction()
+	}
+    public function prepschool2Action()
+    {
+        // action body
+	}
+	
+  public function prepschoolAction()
     {
        // action body
 		$this->view->metaTitle = "Preparedness School - We Teach Self Reliance";
 		$this->view->metaKeywords = "prepardeness school, preparedness training, prep school, self reliance, self sufficiency, self defense, intentional community";
 		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness.";
-    }	
+    	   }
+   
     public function retreatfaqAction()
     {
         // action body
@@ -267,6 +285,33 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+    public function joefoxAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function billstillAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function zacbauerAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function garywilliamsAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+  	public function paulrangeAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+	
+	
 
 
 }

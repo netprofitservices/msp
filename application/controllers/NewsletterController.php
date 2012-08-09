@@ -10,7 +10,7 @@ class NewsletterController extends Zend_Controller_Action
 		$this->view->metaKeywords = "Default keywords here.";
 		$this->view->metaDescription = "Default description here.";
 
-		$this->view->baseUrl = 'http://mainstreampreppers.com/';
+		$this->view->baseUrl = 'http://www.mainstreampreppers.com/';
     }
 
     public function indexAction()
@@ -31,13 +31,43 @@ class NewsletterController extends Zend_Controller_Action
 			$email = $this->_getParam('emailaddress');
 			$zip = $this->_getParam('zip');
 			
+			
+			// Sign them up on MailChimp
+			$merge_vars = array(
+				'ZIPCODE' => $zip,
+				'GROUPINGS' => array(
+					array(
+						'name' => 'MSP Contacts', 
+						'groups' => 'FREE Network'
+					)
+				)
+			);
+			
+			// Optional variables (don't overwrite with null)
+			if (!empty($name)) {
+				$merge_vars['FIRST'] = $name;
+			}
+			
+			require_once('models/MailChimp.php');
+			$MailChimp = new MailChimp($configOptions);
+			
+			$mailchimpStatus = $MailChimp->subscribeOrUpdate($email, $merge_vars);
+			
+			
+			// Write to csv file
 			$date = date('Y-m-d H:i:s'); 
 			
-			$line = "$email,$name,$zip,$date\n";
+			$line = array(
+				$email,
+				$name,
+				$zip,
+				$date,
+				$mailchimpStatus
+			);
 
 
 			$fh = fopen($file, 'a');
-			if (fwrite($fh, $line)) {
+			if (fputcsv($fh, $line)) {
 				echo 'ok';
 			}
 			
@@ -45,7 +75,6 @@ class NewsletterController extends Zend_Controller_Action
 		}
 		
     }
-
 
 }
 

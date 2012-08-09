@@ -1,0 +1,271 @@
+
+
+<!-- <div class="sticky">
+
+<a href="contact" class="fancybox red-button">
+Inquire Today
+</a-->
+<!--  
+<div class="social">
+<h5>Share this:</h5>
+<a href="https://twitter.com/#!/PrepperSkills" class="twitter">Twitter</a>
+<a href="http://www.facebook.com/MainstreamPreppers" class="facebook">Follow us on Facebook</a>
+</div>end social -->
+
+<!--a class="fancybox ask-questions" href="contact">
+Ask a question
+</a>
+
+</div> end sticky -->
+
+
+
+<div id="main-content" role="main">
+
+	<div class="blue-bg clear">
+
+		<section class="what-is">   
+			<div class="wrapper">  
+				<header>
+					<h1>Early Enrollment Signup</h1>                      
+				</header>
+			</div>  <!-- end wrapper -->  
+			<div class="ribboncorners"></div>
+		</section> <!-- end what-is -->           
+
+		<div class="clear"></div>
+	</div><!-- end blue-bg -->    
+
+
+	<section>
+
+
+
+
+		<div class="box pricing-box">  
+
+			<header>
+				<h1><span>Special Price</span> For the Next 485 Members</h1>
+			</header>
+
+
+			<div class="pricing-options-box">
+
+				<div class="monthly pricing-option">
+
+					<p class="grey">Regular: <del>$60/month</del></p>
+
+					<p class="big-amount blue">
+						<sup class="dollar-sign">$</sup><span class="amount">15</span><br />
+						<span class="per">PER MONTH</span>
+					</p>
+
+				</div><!-- end monthly -->
+
+				<span class="or">
+					<i>OR</i>
+				</span>
+
+				<div class="yearly pricing-option">
+
+					<p class="grey">Regular: <del>$600/year</del></p>
+
+					<p class="big-amount blue">
+						<sup class="dollar-sign">$</sup><span class="amount">150</span><br />
+						<span class="per">PER YEAR</span>
+					</p>
+
+				</div><!-- end monthly -->
+
+				<div class="clear"></div>     
+
+			</div><!-- end pricing-optionis-box -->
+
+
+			<div class="why-sign-up">
+
+				<h2 class="red">WHY SIGN UP TODAY?</h2>
+
+				<ul class="arrow">
+					<li>Risk Free. No Obligation.</li>
+
+					<li>Share it with a Friend while it’s FREE!</li>
+
+					<li>Cancel Anytime. No Hassles</li>
+
+					<li>First Adopter Discounts are Grandfathered FOREVER!</li>
+				</ul>
+
+			</div><!-- end why-sign-up-->
+
+
+			<div class="clear"></div>     
+
+		</div> <!-- end pricing-box -->
+
+
+
+
+		<section class="box twocol"> 
+
+
+			<div class="wide-left">
+				<link href="css/form.css" rel="stylesheet">
+
+
+
+				<form action="/prepschoolsignup" method="post" id="request-application" class="myform">
+
+					<div class="form">
+
+						<div>
+							<label for="firstname">First Name:</label>
+							<input name="firstname" id="firstname" type="text" class="firstname required" />
+						</div>
+						<div>  
+							<label for="lastname">Last Name</label>
+							<p class="optionallabel">Optional</p>
+							<input name="lastname" id="lastname"  type="text"  class="lastname optional" /> 
+						</div>  
+						<div class="clear"></div>
+						<div>  
+							<label for="emailaddress">Email Address:</label>
+							<input name="emailaddress" id="emailaddress" type="email"  class="required" />     
+						</div>
+						<div> 
+							<label for="phone">Phone:</label>
+							<p class="optionallabel">Optional</p>
+							<input name="phone" id="phone" type="number" maxlength="10" class="optional"  />
+						</div>
+						<div class="clear"></div>
+
+						<div>
+							<label for="zip" class="clear">Current Zip Code:</label>
+							<input name="zip" id="zip" type="text" class="zipcode required" maxlength="10"  />
+						</div>
+
+						<div class="clear"></div>
+
+						<label for="primary">Primary Motivation for Preparedness: </label>
+						<select name="primary" id="primary">
+							<option>--Select--</option>
+							<option>Develop Self Sufficiency Skills</option>
+							<option>Job Loss / Bankruptcy</option>
+							<option>House Fire / Tornado</option>
+							<option>Area Flood / Earthquake / Other Disaster</option>
+							<option>Drought / Crop Failures / Food Supply Disruption</option>
+							<option>Sustained Power Outage</option>
+							<option>Social Unrest / Riots</option>
+							<option>Economic Collapse</option>
+							<option>Hyperinflation</option>
+							<option>Martial Law</option>
+							<option>EMP  </option>
+							<option>Solar Flare/CME</option>
+							<option>Nuclear Power Plant Meltdown</option>
+							<option>Nuclear or Biological Warfare</option>
+							<option>Terrorist Attack</option>
+							<option>Virus / Pandemic</option>
+							<option>Zombie Apocalypse (just kidding!)</option>
+						</select>
+
+
+<?/*						<label>Secondary Motivations(s) for Preparedness: </label> 
+						<div class="checkboxes">
+							<? $options = array(
+								'Develop Self Sufficiency Skills',
+								'Job Loss / Bankruptcy',
+								'House Fire / Tornado',
+								'Area Flood / Earthquake / Other Disaster',
+								'Drought / Crop Failures / Food Supply Disruption',
+								'Sustained Power Outage',
+								'Social Unrest / Riots',
+								'Economic Collapse',
+								'Hyperinflation',
+								'Martial Law',
+								'EMP',
+								'Solar Flare/CME',
+								'Nuclear Power Plant Meltdown',
+								'Nuclear or Biological Warfare',
+								'Terrorist Attack',
+								'Virus / Pandemic',
+								'Zombie Apocalypse (just kidding!)',
+								'Simpler Lifestyle',
+								'Like Minded Friends/Neighbors'
+							); ?>
+
+							<? $i = 1 ?>
+							<? foreach ($options as $option): ?>
+							<div>
+								<input name="secondary[]" id="secondary-<?= $i ?>" value="<?= $option ?>" type="checkbox" />
+								<label for="secondary-<?= $i++ ?>"><?= $option ?></label>
+							</div>
+						<? endforeach ?>
+					</div><!-- end checkboxes -->           
+					*/ ?>
+					
+					<label for="comments">Questions/Concerns</label>
+					<textarea  name="comments" id="comments" class="commments required"></textarea>
+
+
+					<div class="clear"></div>
+
+				</div><!-- end form -->
+
+				<br />
+
+
+				<div id="form-message"></div>
+
+				<input type="submit" class="form-btn" value="BECOME A MEMBER" name="submit" id="submit"/> 
+
+
+
+			</form>         
+
+
+		</div><!-- end wide-left-->
+
+
+
+
+		<aside class="right-col">
+			<a href="contact" class="questions-on-signup fancybox" data-fancybox-type="iframe">
+				<b>Questions?</b>
+				ASK US</a><br /><br />
+
+
+				<h2>ABOUT<br />
+					PREPSCHOOL</h2>
+					<ul class="related">
+						<li><a href="#">Meet Our Instructors</a></li>
+						<li><a href="#">Testimonial</a></li>
+						<li><a href="#">Course Schedule</a></li>
+
+
+
+					</ul><!-- end related-->
+
+
+				</aside><!-- end right-col-->
+
+				<div class="clear"></div>
+
+			</section><!-- end twocol-->
+
+
+
+
+
+
+
+
+
+
+
+
+		</section><!-- end section -->
+
+
+
+
+	</div><!-- end main-content -->

@@ -42,7 +42,9 @@ Layout stuff
 }
 
 .box.twocol{
-	padding:0;
+	padding:10px 0 0 0;
+	position:relative;
+
 }
 
 
@@ -53,9 +55,15 @@ Layout stuff
 }
 
 .twocol .right-col{
-	float:right;
-	
+	float:right;	
 }
+
+
+.twocol .right-col.wide{
+	
+	width: 680px;
+}
+
 
 
 
@@ -357,6 +365,110 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', end
 
 
 
+#join-network-banner.success .thankyou{
+	padding-top: 50px;
+	text-align:center;
+	color:#fff;
+}
+
+
+#join-network-banner.success .thankyou h2{
+	text-align:center;	
+	color:#fff;
+	text-shadow: 0 3px 5px #2474a5;
+	letter-spacing: -1px;
+	font-size: 38px;
+}
+
+#join-network-banner.success .thankyou p{
+	font-size: 24px;
+	text-shadow: 0 3px 5px #2474a5;
+	
+}
+
+
+#join-network-banner.success .thankyou-list{
+	list-style:none;
+	margin: 25px 0;
+	padding:0;
+	overflow:auto;
+}
+
+#join-network-banner.success .thankyou-list li{
+	display:block;
+	float: left;
+	overflow: auto;	
+	width: 30.5%;
+	padding: 10px;
+	margin-right: 0.5%;	
+}
+
+#join-network-banner.success .thankyou-list li:last-of-type{
+	margin-right: 0;	
+}
+
+
+#join-network-banner.success .thankyou-list a{
+	display:block;
+	border:3px double #fff;
+	height: 50px;
+	padding: 10px;
+	text-align: left;
+	color:#fff;
+	text-decoration: none;
+	font-size: 19px;
+	background: url("../images/blue-50.png") repeat scroll center center transparent;
+	box-shadow: 0 5px 5px #3480a5;
+
+}
+
+#join-network-banner.success{
+	height: 300px;	
+}
+
+#join-network-banner.success .thankyou-list a:hover{
+	background: #fff;
+	color:#d20000;
+	border-color: #63cbff;	
+}
+
+#join-network-banner.success .thankyou-list a:hover .green{
+	color:#d20000;	
+}
+
+#join-network-banner.success .thankyou-list a img{
+	margin-right: 10px;	
+}
+ 
+#join-network-banner.success .thankyou-list a.twitter{
+		margin-right: 0%;
+}
+
+#join-network-banner.success .thankyou-list a.free-trial{
+	text-align:center;
+	line-height: 0.5;
+	
+	
+}
+#join-network-banner.success .thankyou-list a.free-trial b{
+	text-transform: uppercase;
+	display:block;
+	font-size: 22px;
+	line-height: 1.2;
+}	
+
+#join-network-banner.success .thankyou-list a.free-trial span{
+	display:block;
+	background:url(../images/free-flag-2.png) center no-repeat;
+	width: 88px;
+	height: 50px;
+	float:left;
+	text-indent: -99999px;
+	margin-top: -18px;
+	margin-right: -10px;
+	
+	}
+
 
 
 /* ##############
@@ -583,6 +695,79 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', end
 }
 
 
+
+
+
+
+
+
+/* ##############
+
+	free trial banner
+
+############## */
+
+#free-trial-banner {
+	background: #000;
+	border-top: 10px solid #d20000;
+	margin-bottom: 50px;
+}
+
+
+#free-trial-banner > section {
+	background:none;
+	width: 1000px;	
+	height: 370px;
+	border:none;
+	padding: 20px 0 0 0 ;
+	position:relative;
+	background:url(../images/free-trial-banner.gif) 50% 0 no-repeat;
+}
+
+
+#free-trial-banner.sixty > section {
+	background:url(../images/free-trial-banner60.gif) 50% 0 no-repeat;
+}
+
+
+#free-trial-banner.sixty  header a{
+	display:block;
+	height: 325px;	
+}
+
+
+#free-trial-banner  header h1, #free-trial-banner header h2{
+	text-indent: -9999px;
+	display:block;
+
+}
+
+
+#free-trial-banner .enroll-today{
+	background: url(../images/enroll-today-banner-ribbon.png) center no-repeat;
+	display:block;
+	position:absolute;
+	bottom: -30px;
+	left: 21%;
+	width: 596px;
+	height: 71px;
+	text-indent: -99999px;
+}
+
+#free-trial-banner.sixty .enroll-today{
+	text-indent:0;	
+}
+
+
+#free-trial-banner.sixty .enroll-today a{
+	display:block;
+	height: 100%;
+	text-indent: -99999px;	
+}
+
+#free-trial-banner .enroll-today.success{
+	background: url(../images/enroll-today-banner-ty.png) center no-repeat;
+}
 
 
 
@@ -1464,13 +1649,13 @@ Mark your calendar box
 	padding-left: 20px;
 }
 
-.right-col ul li{
+.right-col ul.related li{
 	display:block;
 	border-top: 1px solid #bababa;
 	border-bottom: 1px solid #bababa;
 }
 
-.right-col ul li a{
+.right-col ul.related li a{
 	display:block;
 	border-left:20px solid #D50000;
 	background:url(../images/red-thick-arrow.png) center right no-repeat;
@@ -1485,12 +1670,32 @@ Mark your calendar box
 	min-height: 45px;
 }
 
-.right-col ul li a:hover{
+.right-col ul.related li a:hover{
 	color:	#0c3d82;
 	border-color:#0c3d82;
 	background:url(../images/blue-thick-arrow.png) center right no-repeat;
 }
 
+
+
+
+
+
+.breadcrumbs{
+	margin: 5px 10px 0 10px;
+	font-size: 12px;
+	position: relative;
+}
+
+.breadcrumbs a{	
+		color:#0b4694;
+		text-decoration: none;
+		text-transform: uppercase;
+}
+
+.breadcrumbs a:hover{
+	color:	#d20000;
+}
 
 
 /* ############## 

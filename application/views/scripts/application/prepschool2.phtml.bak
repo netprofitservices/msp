@@ -1,0 +1,499 @@
+
+
+ <!--<div class="sticky">
+
+	<a href="application/signup" class="fancybox red-button">
+		Sign Up Today
+	</a>
+    
+    
+    <div class="social">
+	    <h5>Share this:</h5>
+		<a href="https://twitter.com/#!/PrepperSkills" class="twitter">Twitter</a>
+		<a href="http://www.facebook.com/MainstreamPreppers" class="facebook">Follow us on Facebook</a>
+    </div>
+
+    
+	<a class="fancybox ask-questions" href="contact">
+		Ask a question
+    </a>
+
+ </div>--><!-- end sticky -->
+
+
+
+
+
+
+	<div id="main-content" role="main">
+
+
+  <div id="free-trial-banner" class="blue-bg clear sixty">
+                            
+                                <section>   
+                                  
+                                                    <header>
+													<a href="prepschool2#signup">
+                                                        <h1>Free Prep School Membership</h1>                      
+														<h2>Free 60 Day Trial. No Credit Card Required.  Limited to first 500 Members</h2>
+														</a>
+                                                    </header>
+                                  					
+													<div class="enroll-today"><a href="prepschool2#signup">Enroll Today!</a></div>
+                                
+                                </section> <!-- end free-trial-banner -->           
+                    
+                                        <div class="clear"></div>
+                                </div><!-- end blue-bg -->    
+
+
+				<section>
+				
+				
+				<!--<div class="box">
+
+				<h2>Prep School Offers:</h2>
+								<div class="col">
+								<ul class="decorated">
+								<li>Volumes of in depth, expert skill development</li>
+								<li>Top instructors from across the country</li>
+								<li>Courses cover all areas of preparedness</li>
+								<li>Follow Up Discussions & 1-on-1 Consultations</li>
+								<li>Skip the Plane/Hotel Bill - Get Trained Online</li>
+								</ul>
+								</div>
+								<div class="col">							
+								<ul class="decorated">
+								<li>Every lesson organized into detailed notes</li>
+								<li>The Encyclopedia of Preparedness - FREE</li>
+								<li>FREE Entry & VIP Access at Preparedness Expos</li>
+								<li>Want Awesome Live Instruction?  Members Save 50%</li>
+								<li>Training Fees Saved To Date:  $812,400!</li>
+								</ul>
+								</div>
+								
+							<br><br>
+							
+					</div>-->
+					<!-- end box -->     
+
+
+					<!--
+					<div class="box">
+
+						<h1 class="large">
+							<span>Why</span> 
+							improve your preparedness?<br>
+							Have you taken our <a href="quiz">Prepper Quiz</a>?
+						</h1>
+								<div class="clear"></div>
+						
+
+					</div>--><!-- end box -->   
+
+					<div class="box">
+					
+						<h1 class="large">
+							<span>What SKILLS </span> 
+							do we cover in our &ldquo;Prep School&rdquo;?
+						</h1>
+
+
+						<div class="clear speech">
+							<div class="speech-corner-r"></div>
+
+					<h2>PHASE ONE CURRICULUM:</h2>
+								
+								<div class="col">
+								<h4 class="black">Food Production / Storage</h4>
+								<ul class="red-bullets">
+								<li><p>Food Production</p></li><!--$160-->
+								<li><p>Permaculture</p></li><!--$160-->
+								<li><p>Aquaponics</p></li><!--$160-->
+								<li><p>Water Systems</p></li>
+								
+								<li><p>Cooking w Food Storage</p></li>
+								<li><p>Cooking w Wild Edibles</p></li>
+								<li><p>Dehydrating</p></li>
+								<li><p>Canning/Preserving</p></li>
+								<li><p>DIY Food Storage Tips</p></li>
+								</ul>
+								
+								</div>
+								<div class="col">							
+								
+								<h4 class="black">Survival</h4>
+								<ul class="red-bullets">
+									<li><p>Woods Walkers (Survival 101)</p></li><!--$150-->
+									<li><p>Survival (level 2)</p></li><!--$160-->
+									<li><p>Survival (level 3)</p></li><!--$160-->
+									<li><p>Bugging Out (BoB / BoV)</p></li><!--$100-->
+									<li><p>Wilderness Survival (3 day)</p></li><!--$300-->
+									<li><p>Wild Edibles</p></li><!--??-->
+									<li><p>Winter Survival</p></li><!--??-->
+									<li><p>Treating Cuts, Bites, Wounds</p></li>
+									
+									<!--Total Survival: 5 @ $870 + 3 ??-->
+								</ul>
+								
+								
+								</div>
+								<div class="clear"></div>
+								
+								<div class="col">	
+								<h4 class="black">Homesteading:</h4>
+								<ul class="red-bullets">
+								
+									<li><p>Preparedness Basics</p></li><!--$160-->
+									<li><p>Shelter in Place (SIP) Strategies</p></li><!--$160-->
+									<li><p>Bug Out Location Consult</p></li><!--$160-->
+									<li><p>Off Grid Systems</p></li><!--$160-->
+									<li><p>Security / Surveillance</p></li><!--$160-->
+									<li><p>Homestead Design</p></li><!--$160-->
+									<li><p>Securing your Homestead</p></li><!--$160-->
+									<li><p>OPSEC Strategies</p></li><!--$160-->
+									<li><p>Medical / Health</p></li><!--$160-->
+									<li><p>Forming a Group - Consult</p></li><!--$160-->
+																
+									<!--Total Homesteading: 13x160=$2080-->
+								</ul>
+								
+								</div>
+								<div class="col">
+								
+								
+								<h4 class="black">Defense / Tactical:</h4>
+								
+								<ul class="red-bullets">
+									<li><p>Fitness / Combatives</p></li><!--$??-->
+									<li><p>Emergency Medical</p></li><!--??-->
+									<li><p>Self Defense</p></li><!--$20-->
+									<li><p>Knife Defense</p></li><!--??-->
+									<li><p>Self Defense Shotgun</p></li><!--$70-->
+									<li><p>Beginner Handgun</p></li><!--$70-->
+									<li><p>Camouflage and Concealment</p></li><!--$60-->
+									<li><p>Evasion (level 1)</p></li><!--$250-->
+									<li><p>Tactical Patrolling (level 1)</p></li><!--$250-->
+									<!--Resistance-->
+									<!--Escape-->
+									<!--Tactical Rifle-->
+									<!--total: 6 $720  + 5 ?? -->
+									
+								</ul>
+								
+								</div>
+								<div class="clear"></div>
+								
+								<h2 class="blue">We're just getting warmed up.<br>
+								Instructors and Training Dates Will be Announced Soon</h2>
+					
+								<div class="clear"></div>
+								</div>
+							
+								
+					
+					
+					<!--
+					<h2>Plus, We Have the BEST Instructors, Period.</h2>
+					<div class="col">
+					<strong>We built the preparedness dream team. Seriously.</strong>
+					<ul class="decorated">
+								<li>US Army Special Forces Officer</li>
+								<li>Survival, Evasion, Resistance, Escape Instructor</li>
+								<li>Electrical Engineer, specialized in off grid technologies</li>
+								<li>Authors of Preparedness books like "Survivalist Family"</li>
+								<li>US Marine Veteran with combat experience</li>
+								<li>Food Production Expert (Soil Development / etc)</li>
+								<li>Self Defence Specialist (Krav Maga)</li>
+								<li>
+							</ul>    
+						</div>
+						<div class="col">
+						<strong>Instructor Profiles:</strong>
+						<ul class="decorated">
+								<li>Instructor 1</li>
+								<li>Instructor 2</li>
+								<li>Instructor 3</li>
+								<li>Instructor 4</li>
+								<li>Instructor 5 - currently open</li>
+							</ul>                      
+
+						</div>-->
+
+					</div> <!-- end box -->
+
+
+
+				
+                    <!--<div class="box" style="padding-top:0">
+                    <a name="new"></a>
+                    <img src="images/prepshool-new-events-box.gif" title="Prep School New Courses and Upcoming Events" width="934" height="598" />
+                    </div>-->
+                    
+					
+                   
+					<div class="box" style="padding-right: 0;">
+
+	
+						<div class="col" style="width: 37%">
+						
+						
+						
+							<!--article class="content"><br /><br />
+								<header>
+									<h3>How to Keep your Membership FREE</h3>
+								</header>
+
+								<ul class="decorated">
+										<li>Members Get 50% Off ALL Live Trainings</li>
+										<li>Refer 3*, yours is FREE</li>
+										
+										<li>Save via special vendor discounts</li>
+										<!--<li>Simply cannot afford a membership?  <br>
+										<a href="contact" class="fancybox">Drop us a line</a> and we'll try to help.</li>-->
+										<!--/ul>
+
+
+
+									<p>* 3 <u>active</u> referral memberships keeps yours free.</p>
+							</article end content -->
+
+						
+							<img src="images/refer-3-free.jpg" title="Keep Your Membership FREE Forever! Refer 3*, yours is FREE! * 3 Active Referral Memberships keeps your membership free
+Learn how to refer the prep school to friends." />
+
+						</div><!-- end col -->
+						
+						
+						
+											
+					
+						<div class="col" style="width: 60%; padding: 0;">
+						
+							<img src="images/course/featured-instructor-joefox.jpg" title="Featured Instructor - Joe Fox" />
+						</div>
+						
+						
+						<br /><br /><br /><br /><br />
+
+						
+			<!--			<div class="col">
+                        
+                        	<article class="mark-your-calendar">
+                          	  <header>
+                              <h1>Mark Your Calendar</h1>
+                              </header>
+                              <ul>
+                                    <li>
+                                    <a href="instructors.php" class="cboxElement">
+                                        <time datetime="2012-07-31">July <span>31</span></time>
+                                        <h2>Become an Instructor</h2>
+                                        <p><b class="red">Key Instructors</b> will be<br />
+											announced on July 31, 2012.</p>
+    
+    
+                                    </a>
+                                    
+                                    </li>
+                                    
+                                    <li><p><b><a href="contact" class="fancybox">CLICK HERE TO SUGGEST AN INSTRUCTOR</a></b></p></li>
+                                
+                                </ul>
+                                
+     
+    
+                                <!--a href="comingsoon" class="fancybox cboxElement">
+    
+                                    <img src="images/mark-your-calendar.jpg" title="Meet Our Instructors on July 31st" />
+                                </a--><!--
+                            
+                            </article>
+							
+                            
+                            
+                            </div>--><!-- end col -->
+
+
+
+						<div class="clear"></div>
+
+						<div class="bar"></div>
+
+					</div><!-- end box -->
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+		<section class="box twocol" id="signup"> 
+			<img src="images/enroll-today-riskfree.gif" title="Enroll Today! Free Prep School Membership! Free Trial – Risk Free – No Obligation" /> 
+
+			<div class="wide-left">
+				<link href="css/form.css" rel="stylesheet">
+
+
+
+				<form action="prepschool2" method="post" id="request-application" class="myform">
+
+					<div class="form">
+
+						<div>
+							<label for="firstname">First Name:</label>
+							<input name="firstname" id="firstname" type="text" class="firstname required" />
+						</div>
+						<div>  
+							<label for="lastname">Last Name</label>
+							<p class="optionallabel">Optional</p>
+							<input name="lastname" id="lastname"  type="text"  class="lastname optional" /> 
+						</div>  
+						<div class="clear"></div>
+						<div>  
+							<label for="emailaddress">Email Address:</label>
+							<input name="emailaddress" id="emailaddress" type="email"  class="required" />     
+						</div>
+						<div> 
+							<label for="phone">Phone:</label>
+							<p class="optionallabel">Optional</p>
+							<input name="phone" id="phone" type="number" maxlength="10" class="optional"  />
+						</div>
+						<div class="clear"></div>
+
+						<div>
+							<label for="zip" class="clear">Current Zip Code:</label>
+							<input name="zip" id="zip" type="text" class="zipcode required" maxlength="10"  />
+						</div>
+
+						<div class="clear"></div>
+
+						<label for="primary">Primary Motivation for Preparedness: </label>
+						<select name="primary" id="primary">
+							<option>--Select--</option>
+							<option>Develop Self Sufficiency Skills</option>
+							<option>Job Loss / Bankruptcy</option>
+							<option>House Fire / Tornado</option>
+							<option>Area Flood / Earthquake / Other Disaster</option>
+							<option>Drought / Crop Failures / Food Supply Disruption</option>
+							<option>Sustained Power Outage</option>
+							<option>Social Unrest / Riots</option>
+							<option>Economic Collapse</option>
+							<option>Hyperinflation</option>
+							<option>Martial Law</option>
+							<option>EMP  </option>
+							<option>Solar Flare/CME</option>
+							<option>Nuclear Power Plant Meltdown</option>
+							<option>Nuclear or Biological Warfare</option>
+							<option>Terrorist Attack</option>
+							<option>Virus / Pandemic</option>
+							<option>Zombie Apocalypse (just kidding!)</option>
+						</select>
+
+						<? /*
+						<label>Secondary Motivations(s) for Preparedness: </label> 
+						<div class="checkboxes">
+							<? $options = array(
+								'Develop Self Sufficiency Skills',
+								'Job Loss / Bankruptcy',
+								'House Fire / Tornado',
+								'Area Flood / Earthquake / Other Disaster',
+								'Drought / Crop Failures / Food Supply Disruption',
+								'Sustained Power Outage',
+								'Social Unrest / Riots',
+								'Economic Collapse',
+								'Hyperinflation',
+								'Martial Law',
+								'EMP',
+								'Solar Flare/CME',
+								'Nuclear Power Plant Meltdown',
+								'Nuclear or Biological Warfare',
+								'Terrorist Attack',
+								'Virus / Pandemic',
+								'Zombie Apocalypse (just kidding!)',
+								'Simpler Lifestyle',
+								'Like Minded Friends/Neighbors'
+							); ?>
+
+							<? $i = 1 ?>
+							<? foreach ($options as $option): ?>
+							<div>
+								<input name="secondary[]" id="secondary-<?= $i ?>" value="<?= $option ?>" type="checkbox" />
+								<label for="secondary-<?= $i++ ?>"><?= $option ?></label>
+							</div>
+						<? endforeach ?>
+					</div><!-- end checkboxes -->           
+					*/ ?>
+					
+					
+					<label for="comments">Questions/Concerns</label>
+					<textarea  name="comments" id="comments" class="commments required"></textarea>
+
+
+					<div class="clear"></div>
+
+				</div><!-- end form -->
+
+				<br />
+
+
+
+				<input type="submit" class="form-btn" value="BECOME A MEMBER" name="submit" id="submit"/> 
+
+
+
+			</form>         
+			
+			<div id="form-message"></div>
+			
+
+		</div><!-- end wide-left-->
+
+
+
+
+		<aside class="right-col">
+			<a href="contact" class="questions-on-signup fancybox" data-fancybox-type="iframe">
+				<b>Questions?</b>
+				ASK US</a><br /><br />
+
+
+				<h2>ABOUT<br />
+					PREPSCHOOL</h2>
+					<ul class="related">
+						<li><a href="#">Meet Our Instructors</a></li>
+						<li><a href="#">Testimonial</a></li>
+						<li><a href="#">Course Schedule</a></li>
+
+
+
+					</ul><!-- end related-->
+
+
+				</aside><!-- end right-col-->
+
+				<div class="clear"></div>
+
+			</section><!-- end twocol-->
+
+
+
+
+
+
+
+
+
+				</section><!-- end main-content -->
+
+
+
+
+			</div><!-- end middle-content -->

@@ -29,6 +29,60 @@ $(document).ready(function() {
 				  }
 			);
 			
+			
+			 /* general slide up down
+			 $(".hasChildren").mouseenter( function () {
+					  $(this).find(".show-hide").html("&#9668;");
+					   $(this).find(".children").stop().slideDown();
+					   $(this).addClass("selected");
+					   
+			
+	
+				  }
+			);*/ 
+			
+			
+			 /* general slide up down*/ 
+			 $(".hasChildren a").click(function(){
+					
+					$(this).siblings(".children").stop().slideToggle();
+					  $(this).find("span").html("&#9660;");
+					   $(this).parent().toggleClass("selected");				
+					   
+								   
+					   return false;
+			 });
+			 
+
+			 
+			 $(document).click(function() {
+					$(".hasChildren .children").stop().slideUp();
+					  $(".hasChildren .children span").html("&#9660;");
+					   $(".hasChildren").removeClass("selected");
+				
+			});
+			 
+			 
+			
+			 /* upcoming events*/ 
+			 $("#see-all-upcoming").click(function(){
+				 $(".upcoming-events").slideToggle('slow', function() {
+					 	if( $(this).is(":hidden") ){
+							$("#see-all-upcoming").html("SHOW ALL EVENTS <span>&nbsp;</span>");
+							$("#see-all-upcoming").removeClass("shown").addClass("hide");
+						} else{
+							$("#see-all-upcoming").html("HIDE ALL EVENTS <span>&nbsp;</span>");
+							$("#see-all-upcoming").removeClass("hide").addClass("shown");
+							
+						}
+					 
+				 });
+					 
+				 return false;
+			 });
+			 
+			 
+			
 			 
 			 /*price option table fade in*/ 			 
 				 $("#pricing-table article").hide();
@@ -43,6 +97,8 @@ $(document).ready(function() {
 				 }
 				
 			);
+			
+			
 			
 
 			
@@ -155,6 +211,48 @@ $(document).ready(function() {
 					$(this).find(".arrow").fadeOut();
 				  }
 			);
+			
+			
+			
+/* ########### 
+
+Instructor page
+
+################## */	
+			 $(".see-bio").hover(
+				  function () {
+					$(this).stop().animate({
+						right: '40'
+					  }, 500, function() {
+						// Animation complete.
+					  });
+				  }, 
+				  function () {
+					$(this).stop().animate({
+						right: '50'
+					  }, 200, function() {
+						// Animation complete.
+					  });
+				  }
+			);
+			
+			 $(".instructor-list > li").hover(
+				  function () {
+					 $(this).addClass("active");
+						$(".instructor-list > li:not('.active')").stop().fadeTo('fast', 0.4, function() {
+						  // Animation complete.
+						});
+						
+				  }, 
+				  function () {
+					 $(this).removeClass("active");
+						$(".instructor-list > li").stop().fadeTo('fast', 1, function() {
+						  // Animation complete.
+						});
+				  }
+			);
+			
+			
 			
 			
 /* ########### 
