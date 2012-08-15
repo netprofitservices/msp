@@ -239,6 +239,11 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+    public function termsofserviceAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
 
     public function blankAction()
     {
@@ -312,6 +317,12 @@ class IndexController extends Zend_Controller_Action
 		$this->_helper->layout->setLayout('overlay');
     }
 	
+	public function memberloginAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('withlogin');
+    }
+    
 	
 
 
