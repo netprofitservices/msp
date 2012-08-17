@@ -186,6 +186,10 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+    public function eventpageAction()
+    {
+        // action body
+    }
     public function instructorbioAction()
     {
         // action body
