@@ -1638,3 +1638,7 @@ h2.smaller{
 	display:block;	
 }
 
+.text-red-bg{
+	background: #d50000;
+	color:#fff;	
+}

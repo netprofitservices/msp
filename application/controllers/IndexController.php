@@ -358,11 +358,24 @@ class IndexController extends Zend_Controller_Action
     }
     
 	
+	
+	// AIDA ad pages
+	
+	public function selfrelianceAction()
+    {
+        // action body
+    }
+	public function preparenessAction()
+    {
+        // action body
+    }
+	public function preppernetworkAction()
+    {
+        // action body
+    }
+	
 
 
 }
-
-
-
 
 
