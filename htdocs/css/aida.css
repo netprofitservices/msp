@@ -1,0 +1,608 @@
+/* #########################################################
+
+ For AIDA ad pages only
+
+######################################################### */
+
+
+
+
+
+/* ##############
+
+	self reliance banner
+
+############## */
+
+.aida .blue-bg .wrapper {
+	border:none;
+	box-shadow:none;
+	filter:none;
+	width: auto;
+	background:none;	
+}
+
+
+#self-reliance-banner{
+	background:url(../images/aida/aida-selfReliant-banner.jpg) 50% 2px no-repeat transparent;
+	height: 253px;
+	width: 980px;
+	margin: 0px auto 0 auto; 	
+	display:block;
+	border:0;
+	position: relative;
+}
+
+
+#self-reliance-banner  header h1{
+	display:block;
+	text-indent: -9999px;	
+}
+
+#self-reliance-banner img{
+	position: absolute;
+
+}
+
+#self-reliance-banner .aida-plant{
+	right: 40px;
+	top: 0;	
+	z-index: 2;
+}
+
+
+
+#self-reliance-banner .aida-bannerribbon{
+	right: 30px;
+	top: 0;	
+	z-index: 1;
+}
+
+
+#main-content.aida .selfreliance-firstbox{
+	background: url(../images/aida/aida-selfReliant-bannerbelowarrow.gif) -13px bottom  no-repeat;
+	border-bottom: 1px solid #cacaca;
+	margin-top: 0 !important;
+	padding-left: 40px;
+	padding-bottom: 0;
+	width: 920px;
+}
+
+
+.we-can-help{
+	background: url(../images/aida/we-can-help.png) center no-repeat;
+	width: 389px;
+	height: 88px;
+	text-align:center;
+	color: #d50000;
+	text-transform:uppercase;
+	font-size: 30px;
+	line-height: 2.2;
+	letter-spacing: -0.5px;
+}
+
+
+
+
+/* ##############
+
+	Prepareness banner
+
+############## */
+
+.aida .prepareness-wrapper{
+	 background: url("../images/aida/blue-gradient-bg-preparenss.jpg") repeat-x ;
+}
+
+.aida .blue-bg .wrapper {
+	border:none;
+	box-shadow:none;
+	filter:none;
+	width: auto;
+	background:none;	
+}
+
+
+#preparness-banner{
+	background:url(../images/aida/aida-areyouprepared-banner.png) 30% 2px no-repeat transparent;
+	height: 314px;
+	width: 982px;
+	margin: 0px auto 0 auto; 	
+	display:block;
+	border:0;
+	position: relative;
+}
+
+
+#preparness-banner  header h1{
+	display:block;
+	text-indent: -9999px;	
+}
+
+#preparness-banner img{
+	position: absolute;
+
+}
+
+.aida-prepared{
+	z-index:1;
+	position:absolute;
+	bottom: -40px;
+	right: 0px;
+}
+
+
+.preparness-firstbox{
+	width: 930px;
+	margin: 0 auto !important;
+	padding: 0;
+	
+}
+
+.preparness-welcome{
+	background: url(../images/aida/aida-prepareness-welcomebg.jpg) center no-repeat;
+	width: 900px;
+	height: 119px;
+	margin-bottom: 20px;
+	text-align:center;
+	padding: 20px;
+	font-size: 22px;
+}
+
+.preparness-welcome h1{
+	letter-spacing: -0.5px;
+		
+}
+
+
+
+
+/* ##############
+
+	Prepper Network banner
+
+############## */
+
+
+
+
+#prepper-network-banner{
+	background:url(../images/aida/aida-preppernetwork-banner.jpg) 50% 2px no-repeat transparent;
+	height: 388px;
+	width: 1027px;
+	margin: 0px auto 0 auto; 	
+	display:block;
+	border:0;
+	position: relative;
+}
+
+
+#prepper-network-banner  header h1, #prepper-network-banner  header h2{
+	display:block;
+	text-indent: -9999px;	
+}
+
+#prepper-network-banner img{
+	position: absolute;
+
+}
+
+.badge{
+	z-index:1;
+	position:absolute;
+	top: 10px;
+	left: -2px;
+}
+
+.prepper-network-firstbox{
+	padding: 10px 0;
+	width: 920px;	
+}
+
+.col-dottedline{
+	border-left: 1px dotted #cacaca;
+	padding-left: 15px;
+}
+
+.col-dottedline h3{
+	font-size: 22px;	
+}
+
+
+
+
+
+
+
+/* ######################################
+
+   blue-ribbon-top-box
+   
+###################################### */   
+
+
+.blue-ribbon-top-box{
+	background: url("../images/aida/blue-ribbon-box-bg.png") no-repeat scroll center top transparent;
+    margin: 10px auto;
+    padding: 32px 60px 0;
+    width: 858px;
+}
+
+.blue-ribbon-top-box > header {
+	diisplay:block;
+	height: 60px;	
+	text-align:center;
+}
+
+.blue-ribbon-top-box > header h1{
+	color:#fff;
+	text-transform:uppercase;
+	font-size: 25px;
+	line-height: 2;
+	letter-spacing: -1px;
+}
+
+.blue-ribbon-top-box .col{
+	width: 47%;	
+}
+
+.highlight{
+	border-bottom: 1px solid #CACACA;
+	padding-bottom: 15px;
+	margin: 20px 0;
+}
+
+h2.huge{
+	font-size: 44px;
+	line-height: 1.2;
+	display:block;
+	float:left;
+	width: 550px;
+	margin-right: 25px;	
+}
+
+h3.text-red-bg{
+	font-size: 20px;
+	padding: 5px 10px;
+	font-weight:normal;	
+	display:block;
+}
+
+
+.question{
+	margin: 10px 0;	
+	line-height: 1.5;
+	clear:both;
+	min-height: 50px;
+}
+
+.question .blue-circle{
+	background: #0B4694;
+	color:#fff;
+	display:block;
+	float:left;
+	text-align:center;
+	padding: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius:30px;
+	 -moz-border-radius:30px;
+	 -webkit-border-radius: 30px;
+	line-height: 0.8;
+	margin-right: 15px;	
+
+}
+
+
+
+/* ######################################
+
+   red ribbon blue box
+   
+###################################### */   
+
+
+	.red-ribbon-blue-top-box{
+		background: url(../images/aida/red-ribbon-blue-top-box.jpg) top center no-repeat;
+		width: 994px;
+		padding: 20px;		
+		margin: -10px auto 20px auto;
+	}
+	.red-ribbon-blue-top-box header *{
+		color:#fff;
+		text-align:center;
+	}
+
+	.red-ribbon-blue-top-box header h1{
+		font-size:38px;
+		text-transform:uppercase;	
+		display:block;
+		height: 80px;
+		line-height: 2.8;
+		padding: 10px;
+	}
+	
+	.red-ribbon-blue-top-box header h2{
+		font-size: 28px;
+		line-height: 2.2;
+		text-transform:uppercase;	
+	}
+
+/* ######################################
+
+	Join the network form
+	   
+###################################### */   
+
+	.red-ribbon-blue-top-box form{
+		display:block;
+		background:#dadada;
+		border:1px solid #9c9c9c;
+		box-shadow: 0 3px 3px #d5d5d5;
+		-moz-box-shadow: 0 3px 3px #d5d5d5;
+		-webkit-box-shadow: 0 3px 3px #d5d5d5;	
+		padding: 10px;
+
+	}
+
+
+form#join-network-form {
+	display:block;
+	margin: 15px auto;
+	width: 840px;	
+	
+}
+form#join-network-form input[type="text"], form#join-network-form input[type="email"], form#join-network-form input[type="number"] {
+	width: 220px;	
+}
+
+
+form#join-network-form .disclaimer{
+	text-transform: uppercase;
+	color: #5e5e5e;
+	text-align:center;
+	font-size: 12px;
+	margin: 20px 0 0 0;
+}
+
+form#join-network-form #messageBox {
+    clear: both;
+    color: #d50000;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: right;
+    width: 820px;	 	list-style:none;
+}
+
+
+form#join-network-form input[type="submit"]{
+	background: #0b4694; /* Old browsers */
+	background: -moz-linear-gradient(top,  #0b4694 13%, #08366d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%,#0b4694), color-stop(100%,#08366d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0b4694 13%,#08366d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0b4694 13%,#08366d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0b4694 13%,#08366d 100%); /* IE10+ */
+	background: linear-gradient(top,  #0b4694 13%,#08366d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', endColorstr='#08366d',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+form#join-network-form input[type="submit"]:hover{
+
+	
+	
+background: #d50000; /* Old browsers */
+background: -moz-linear-gradient(top,  #ea0000 0%, #c00000 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ea0000), color-stop(99%,#c00000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ea0000 0%,#c00000 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ea0000 0%,#c00000 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ea0000 0%,#c00000 99%); /* IE10+ */
+background: linear-gradient(top,  #ea0000 0%,#c00000 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0000', endColorstr='#c00000',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+/* ######################################
+
+   instructors slideshow
+   
+###################################### */   
+
+
+#instructors-slideshow{
+	width: 960px;
+	margin: 10px auto 30px auto;
+	border-top: 5px solid #0b4694;
+	border-bottom: 5px solid #0b4694;
+	padding: 20px 0 40px 0;	
+	position:relative;
+	
+	background: url(../images/aida/instructor-slideshow-bg.gif) center 110px no-repeat;
+}
+
+
+#instructors-slideshow > header h1{
+	text-align:center;
+	margin-bottom: 35px;	
+}
+
+
+
+#instructors-slideshow > header .blue{
+	font-size: 1.6em;
+}
+
+
+
+.instructor-preview ul.instructor-list {
+	
+	background: none;
+	width: 940px;
+	margin-left: 10px;
+		
+}
+
+.instructor-preview ul.instructor-list > li:nth-of-type(2n+1) {
+    margin-right: 0;
+}
+
+.instructor-preview ul.instructor-list > li{
+	margin-top: 20px;	
+}
+
+
+#slider-control{
+    bottom: -21px;
+    color: #7C7C7C;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    position: absolute;
+    right: 28px;
+    text-transform: uppercase;
+    width: 265px;
+	background:#fff;
+	padding: 5px 10px;
+}
+
+#slider-control span{
+
+	padding: 0 10px;	
+	display:block;
+	margin-top: 10px;
+	float:left;
+	margin-left: 10px;
+}
+
+
+#prev-slide{
+	background: url(../images/aida/slideshow-prev-btn.gif) top center no-repeat;
+	width: 35px;
+	height: 35px;
+	display:block;
+	text-indent: -9999px;
+	float:left;
+}
+
+
+
+
+#next-slide{
+	background: url(../images/aida/slideshow-next-btn.gif) top center no-repeat;
+	width: 35px;
+	height: 35px;
+	display:block;
+	text-indent: -9999px;
+	float:right;
+}
+
+#slider-control a:hover{
+	background-position: bottom center;	
+}
+
+
+
+
+
+/* ######################################
+
+   prepschool signup box
+   
+###################################### */   
+
+
+
+#prepschool-badge{
+	display:block;
+	float:left;	
+	margin-left: -15px;
+}
+
+.fast-track-self-reliance{
+	width: 660px;
+	float:left;	
+	margin-left: 10px;
+	margin-top: 30px;
+}
+
+
+.fast-track-self-reliance h1{
+	font-size: 26px;
+	text-transform:uppercase;
+	line-height: 1.2;
+	text-align:center;	
+}
+
+.fast-track-self-reliance ul{
+	background: url(../images/aida/shaded-lines.gif) top center repeat-x;
+	padding-top: 50px;
+	display:block;
+	margin:10px 0;
+	padding: 20px 0;
+	color:#d50000;
+}
+
+
+.fast-track-self-reliance ul li{
+    border-bottom: 1px solid #CACACA;
+    display: block;
+    float: left;
+    font-size: 20px;
+    margin: 5px 1%;
+    min-height: 50px;
+    width: 48%;
+	padding:  0 0 5px 0;
+}
+
+.fast-track-self-reliance ul li p{
+	color:#222;
+	margin: 0;
+	line-height: 1.2;	
+	display:block;
+	background: url(../images/aida/red-solid-circles.gif) left 5px no-repeat;
+	padding-left: 20px;
+}
+
+.special-offer-banner{
+		background: url(../images/aida/special-offer-box-bg.jpg) top center no-repeat;
+		width: 907px;
+		height: 143px;
+		padding: 60px 10px 0px 20px;
+		text-align:center;
+		clear:both;
+		margin: 20px 0 0 -5px;
+	
+}
+
+
+.special-offer-banner h1{
+	font-size: 35px;
+	letter-spacing: -0.5;
+	margin: 0;
+}
+
+.special-offer-banner p{
+	margin:0;
+	font-size: 20px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
