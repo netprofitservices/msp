@@ -422,6 +422,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0000', end
 	background: url(../images/aida/instructor-slideshow-bg.gif) center 110px no-repeat;
 }
 
+#slideshow-wrapper{
+
+
+}
+
+.bx-wrapper{
+		margin-left: 35px;	
+}
+
 
 #instructors-slideshow > header h1{
 	text-align:center;
@@ -439,8 +448,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0000', end
 .instructor-preview ul.instructor-list {
 	
 	background: none;
-	width: 940px;
-	margin-left: 10px;
+	width: 910px;
 		
 }
 
@@ -450,6 +458,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0000', end
 
 .instructor-preview ul.instructor-list > li{
 	margin-top: 20px;	
+	width: 420px;
 }
 
 
