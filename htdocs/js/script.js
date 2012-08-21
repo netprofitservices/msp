@@ -275,6 +275,8 @@ function isiPad(){
     return (navigator.platform.indexOf("iPad") != -1);
 }
 
+
+
 if( !(isiPad())){
     /* if not ipad*/
 	
@@ -293,9 +295,23 @@ if( !(isiPad())){
 			   });
 		   }
 		});
+
 	
 	
+} else{
+		
+	/* hide sticky */	
+	$(".sticky").hide();	
+
 }
+
+
+	var isiPhone = navigator.userAgent.toLowerCase().indexOf("iphone");
+	if(isiPhone > -1)
+	  {
+			/* hide sticky */	
+		$(".sticky").hide();	
+	  }
 
 
 
