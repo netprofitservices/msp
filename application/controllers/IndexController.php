@@ -319,6 +319,100 @@ class IndexController extends Zend_Controller_Action
 	public function selfrelianceAction()
     {
         // action body
+		if ($this->getRequest()->isPost()) {
+			// Load configuration
+			$configOptions = new Zend_Config($this->getInvokeArg('bootstrap')->getOptions());
+			$emailTo = $configOptions->email->to;
+			$listId = $configOptions->mailchimp->listId;
+			$newsletterFile = $configOptions->newsletter->file;
+			$file = $configOptions->signups->file;
+
+			// Form fields
+			$firstname = $this->_getParam('firstname');
+			$lastname = $this->_getParam('lastname');
+			$email = $this->_getParam('emailaddress');
+			$phone = $this->_getParam('phone');
+			$comments = $this->_getParam('comments');
+			$zip = $this->_getParam('zip');
+			$primary = $this->_getParam('primary');
+			//$secondary = $this->_getParam('secondary');
+			$name = "$firstname $lastname";
+			
+			// Sign them up on MailChimp
+			$merge_vars = array(
+				'FIRST' => $firstname, 
+				'LAST' => $lastname,
+				'ZIPCODE' => $zip,
+				'GROUPINGS' => array(
+					array(
+						'name' => 'MSP Contacts', 
+						'groups' => 'Prep School,FREE Network'
+					)
+				)
+			);
+			
+			require_once('models/MailChimp.php');
+			$MailChimp = new MailChimp($configOptions);
+			
+			$mailchimpStatus = $MailChimp->subscribeOrUpdate($email, $merge_vars);
+			
+			//$secondaryList = implode(', ', $secondary);
+			$secondaryList = '';
+			
+			$subject = "Prep School Enrollment from $name";
+			
+			$body = "New application request from $name.<br />\n";
+			$body .= "Phone: $phone<br />\n";
+			$body .= "Email: $email<br />\n";
+			$body .= "Zip code: $zip<br />\n";
+			$body .= "Primary motivation: $primary<br />\n";
+			//$body .= "Secondary motivation: $secondaryList<br />\n";
+			$body .= "<br />\n$comments<br />\n";
+			$body .= "<br />\n$mailchimpStatus";
+			
+			require_once('models/Mail.php');
+			$Mail = new Mail;
+			$Mail->send($emailTo, $subject, $body, array($email, $name));
+			
+			
+			// Now log it to a csv file
+			$date = date('Y-m-d H:i:s'); 
+			
+			$line = array(
+				$date,
+				$lastname,
+				$firstname,
+				$email,
+				$phone,
+				$zip,
+				$primary,
+				$secondaryList,
+				$comments
+			);
+
+
+			$fh = fopen($file, 'a');
+			if (fputcsv($fh, $line)) {
+			}
+			fclose($fh);
+			
+			// Also add them to the newsletter csv
+			$line = array(
+				$email,
+				$name,
+				$zip,
+				$date,
+				$mailchimpStatus
+			);
+
+			$fh = fopen($newsletterFile, 'a');
+			if (fputcsv($fh, $line)) {
+			}
+			
+			
+			echo 'ok';
+			die;
+		}
     }
 	public function preparednessAction()
     {
