@@ -404,6 +404,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0000', end
 }
 
 
+
+.red-ribbon-blue-top-box #form-message{
+	text-align:center;
+	background:#d1e4fd;
+	width: 850px;
+	margin: 15px auto;	
+	font-size: 20px;
+}
+
+
+
 /* ######################################
 
    instructors slideshow
