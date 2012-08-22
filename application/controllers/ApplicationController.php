@@ -6,9 +6,9 @@ class ApplicationController extends Zend_Controller_Action
     public function init()
     {
         /* Initialize action controller here */
-		$this->view->metaTitle = "Mainstream Preppers";
-		$this->view->metaKeywords = "Default keywords here.";
-		$this->view->metaDescription = "Default description here.";
+		$this->view->metaTitle = "Mainstream Preppers - Thriving in Good Times and Bad";
+		$this->view->metaKeywords = "prepper, prepardeness, prepper training, prepper groups, preparedness training, intentional community";
+		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, a network for forming preparedness groups, and more.";
 
 		$configOptions = new Zend_Config($this->getInvokeArg('bootstrap')->getOptions());
 		$this->view->baseUrl = $configOptions->baseUrl;

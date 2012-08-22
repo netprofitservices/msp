@@ -171,7 +171,7 @@ ul.checkedmark li{
 	width: 960px;
 	position:relative;
 	margin:  auto;	
-	padding: 10px 0;
+	padding: 0 0 10px 0;
 	
 	z-index: 10; /*fix stupid IE7*/
 }
@@ -194,6 +194,7 @@ nav#top-links{
 	font-size: 12px;
 	display:block;
 	width:100%;
+	padding-top: 10px;
 	text-align:right;
 }
 
@@ -217,7 +218,29 @@ nav#top-links a, nav#main-nav ul li a{
 nav#top-links a:hover, nav#main-nav ul li a:hover{
 	text-decoration:underline;	
 	color:#d50000;
+
 }
+
+
+
+nav#top-links a.loginlink{
+	background: url("../images/keylock.png") no-repeat scroll 94% center #D50000;
+	color: #fff;
+	padding: 10px 29px 5px 10px;
+	display:block;
+	float:right;	
+	
+	margin-top: -10px;
+	
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+
 
 
 nav#main-nav{
@@ -1615,3 +1638,7 @@ h2.smaller{
 	display:block;	
 }
 
+.text-red-bg{
+	background: #d50000;
+	color:#fff;	
+}
