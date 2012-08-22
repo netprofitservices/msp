@@ -513,9 +513,10 @@ class IndexController extends Zend_Controller_Action
 			die;
 		}
     }
+
 	public function preppernetworkAction()
     {
-        // action body
+		// Form processing is handled by the newsletter/signup action
     }
 	
 
