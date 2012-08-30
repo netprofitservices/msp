@@ -229,6 +229,30 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+	
+    public function quiz2Action()
+    {
+        // action body
+    }
+	
+    public function aboutquizAction()
+    {
+        // action body
+    }
+	
+    public function quizresultAction()
+    {
+        // action body
+    }
+	
+    public function sharefriendAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+		
+    }
+	
+	
 
     public function whyprepareAction()
     {
