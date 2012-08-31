@@ -224,11 +224,6 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
-
-    public function quizAction()
-    {
-        // action body
-    }
 	
     public function quiz2Action()
     {
