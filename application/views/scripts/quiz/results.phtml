@@ -1,0 +1,165 @@
+
+<div class="sticky">
+
+	<a href="prepschool" class="fancybox red-button">
+		Get Prepared
+	</a>
+
+	<div class="social">
+		<h5>Share this:</h5>
+		<a href="https://twitter.com/#!/PrepperSkills" class="twitter">Twitter</a>
+		<a href="http://www.facebook.com/MainstreamPreppers" class="facebook">Follow us on Facebook</a>
+	</div><!-- end social -->
+
+	<a class="fancybox ask-questions" href="contact">
+		Ask a question
+	</a>
+
+</div><!-- end sticky -->
+
+
+
+
+
+<script src="js/quiz.js"></script>
+
+<link href="css/quiz.css" rel="stylesheet">
+
+
+<div id="main-content" role="main">
+
+	<div class="blue-bg clear">
+
+		<section class="are-you-prepared-title">   
+			<div class="wrapper">  
+				<header>
+					<h1>Are You Prepared?</h1>   
+					<a href="#">About This Quiz</a>                   
+				</header>
+
+
+				<p class="clear">You understand <a href="aboutquiz">why you need to prepare</a>. So you gathered some food, water, planned out a location, and setup an emergency plan for your family. <b>YOU THINK YOU ARE PREPARED, BUT ARE YOU?</b>  Do you have what it takes to survive a major economic collapse, natural disaster, social unrest, and <a href="aboutquiz">many other situations</a>? 
+
+				</div>  <!-- end wrapper -->  
+				<div class="ribboncorners"></div>
+			</section> <!-- end are-you-prepared -->           
+
+			<div class="clear"></div>
+		</div><!-- end blue-bg -->    
+
+
+		<section class="quiz-result">
+
+			<div class="decorated-corners"></div>
+
+
+			<div class="box">
+
+				<article class="quiz-score">	
+					<header>
+						<h2>You answered <?= $this->correctCount ?> out of <?= $this->totalCount ?> questions correctly.</h2>
+						<h1><span>Your Score is</span><span class="circle"><?= $this->letterGrade ?></span></h1>
+						<div class="clear"></div>
+					</header>
+
+					<p class="share-quiz-title">Ask your friends to take this quiz, they won&rsquo;t see your score:   </p>
+
+
+					<?php
+					$pageURL = $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];								
+					?> 
+					<a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://<?php echo $pageURL ?>" class="twitter-big">Share This on Twitter</a>
+					<a href="http://www.facebook.com/sharer.php?u=http://<?php echo $pageURL ?>" class="facebook-big">Share This Link on Facebook</a>
+					<a href="sharefriend" class="email-big fancybox">Email Friend</a>
+
+
+					<div class="clear"></div>
+
+					<div class="areas-improve">Areas to Improve</div>
+					<br /><br />
+
+
+
+
+					<div class="clear"></div>
+
+				</article><!-- end quiz-score-->
+
+
+
+			</div><!-- end box -->
+
+			
+			<? foreach ($this->quiz['sections'] as $section): ?>
+				<? if (!$section['allCorrect']): ?>
+					<article class="box quiz-section">
+						<header>
+							<h1><?= $section['title'] ?></h1>
+						</header>   	
+
+						<div class="wrong-answers">
+							<ul>
+								<? foreach ($section['questions'] as $question): ?>
+									<? // Only show wrong answers ?>
+									<? if (empty($question['result'])): ?>
+										<li>
+											<p><b>Question:</b> <?= $question['question'] ?> </p>
+											<p><b>Your Answer:</b> <?= $question['userAnswer'] ?></p>
+
+											<p class="expert"><?= $question['explanation'] ?></p>
+
+										</li>
+									<? endif ?>
+								<? endforeach ?>
+							</ul>
+						</div><!-- end wrong-answers -->
+
+						
+						<? if (!empty($section['realityCheck'])): ?>
+							<div class="red-arrow-title bordered-box">
+								<span class="red-rounded-arrow">Reality Check</span>
+								<h4 class="black">
+									<?= $section['realityCheck']['heading'] ?>
+								</h4>
+
+								<p class="clear">
+									<?= $section['realityCheck']['body'] ?>                            
+								</p>				    
+							</div>
+						<? endif ?>
+
+
+						<div class="clear"></div>
+
+
+					</article><!-- end  quiz-section -->
+
+					<div class="bar"></div>
+					
+				<? endif ?>
+			<? endforeach ?>
+
+			
+
+
+
+
+
+
+
+	</section><!-- end quiz-result -->
+
+
+	<div class="box share-footer">
+		<p class="share-quiz-title">Ask your friends to take this quiz, they won&rsquo;t see your score:   </p>
+
+		<a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://<?php echo $pageURL ?>" class="twitter-big">Share This on Twitter</a>
+		<a href="http://www.facebook.com/sharer.php?u=http://<?php echo $pageURL ?>" class="facebook-big">Share This Link on Facebook</a>
+		<a href="sharefriend" class="email-big fancybox">Email Friend</a>
+
+	</div>
+
+
+
+
+</div><!-- end main-content -->

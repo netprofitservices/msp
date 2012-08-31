@@ -15,18 +15,20 @@ class QuizController extends Zend_Controller_Action
 	
 	public function indexAction() {
 		$this->view->quizSetup = $this->getModel()->getQuizSetup();
-		
+	}
+	
+	public function resultsAction() {
 		if ($this->getRequest()->isPost()) {
-			$result = $this->getModel()->grade($_POST);
+			$this->view->quiz = $this->getModel()->grade($_POST);
 			
-			$correctCount = $this->getModel()->getCorrectAnswerCount();
-			$totalCount = $this->getModel()->getTotalAnswerCount();
-			$letterGrade = $this->getModel()->getLetterGrade();
+			// Send the quiz results to MSP
+			$this->getModel()->emailResults();
 			
-			echo "You answered $correctCount out of $totalCount questions correctly. Grade: $letterGrade.";
-			
-			pr($result);
-			prd($_POST);
+			$this->view->correctCount = $this->getModel()->getCorrectAnswerCount();
+			$this->view->totalCount = $this->getModel()->getTotalAnswerCount();
+			$this->view->letterGrade = $this->getModel()->getLetterGrade();
+		} else {
+			$this->_redirect('quiz/index');
 		}
 	}
 	

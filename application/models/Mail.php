@@ -2,7 +2,7 @@
 
 class Mail {
 	protected $mailer;
-	protected $fromAddress = 'danny@netprofitservices.com';
+	protected $fromAddress = 'kevin@netprofitservices.com';
 	protected $fromName = 'Mainstream Preppers';
 	protected $smtp_settings = array(
 		'host' => 'mail.netprofitservices.com',
