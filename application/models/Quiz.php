@@ -601,7 +601,7 @@ class Quiz {
 		
 		require_once('models/Mail.php');
 		$Mail = new Mail;
-		$to = 'personman2@gmail.com';
+		$to = 'kevin@netprofitservices.com';
 		$subject = "MSP quiz results";
 		$body = $this->getResultsForEmail();
 		
