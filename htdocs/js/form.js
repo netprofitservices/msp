@@ -108,7 +108,7 @@ $().ready(function() {
 	
 	
 	
-$('#join-network-form input[type="text"], #join-network-form input[type="email"]').each(function() {
+$('#join-network-form input[type="text"], #join-network-form input[type="email"], #member-login-form input[type="email"]').each(function() {
 	var default_value = this.value;
 
 	$(this).focus(function(){
@@ -144,6 +144,29 @@ $('#join-network-form input[type="text"], #join-network-form input[type="email"]
 		}
 	});
 	
+	
+		
+	// validate join network banner form
+	$("#member-login-form").validate({
+	
+		wrapper: "div",
+		rules: {
+			emailaddress:{
+				required: true
+			}
+		},
+	  errorPlacement: function(error, element) {
+		  var arrow = "<div class='arrowhead'></div>";
+		   error.insertAfter(element);
+		    error.addClass('errormessage');
+			$(arrow).prependTo(error);
+			
+		   },
+		messages: {	
+			emailaddress: "Please enter a valid email address or username"		
+			
+		}
+	});
 	
 	
 	

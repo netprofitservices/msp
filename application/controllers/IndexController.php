@@ -276,10 +276,11 @@ class IndexController extends Zend_Controller_Action
     }
 	
 	
-    public function memberloginAction()
+	
+    public function termsofserviceAction()
     {
         // action body
-		$this->_helper->layout->setLayout('withlogin');
+		$this->_helper->layout->setLayout('overlay');
     }
 
     public function blankAction()
@@ -329,7 +330,33 @@ class IndexController extends Zend_Controller_Action
         // action body
     }
 
-
+    public function billstillAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function zacbauerAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function garywilliamsAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+  	public function paulrangeAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+	
+	public function memberloginAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('withlogin');
+    }
+    
 }
 
 
