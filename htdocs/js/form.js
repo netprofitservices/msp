@@ -31,6 +31,8 @@ $.validator.setDefaults({
 					redirectTo = 'prepschool'
 				} else if (action == 'prepschool') {
 					redirectTo = 'prepschoolsignupthankyou'
+				} else if (action == 'selfreliance') {
+					redirectTo = 'prepschoolsignupthankyou2'
 				} 
 				
 				
