@@ -25,11 +25,20 @@ $.validator.setDefaults({
 				$(".form form").hide();
 				$(".myform").hide();
 				
+				redirectTo = ''
 				// Prepschool signup redirect to prepschool
 				if (action == 'prepschoolsignup') {
-					setTimeout('window.location.href = "prepschool"', 1000);
-					
+					redirectTo = 'prepschool'
+				} else if (action == 'prepschool') {
+					redirectTo = 'prepschoolsignupthankyou'
+				} 
+				
+				
+				// Redirect after one second
+				if (redirectTo) {
+					setTimeout('window.location.href = "' + redirectTo + '"', 1000);
 				}
+				
 			} else {
 				$("#form-message").fadeIn();
 				$("#form-message").addClass("error");
