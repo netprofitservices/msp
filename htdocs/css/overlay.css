@@ -11,6 +11,12 @@
 	margin: 10px 0 0 0;	
 }
 
+#overlay-content  article.box{
+	padding: 20px 0;
+	width: auto;
+}
+
+
 
 /* ##############
 
@@ -92,15 +98,7 @@ form stuff
 }
 
 
-.form input.radio {
-	width: 20px;
-	display: inline;
-}
 
-.form label.radioLabel {
-	display: inline;
-	padding-right: 50px;
-}
 
 .form input.form-btn{	
 	background:#0b4694;

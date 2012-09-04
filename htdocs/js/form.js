@@ -25,11 +25,20 @@ $.validator.setDefaults({
 				$(".form form").hide();
 				$(".myform").hide();
 				
+				redirectTo = ''
 				// Prepschool signup redirect to prepschool
 				if (action == 'prepschoolsignup') {
-					setTimeout('window.location.href = "prepschool"', 1000);
-					
+					redirectTo = 'prepschool'
+				} else if (action == 'prepschool') {
+					redirectTo = 'prepschoolsignupthankyou'
+				} 
+				
+				
+				// Redirect after one second
+				if (redirectTo) {
+					setTimeout('window.location.href = "' + redirectTo + '"', 1000);
 				}
+				
 			} else {
 				$("#form-message").fadeIn();
 				$("#form-message").addClass("error");
@@ -108,7 +117,7 @@ $().ready(function() {
 	
 	
 	
-$('#join-network-form input[type="text"], #join-network-form input[type="email"]').each(function() {
+$('#join-network-form input[type="text"], #join-network-form input[type="email"], #member-login-form input[type="email"]').each(function() {
 	var default_value = this.value;
 
 	$(this).focus(function(){
@@ -144,6 +153,29 @@ $('#join-network-form input[type="text"], #join-network-form input[type="email"]
 		}
 	});
 	
+	
+		
+	// validate join network banner form
+	$("#member-login-form").validate({
+	
+		wrapper: "div",
+		rules: {
+			emailaddress:{
+				required: true
+			}
+		},
+	  errorPlacement: function(error, element) {
+		  var arrow = "<div class='arrowhead'></div>";
+		   error.insertAfter(element);
+		    error.addClass('errormessage');
+			$(arrow).prependTo(error);
+			
+		   },
+		messages: {	
+			emailaddress: "Please enter a valid email address or username"		
+			
+		}
+	});
 	
 	
 	
@@ -196,6 +228,54 @@ $('#join-network-form input[type="text"], #join-network-form input[type="email"]
 			
 		}
 	});
+	
+	
+	
+
+	
+	// validate create profile
+	$("#create-profile").validate({
+		onkeyup: false,
+		focusInvalid: true,
+
+		rules: {	
+			emailaddress: {
+				required: true,
+				email: true
+			},
+			username: {
+				required: true,
+				minlength: 5
+			},
+			zip:{
+				required: true,
+				minlength: 5,
+				number: true
+			},
+			password: {
+				required: true,
+				minlength: 5
+			},
+			password2: {
+				required: true,
+				minlength: 5,
+				equalTo: "#password"
+			},
+			terms: {
+				required: true
+			}
+		},
+		messages: {	
+			username: "Username field cannot be blank ",
+			password: "Your password must contain 5 or more characters and including at least 1 number ",
+			password2: "Please make sure your password matches",
+			emailaddress: "Please enter a valid email address",
+			zip: "Please enter a correct zip code",
+			terms: "You must agree to our Terms of Services before becoming a member"
+			
+		}
+	});
+	
 	
 	
 });

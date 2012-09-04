@@ -162,6 +162,11 @@ $().ready(function() {
 			if (showReferral == 1) {
 
 					$("#referral-results").show();	
+
+			}
+			
+			if( $(this).is(".referral-only")){
+					$("#referral-results").show();	
 			}
 		
 			calculateRevenue();
@@ -251,6 +256,7 @@ $().ready(function() {
 	
 /* primary calculate function */	
 	function calculateRevenue() {
+	
 		
 		membersNum = parseInt($("#members-num").val());
 		
