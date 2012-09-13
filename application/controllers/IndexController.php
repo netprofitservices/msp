@@ -202,11 +202,6 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
-    public function joefoxAction()
-    {
-        // action body
-		$this->_helper->layout->setLayout('overlay');
-    }
     public function sereAction()
     {
         // action body
@@ -278,7 +273,6 @@ class IndexController extends Zend_Controller_Action
     }
 	
 	
-	
     public function termsofserviceAction()
     {
         // action body
@@ -330,6 +324,12 @@ class IndexController extends Zend_Controller_Action
     public function introAction()
     {
         // action body
+    }
+
+    public function joefoxAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
     }
 
     public function billstillAction()
