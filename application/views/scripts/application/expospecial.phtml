@@ -88,7 +88,8 @@ Ask a question
 						</div>
 
 						<div class="clear"></div>
-
+						
+						<? if (false): ?>
 						<label for="primary">Primary Motivation for Preparedness: </label>
 						<select name="primary" id="primary">
 							<option>--Select--</option>
@@ -110,7 +111,10 @@ Ask a question
 							<option>Virus / Pandemic</option>
 							<option>Zombie Apocalypse (just kidding!)</option>
 						</select>
-
+						
+						<? else: ?>
+							<input type="hidden" name="primary" value="expo" id="primary" />
+						<? endif ?>
 						<? /*
 						<label>Secondary Motivations(s) for Preparedness: </label> 
 						<div class="checkboxes">
