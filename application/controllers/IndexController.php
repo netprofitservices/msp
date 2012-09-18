@@ -95,6 +95,10 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+    public function instructorpreview2Action()
+    {
+        // action body
+    }
     public function instructorbioAction()
     {
         // action body
@@ -285,6 +289,21 @@ class IndexController extends Zend_Controller_Action
     public function introAction()
     {
         // action body
+    }
+    public function donharroldAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function doomandbloomAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function invictusAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
     }
     public function joefoxAction()
     {
