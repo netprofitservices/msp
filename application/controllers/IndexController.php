@@ -538,7 +538,7 @@ class IndexController extends Zend_Controller_Action
 		// Form processing is handled by the newsletter/signup action
     }
 	
-	public function networkthankyou2()
+	public function networkthankyou2Action()
     {
 		
     }

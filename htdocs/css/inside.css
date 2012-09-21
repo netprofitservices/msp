@@ -476,6 +476,127 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', end
 
 
 
+
+
+/* ##############
+
+	Join Network Thank you banner
+
+############## */
+
+#welcome-network{
+	background:url(../images/preppernetwork-thankyou2.jpg) 50% -1px no-repeat transparent;
+	height: 386px;
+	width: 960px;
+	padding-bottom: 0;
+	margin: 0px auto 0 auto; 	
+	display:block;
+	border:0;
+}
+
+
+#welcome-network > header h1{
+	text-indent: -9999px;
+	display:block;	
+
+}
+
+
+#welcome-network .zip-stats{
+    margin: 138px auto 0 auto;
+    width: 680px;
+}
+
+
+#welcome-network .zip-stats h2{
+	display:block;
+	color: #4f4f4f;
+	text-transform:uppercase;
+	font-size: 20px;
+	text-align:center;
+	margin-bottom: 10px;
+}
+
+#welcome-network .num {
+    float: left;
+    height: 120px;
+    margin-left: 45px;
+    margin-top: 25px;
+    width: 300px;
+}
+
+#welcome-network .num .digit{
+	display:block;
+	float: left;
+	margin: 0 5px;
+
+	color: #464545;
+	font-size: 80px;
+	font-weight:bold;
+	line-height: 1.2;
+	text-align:center;
+	width: 80px;
+	height: 100px;	
+	
+	text-shadow: 0 0 1px #f4f4f4;
+	
+	box-shadow: 0 10px 10px #094663;
+	-webkit-box-shadow: 0 10px 10px #094663;
+	-moz-box-shadow: 0 10px 10px #094663;
+	
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 10%, #eaeaea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 10%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 10%,#eaeaea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 10%,#eaeaea 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 10%,#eaeaea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+}
+	
+	
+#welcome-network .label{
+	
+    display: block;
+    float: right;
+    margin-right: 28px;
+    margin-top: 24px;
+}
+	
+#welcome-network .label h3{
+	
+    color: #FFFFFF;
+    font-size: 54px;
+	line-height: 1;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    margin: 0;
+    text-transform: uppercase;
+	
+}
+
+#welcome-network .label p{
+	color:#fff;	
+	margin-left: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ##############
 
 	Retreats banner
@@ -772,7 +893,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4694', end
 
 
 #free-trial-banner.sixty > section {
-	background:url(../images/free-trial-banner.gif) 50% 0 no-repeat;
+	background:url(../images/free-trial-banner60.gif) 50% 0 no-repeat;
 }
 
 

@@ -22,9 +22,9 @@
 
 	<div id="main-content" role="main">
                         
-                            <div id="welcome-network" class="blue-bg clear">
+                            <div class="blue-bg clear">
                             
-                                <section>   
+                                <section id="welcome-network">   
                                   
                                                     <header>
                                                         <h1>Welcome to the Free Prepper Network</h1>                      
@@ -35,7 +35,18 @@
 													<div class="zip-stats">
 														<h2>Quick Stats for Garden City, Massachusetts</h2>
 														
+														<div class="num">
+															<div class="digit">0</div>
+															<div class="digit">0</div>
+															<div class="digit">9</div>														
+														</div><!-- end num -->
 														
+														<div class="label">
+															<h3>Preppers</h3>
+															<p><b>Found within 500 Miles Radius </b><br />
+																Full details in the Member&rsquo;s Area
+															</p>														
+														</div>
 														
 													</div><!-- end zip-stats -->
                                   					
@@ -108,14 +119,26 @@
 															<li>
 														 	<span class="num">4</span> 
 															
-															 Add a <b>FREE</b> Trial of our Prep School:<br />
+															 Add a <b>FREE</b> Trial of our Prep School:
 															 <i class="subtitle">Adding the Prep School is optional.  But it&rsquo;s risk free.  No obligation.  No credit card required.</i>
 															 
-															 <form action="#" id="networkty-sign-up-prep-school">
-															 	<p><b>To Enroll, we only need your: </b></p>
-															 
-															 
-															 </form>
+			
+																								 
+																<form  method="post" id="networkty-sign-up-prep-school">   
+																
+																		<p><b>To Enroll, we only need your: </b></p>
+																
+													   
+																		<input type="text" value="First Name"  name="firstname" id="firstname"  class="required" />
+																		<input type="text" value="Last Name (optional)"  name="optional" id="optional"  class="required" />
+																	   <input type="submit" class="form-btn " value="Sign Up" name="submit" />      
+																	   
+																  <div id="messageBox"></div>    
+																  
+																  <div class="clear"></div>
+															   
+																	   
+																  </form><!-- end form-->
 															 
 															 
 															</li>
