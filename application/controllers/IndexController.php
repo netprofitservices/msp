@@ -106,7 +106,16 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
-    public function networkthankyouAction()
+	
+
+
+    public function instructorpreview2Action()
+    {
+        // action body
+    }
+
+
+	public function networkthankyouAction()
     {
         // action body
     }
@@ -325,6 +334,23 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+
+    public function donharroldAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function doomandbloomAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function invictusAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+	
 
     public function joefoxAction()
     {
@@ -566,9 +592,18 @@ class IndexController extends Zend_Controller_Action
 		// Form processing is handled by the newsletter/signup action
     }
 	
+
+
+
+
+	public function networkthankyou2Action()
+    {
+		
+    }
+	
+	
 }
-
-
+	
 
 
 

@@ -394,6 +394,71 @@ input.half{
 .signup-nextsteps a img{
 	margin-top: -3px;	
 }
+<<<<<<< HEAD
+=======
+
+
+
+.signup-nextsteps .subtitle{
+	font-size: 16px;	
+	font-weight:bold;
+	display:block;
+}
+
+form#networkty-sign-up-prep-school {
+	background:#f7f7f7;
+	border: 1px solid #d5d5d5;
+	padding: 10px;
+	font-size: 18px;
+	margin-left: 100px;
+	margin-top: 15px;
+}
+
+
+
+
+form#networkty-sign-up-prep-school p b{
+	color: #555555;
+	font-size: 16px;
+	text-transform:uppercase;
+	margin: 5px 0;
+}
+
+form#networkty-sign-up-prep-school input[type="text"]{
+	border:1px solid #838383;
+	padding: 10px;
+	font-size: 20px;
+	color: #b1b1b1;	
+	margin:0;
+	float:left;
+	margin-left: -1px;
+}
+
+
+
+form#networkty-sign-up-prep-school input[type="text"]:focus, 
+form#networkty-sign-up-prep-school input[type="text"]:hover{
+	color: #222;	
+}
+
+form#networkty-sign-up-prep-school input.form-btn{
+	background: #d50000;
+	float:left;
+	border:none;
+	width: 150px;
+	clear:none;
+	margin-top: 0;
+	
+	border-radius: 0 10px 10px 0px;
+	-webkit-border-radius: 0 10px 10px 0px;
+	-moz-border-radius: 0 10px 10px 0px;
+}
+
+form#networkty-sign-up-prep-school input.form-btn:hover{
+	background: #0b4694
+}	
+
+>>>>>>> networkty
 
 /* remove webkit arrows on number type input */
 input::-webkit-outer-spin-button,
