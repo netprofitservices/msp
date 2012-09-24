@@ -394,12 +394,9 @@ input.half{
 .signup-nextsteps a img{
 	margin-top: -3px;	
 }
-<<<<<<< HEAD
-=======
 
 
-
-.signup-nextsteps .subtitle{
+.signup-nextsteps .subtitle {
 	font-size: 16px;	
 	font-weight:bold;
 	display:block;
@@ -458,7 +455,24 @@ form#networkty-sign-up-prep-school input.form-btn:hover{
 	background: #0b4694
 }	
 
->>>>>>> networkty
+
+
+form#networkty-sign-up-prep-school #messageBox{
+	clear:both;
+	padding-top: 5px;
+		
+}
+
+
+form#networkty-sign-up-prep-school #messageBox .error{
+	color: #d50000;	
+}
+
+form#networkty-sign-up-prep-school input.error{
+	background: #ffd3d3;
+	border-color: #d50000;	
+}
+
 
 /* remove webkit arrows on number type input */
 input::-webkit-outer-spin-button,
