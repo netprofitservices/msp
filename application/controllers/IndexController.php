@@ -81,7 +81,11 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
-
+    public function hiringAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
     public function howthemoneyworksAction()
     {
         // action body
@@ -233,7 +237,11 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
-
+    public function termsofserviceAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
     public function whyprepareAction()
     {
         // action body
