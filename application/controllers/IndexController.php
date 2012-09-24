@@ -83,20 +83,25 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+
 	public function ifyoubuilditAction()
+	{
+        // action body
+    }	
+    public function hiringAction()
     {
         // action body
 		$this->_helper->layout->setLayout('overlay');
     }
-
     public function missionAction()
     {
         // action body
     }
     public function managementAction()
-    {
+	{
         // action body
     }
+
     public function marketingexampleAction()
     {
         // action body
@@ -247,6 +252,7 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+
 	
     public function quiz2Action()
     {
@@ -271,6 +277,12 @@ class IndexController extends Zend_Controller_Action
     }
 	
 
+    public function termsofserviceAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+
     public function whyprepareAction()
     {
         // action body
@@ -282,11 +294,6 @@ class IndexController extends Zend_Controller_Action
     }
 	
 	
-    public function termsofserviceAction()
-    {
-        // action body
-		$this->_helper->layout->setLayout('overlay');
-    }
 
     public function blankAction()
     {
