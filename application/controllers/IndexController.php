@@ -318,6 +318,11 @@ class IndexController extends Zend_Controller_Action
         // action body
 		$this->_helper->layout->setLayout('overlay');
     }
+    public function marjorywildcraftAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
     public function billstillAction()
     {
         // action body
