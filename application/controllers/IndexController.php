@@ -208,6 +208,10 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+    public function instructorsAction()
+    {
+        // action body
+    }
     public function instructorpreviewAction()
     {
         // action body
