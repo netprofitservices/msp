@@ -158,6 +158,10 @@ class ApplicationController extends Zend_Controller_Action
 		if ($this->getRequest()->isPost()) {
 			$configOptions = new Zend_Config($this->getInvokeArg('bootstrap')->getOptions());
 			$emailTo = $configOptions->email->to;
+			$listId = $configOptions->mailchimp->listId;
+			$newsletterFile = $configOptions->newsletter->file;
+			$file = $configOptions->signups->file;
+			
 			
 			$firstname = $this->_getParam('firstname');
 			$lastname = $this->_getParam('lastname');
@@ -168,6 +172,25 @@ class ApplicationController extends Zend_Controller_Action
 			$primary = $this->_getParam('primary');
 			$secondary = $this->_getParam('secondary');
 			$name = "$firstname $lastname";
+			
+			
+			// Sign them up on MailChimp
+			$merge_vars = array(
+				'FIRST' => $firstname, 
+				'LAST' => $lastname,
+				'ZIPCODE' => $zip,
+				'GROUPINGS' => array(
+					array(
+						'name' => 'MSP Contacts', 
+						'groups' => 'Prep School,FREE Network'
+					)
+				)
+			);
+			
+			require_once('models/MailChimp.php');
+			$MailChimp = new MailChimp($configOptions);
+			
+			$mailchimpStatus = $MailChimp->subscribeOrUpdate($email, $merge_vars);
 			
 			//$secondaryList = implode(', ', $secondary);
 			$secondaryList = '';
@@ -180,16 +203,14 @@ class ApplicationController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
-			$body .= "<br />\n$comments";
+			$body .= "<br />\n$comments<br />\n";
+			$body .= "<br />\n$mailchimpStatus";
 			
 			require_once('models/Mail.php');
 			$Mail = new Mail;
 			$Mail->send($emailTo, $subject, $body, array($email, $name));
 			
 			// Now log it to a csv file
-			$file = $configOptions->signups->file;
-			
-			
 			$date = date('Y-m-d H:i:s'); 
 			
 			$line = array(
@@ -201,13 +222,28 @@ class ApplicationController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$mailchimpStatus
 			);
 
 
 			$fh = fopen($file, 'a');
 			if (fputcsv($fh, $line)) {
 			}
+			
+			// Also add them to the newsletter csv
+			$line = array(
+				$email,
+				$name,
+				$zip,
+				$date,
+				$mailchimpStatus
+			);
+
+			$fh = fopen($newsletterFile, 'a');
+			if (fputcsv($fh, $line)) {
+			}
+			
 			
 			echo 'ok';
 			die;

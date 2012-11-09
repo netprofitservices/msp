@@ -1,7 +1,13 @@
 application.ini
 htdocs-bak
 htdocs/beta
+htdocs/beta-d
 htdocs/beta-old
+access_codes.csv
+files/*
+members-d
+members-e
+members
 .cshrc
 .history
 .gitconfig
@@ -13,5 +19,5 @@ htdocs/beta-old
 .rhosts
 .shrc
 .ssh
-access_codes.csv
-files/*
+.mysql_history
+*.sql

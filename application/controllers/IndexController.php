@@ -73,10 +73,7 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
-    public function expoqrAction()
-    {
-        // action body
-    }
+
     public function faqAction()
     {
         // action body
@@ -86,52 +83,25 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
-    public function ifyoubuilditAction()
+
+	public function ifyoubuilditAction()
+	{
+        // action body
+    }	
+    public function hiringAction()
     {
         // action body
 		$this->_helper->layout->setLayout('overlay');
     }
-    public function instructorpreviewAction()
-    {
-        // action body
-    }
-    public function instructorbioAction()
-    {
-        // action body
-    }
-    public function instructorsAction()
-    {
-        // action body
-    }
-    public function instructorsprivateAction()
-    {
-        // action body
-    }
-    public function instructorsprivatekeyAction()
-    {
-        // action body
-    }
-	
-    public function instructorrevenueestimatorAction()
-    {
-        // action body
-    }
-
-    public function instructorrevenueestimateAction()
-    {
-        // action body
-    }
-
-
-
     public function missionAction()
     {
         // action body
     }
     public function managementAction()
-    {
+	{
         // action body
     }
+
     public function marketingexampleAction()
     {
         // action body
@@ -141,29 +111,25 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+	
+
+
+    public function instructorpreview2Action()
+    {
+        // action body
+    }
+
+
+	public function networkthankyouAction()
+    {
+        // action body
+    }
     
 	public function overlayAction()
     {
         // action body
 		$this->_helper->layout->setLayout('overlay');
     }
-    public function partnershipsAction()
-    {
-        // action body
-	}
-    public function prepschool2Action()
-    {
-        // action body
-	}
-	
-  public function prepschoolAction()
-    {
-       // action body
-		$this->view->metaTitle = "Preparedness School - We Teach Self Reliance";
-		$this->view->metaKeywords = "prepardeness school, preparedness training, prep school, self reliance, self sufficiency, self defense, intentional community";
-		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness.";
-    	   }
-   
     public function retreatfaqAction()
     {
         // action body
@@ -209,7 +175,68 @@ class IndexController extends Zend_Controller_Action
         // action body
 		$this->_helper->layout->setLayout('overlay');
     }
-    
+
+    public function prepschoolsignupAction()
+    {
+        // action body
+    }
+    public function prepschoolsignup2Action()
+    {
+        // action body
+    }
+    public function prepschoolsignupthankyouAction()
+    {
+        // action body
+    }
+    public function prepschoolsignupthankyou2Action()
+    {
+        // action body
+    }
+    public function createprofileAction()
+    {
+        // action body
+    }
+    public function coursepageAction()
+    {
+        // action body
+    }
+    public function eventpageAction()
+    {
+        // action body
+    }
+    public function instructorbioAction()
+    {
+        // action body
+    }
+    public function instructorsAction()
+    {
+        // action body
+    }
+    public function instructorpreviewAction()
+    {
+        // action body
+    }
+    public function instructorprogramAction()
+    {
+        // action body
+    }
+    public function sereAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function instructorrevenueestimateAction()
+    {
+        // action body
+    }
+    public function instructorrevenueestimatorAction()
+    {
+        // action body
+    }
+    public function referralestimatorAction()
+    {
+        // action body
+    }
 
     public function retreatsAction()
     {
@@ -230,6 +257,36 @@ class IndexController extends Zend_Controller_Action
         // action body
     }
 
+	
+    public function quiz2Action()
+    {
+        // action body
+    }
+	
+    public function aboutquizAction()
+    {
+        // action body
+    }
+	
+    public function quizresultAction()
+    {
+        // action body
+    }
+	
+    public function sharefriendAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+		
+    }
+	
+
+    public function termsofserviceAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+
     public function whyprepareAction()
     {
         // action body
@@ -239,6 +296,8 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+	
+	
 
     public function blankAction()
     {
@@ -274,7 +333,7 @@ class IndexController extends Zend_Controller_Action
 			
 			require_once('models/Mail.php');
 			$Mail = new Mail;
-			$Mail->send($emailTo, $subject, $body, array($email, $name), 'kevin@netprofitservices.com');
+			$Mail->send($emailTo, $subject, $body, array($email, $name));
 			//echo "email: $emailTo, subject: $subject, body: $body, from: $email, $name";
 			echo 'ok';
 			die;
@@ -286,11 +345,37 @@ class IndexController extends Zend_Controller_Action
     {
         // action body
     }
+
+    public function donharroldAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function doomandbloomAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+    public function invictusAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+	
+
     public function joefoxAction()
     {
         // action body
 		$this->_helper->layout->setLayout('overlay');
     }
+
+    public function marjorywildcraftAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('overlay');
+    }
+
+
     public function billstillAction()
     {
         // action body
@@ -630,6 +715,12 @@ class IndexController extends Zend_Controller_Action
 		}
     }
 
+	public function memberloginAction()
+    {
+        // action body
+		$this->_helper->layout->setLayout('withlogin');
+    }
+    
 	public function preppernetworkAction()
     {
 		// Form processing is handled by the newsletter/signup action
@@ -637,6 +728,16 @@ class IndexController extends Zend_Controller_Action
 	
 
 
+
+
+	public function networkthankyou2Action()
+    {
+		
+    }
+	
+	
 }
+	
+
 
 

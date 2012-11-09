@@ -128,11 +128,12 @@ input.form-btn.failed{
 	margin-top: 0;
 	font-weight:bold;
 	display:block;
-	padding-left: 10px;
+	padding-left: 5px;
 	float:left;
 	padding-top: 7px;
 	padding-bottom: 5px;
 	clear:none;
+	font-size: 14px;
 }
 	
 .form input.error{
@@ -140,6 +141,10 @@ input.form-btn.failed{
 	float:left;
 	display:inline;
 	margin-bottom: 10px;
+}
+
+.form input[type="checkbox"].error{
+	outline: 1px solid #d50000
 }
 	
 .form textarea.error{
@@ -169,6 +174,8 @@ input.form-btn.failed{
 	font-size: 18px;
 	text-transform:uppercase;
 	margin-top: 30px;
+	
+	clear:both;
 }
 	
 	
@@ -223,8 +230,18 @@ input.form-btn.failed{
 }
 
 
-.twocol .form input[type="text"], .twocol .form input[type="number"], .twocol .form input[type="email"], .twocol .form textarea, .twocol .form select {
+.twocol .form input[type="text"], .twocol .form input[type="number"], .twocol .form input[type="email"], .twocol .form textarea, .twocol .form select, .twocol .form input[type="password"]  {
     width: 95%;
+}
+
+.twocol .form input[type="text"].username-with-check{
+	width: 70%;
+}
+
+
+
+input.half{
+	width: 45.8% !important;
 }
 
 .twocol .form select {
@@ -252,6 +269,210 @@ input.form-btn.failed{
 
 }
 
+.thankyou-list {
+	margin:0;
+	padding:0;
+}	
+
+.thankyou-list li{
+	list-style: none;	
+}
+
+
+.thankyou-list .facebook, .thankyou-list .twitter{
+	display:block;
+	width: 48%;
+	margin-bottom: 20px;
+	float:left;
+	padding:3px;
+	text-transform:uppercase;
+	font-size: 18px;
+	text-decoration:none;
+	border:1px dotted #c9c9c9;	
+	color: #0B4694
+}
+
+.thankyou-list .facebook{
+		margin-right: 1%;
+}
+
+
+.thankyou-list .facebook:hover, .thankyou-list .twitter:hover{
+	border-color: #d20000;
+	color: #d20000
+}
+
+
+.next-steps{
+    border: 3px double #D50000;
+    margin: 10px auto;
+    padding: 20px;
+    width: 800px;
+
+}
+
+.next-steps > h1{
+    color: #D50000;
+    font-size: 50px;
+	margin-left: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.signup-nextsteps{
+	font-size: 30px;
+	margin: 5px 10px 20px 10px;	
+	padding:0;
+	position:relative;
+}
+
+.signup-nextsteps li{
+    list-style: none outside none;
+    margin-bottom: 20px;
+    min-height: 80px;
+    display: block;
+}
+
+.signup-nextsteps .small{
+	font-size: 0.7em;
+	color:#767676	
+}
+
+.signup-nextsteps .num{
+
+    border-left: 27px solid #0B4694;
+    color: #0B4694;
+    display: block;
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 1.5;
+    margin-right: 32px;
+    padding-left: 14px;
+    text-align: left;
+    width: 30px;
+    margin-top: 6px;
+	
+}
+
+.signup-nextsteps .fb-like{
+   position: relative;
+	margin-left: 105px;
+	display:block;
+
+}
+
+.twitter-follow-button {
+   position: relative;
+	margin-left: 100px;	
+	display:block;
+}
+
+.signup-nextsteps .icon{
+	/*display:block;
+	float:left;
+	padding-bottom: 20px;
+	margin-right: 15px;*/
+	
+	margin-top: 10px;
+	
+}
+
+.signup-nextsteps a{
+	background: #e4e9f0;
+	text-decoration:none;
+	color: #222;
+	padding: 0 5px;	
+}
+
+.signup-nextsteps a:hover{
+	color: #d50000;
+}	
+
+
+.signup-nextsteps a img{
+	margin-top: -3px;	
+}
+
+
+.signup-nextsteps .subtitle {
+	font-size: 16px;	
+	font-weight:bold;
+	display:block;
+}
+
+form#networkty-sign-up-prep-school {
+	background:#f7f7f7;
+	border: 1px solid #d5d5d5;
+	padding: 10px;
+	font-size: 18px;
+	margin-left: 100px;
+	margin-top: 15px;
+}
+
+
+
+
+form#networkty-sign-up-prep-school p b{
+	color: #555555;
+	font-size: 16px;
+	text-transform:uppercase;
+	margin: 5px 0;
+}
+
+form#networkty-sign-up-prep-school input[type="text"]{
+	border:1px solid #838383;
+	padding: 10px;
+	font-size: 20px;
+	color: #b1b1b1;	
+	margin:0;
+	float:left;
+	margin-left: -1px;
+}
+
+
+
+form#networkty-sign-up-prep-school input[type="text"]:focus, 
+form#networkty-sign-up-prep-school input[type="text"]:hover{
+	color: #222;	
+}
+
+form#networkty-sign-up-prep-school input.form-btn{
+	background: #d50000;
+	float:left;
+	border:none;
+	width: 150px;
+	clear:none;
+	margin-top: 0;
+	
+	border-radius: 0 10px 10px 0px;
+	-webkit-border-radius: 0 10px 10px 0px;
+	-moz-border-radius: 0 10px 10px 0px;
+}
+
+form#networkty-sign-up-prep-school input.form-btn:hover{
+	background: #0b4694
+}	
+
+
+
+form#networkty-sign-up-prep-school #messageBox{
+	clear:both;
+	padding-top: 5px;
+		
+}
+
+
+form#networkty-sign-up-prep-school #messageBox .error{
+	color: #d50000;	
+}
+
+form#networkty-sign-up-prep-school input.error{
+	background: #ffd3d3;
+	border-color: #d50000;	
+}
+
 
 /* remove webkit arrows on number type input */
 input::-webkit-outer-spin-button,
@@ -263,5 +484,97 @@ input::-webkit-inner-spin-button {
 
 
 
+.right-col .notice{
+	width: 271px;
+	margin: 10px 0 20px 10px	;
+	font-size: 12px;	
+	border: 1px solid #C9C9C9;
+	border-right: 15px solid #afafaf;
+	padding: 10px;
+	position:relative;
+	background:#fff;
+	position:relative; left: -14px;
+}
 
+.right-col .notice .arrow{
+		background: url(../images/left-arrow-line.gif) left top no-repeat;
+		width:12px;
+		height: 20px;
+		position:absolute;
+		top: 10px;
+		left: -10px;
+}
+
+
+.right-col .notice p{
+	margin-bottom: 10px;	
+}
+
+.right-col .notice h3{
+	font-size: 12px;
+	color: #6a6a6a;
+	text-transform:uppercase;
+	margin: 5px 0;
+	display:inline;
+}
 	
+	
+.username-check{
+    display: block;
+    float: right;
+    font-size: 12px;
+    height: 34px;
+    line-height: 1.2;
+    margin: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 146px;
+		outline: 0;
+}
+
+.username-check span{
+	display:block;
+	float:left;
+	width: 25px;
+	height: 25px;
+	margin-right: 2px;
+	margin-left: 8px;
+	text-indent: -9999px;
+	background:url(../images/check-username.png) left center no-repeat;
+}
+
+.username-check.valid span{
+	background-position: -24px 50%;	
+}
+
+
+.username-check.valid{
+	color: #3db900;	
+}
+
+
+.username-check.valid, 
+.username-check.invalid{
+	cursor:default
+
+}
+
+
+.username-check.invalid span{
+	background-position:right 50%;	
+}
+
+
+.username-check.invalid{
+	color: #ff0000;	
+}
+
+
+
+
+
+
+
+
+
+

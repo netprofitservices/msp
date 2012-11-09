@@ -28,7 +28,7 @@ Ask a question
 
 			<header>
 				<h1>Free Prep School Membership</h1>                      
-				<h2>Free 90 Day Trial. No Credit Card Required.  Limited to first 500 Members</h2>
+				<h2>Free 30 Day Trial. No Credit Card Required.  Limited to first 500 Members</h2>
 			</header>
 
 			<div class="enroll-today">Enroll Today!</div>
@@ -61,34 +61,35 @@ Ask a question
 
 					<div class="form">
 
-						<div>
+					
 							<label for="firstname">First Name:</label>
 							<input name="firstname" id="firstname" type="text" class="firstname required" />
-						</div>
-						<div>  
+						
+						<!--div>  
 							<label for="lastname">Last Name</label>
 							<p class="optionallabel">Optional</p>
 							<input name="lastname" id="lastname"  type="text"  class="lastname optional" /> 
-						</div>  
+						</div-->  
 						<div class="clear"></div>
-						<div>  
+						
 							<label for="emailaddress">Email Address:</label>
 							<input name="emailaddress" id="emailaddress" type="email"  class="required" />     
-						</div>
-						<div> 
+					
+						<!--div> 
 							<label for="phone">Phone:</label>
 							<p class="optionallabel">Optional</p>
 							<input name="phone" id="phone" type="number" maxlength="10" class="optional"  />
-						</div>
+						</div-->
 						<div class="clear"></div>
 
-						<div>
+						
 							<label for="zip" class="clear">Current Zip Code:</label>
 							<input name="zip" id="zip" type="text" class="zipcode required" maxlength="10"  />
-						</div>
+						
 
 						<div class="clear"></div>
-
+						
+						<? if (false): ?>
 						<label for="primary">Primary Motivation for Preparedness: </label>
 						<select name="primary" id="primary">
 							<option>--Select--</option>
@@ -110,7 +111,10 @@ Ask a question
 							<option>Virus / Pandemic</option>
 							<option>Zombie Apocalypse (just kidding!)</option>
 						</select>
-
+						
+						<? else: ?>
+							<input type="hidden" name="primary" value="expo" id="primary" />
+						<? endif ?>
 						<? /*
 						<label>Secondary Motivations(s) for Preparedness: </label> 
 						<div class="checkboxes">
@@ -182,9 +186,8 @@ Ask a question
 				<h2>ABOUT<br />
 					PREPSCHOOL</h2>
 					<ul class="related">
-						<li><a href="#">Meet Our Instructors</a></li>
-						<li><a href="#">Testimonial</a></li>
-						<li><a href="#">Course Schedule</a></li>
+						<li><a href="instructorpreview">Meet Our Instructors</a></li>
+						<li><a href="comingsoon" class="fancybox">Course Schedule</a></li>
 
 
 
