@@ -287,6 +287,10 @@ class IndexController extends Zend_Controller_Action
 		$this->_helper->layout->setLayout('overlay');
     }
 
+    public function veteransAction()
+    {
+        // action body
+    }
     public function whyprepareAction()
     {
         // action body
