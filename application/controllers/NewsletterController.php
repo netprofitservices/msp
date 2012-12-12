@@ -63,7 +63,8 @@ class NewsletterController extends Zend_Controller_Action
 				$name,
 				$zip,
 				$date,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 
@@ -76,7 +77,13 @@ class NewsletterController extends Zend_Controller_Action
 		}
 		
     }
-
+	
+	protected function getReferralCode() {
+		$session = new Application_Model_Session;
+		
+		return $session->getReferralCode();
+	}
+	
 }
 
 

@@ -48,6 +48,7 @@ class ApplicationController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			$body .= "Secondary motivation: $secondaryList<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments";
 			
 			require_once('models/Mail.php');
@@ -70,7 +71,8 @@ class ApplicationController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -115,6 +117,7 @@ class ApplicationController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			$body .= "Secondary motivation: $secondaryList<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments";
 			
 			require_once('models/Mail.php');
@@ -138,7 +141,8 @@ class ApplicationController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -202,6 +206,7 @@ class ApplicationController extends Zend_Controller_Action
 			$body .= "Email: $email<br />\n";
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
 			$body .= "<br />\n$comments<br />\n";
 			$body .= "<br />\n$mailchimpStatus";
@@ -223,7 +228,8 @@ class ApplicationController extends Zend_Controller_Action
 				$primary,
 				$secondaryList,
 				$comments,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 
@@ -237,7 +243,8 @@ class ApplicationController extends Zend_Controller_Action
 				$name,
 				$zip,
 				$date,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 			$fh = fopen($newsletterFile, 'a');
@@ -253,7 +260,6 @@ class ApplicationController extends Zend_Controller_Action
 	public function prepschoolAction()
     {
         // action body
-		
 		if ($this->getRequest()->isPost()) {
 			// Load configuration
 			$configOptions = new Zend_Config($this->getInvokeArg('bootstrap')->getOptions());
@@ -302,6 +308,7 @@ class ApplicationController extends Zend_Controller_Action
 			$body .= "Email: $email<br />\n";
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
 			$body .= "<br />\n$comments<br />\n";
 			$body .= "<br />\n$mailchimpStatus";
@@ -323,7 +330,8 @@ class ApplicationController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -338,7 +346,8 @@ class ApplicationController extends Zend_Controller_Action
 				$name,
 				$zip,
 				$date,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 			$fh = fopen($newsletterFile, 'a');
@@ -381,6 +390,7 @@ class ApplicationController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments";
 			
 			require_once('models/Mail.php');
@@ -400,7 +410,8 @@ class ApplicationController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -512,6 +523,7 @@ class ApplicationController extends Zend_Controller_Action
 			$body .= "Phone: $phone<br />\n";
 			$body .= "Email: $email<br />\n";
 			$body .= "Zip code: $zip<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments";
 			
 			//$bcc = 'kevin@netprofitservices.com';
@@ -552,6 +564,12 @@ class ApplicationController extends Zend_Controller_Action
 	}
 		
 	public function mctestAction() {
+	}
+	
+	protected function getReferralCode() {
+		$session = new Application_Model_Session;
+		
+		return $session->getReferralCode();
 	}
 
 }
