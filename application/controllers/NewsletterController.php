@@ -53,6 +53,10 @@ class NewsletterController extends Zend_Controller_Action
 			$MailChimp = new MailChimp($configOptions);
 			
 			$mailchimpStatus = $MailChimp->subscribeOrUpdate($email, $merge_vars);
+
+			require_once('models/Mail.php');
+			$Mail = new Mail;
+			$Mail->savePersonalInfoToSession(array('email' => $email, 'zip' => $zip));
 			
 			
 			// Write to csv file

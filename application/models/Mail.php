@@ -2,6 +2,7 @@
 
 class Mail {
 	protected $mailer;
+	protected $session;
 	protected $fromAddress = 'danny@netprofitservices.com';
 	protected $fromName = 'Mainstream Preppers';
 	protected $smtp_settings = array(
@@ -53,5 +54,19 @@ class Mail {
 		}
 		
 		return $this->mailer;
+	}
+	
+	public function savePersonalInfoToSession($info = array()) {
+		foreach ($info as $key => $value) {
+			$this->getSession()->setValue($key, $value);
+		}
+	}
+	
+	protected function getSession() {
+		if (empty($this->session)) {
+			$this->session = new Application_Model_Session;
+		}
+		
+		return $this->session;
 	}
 }

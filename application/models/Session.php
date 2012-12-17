@@ -19,4 +19,13 @@ class Application_Model_Session {
 		
 		return $this->session;
 	}
+	
+	public function setValue($key, $value) {
+		$this->getSession()->$key = $value;
+	}
+	
+	public function getValue($key) {
+		return $this->getSession()->$key;
+	}
+	
 }

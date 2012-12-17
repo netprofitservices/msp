@@ -190,8 +190,32 @@ class IndexController extends Zend_Controller_Action
     }
     public function prepschoolsignupthankyou2Action()
     {
-        // action body
+		$this->view->signupUrl = $this->getSignupUrl();
     }
+
+	protected function getSignupUrl() {
+		// First, get the base url of the members' site
+		if (!empty($this->config->membersite->url)) {
+			$url = $this->config->membersite->url;
+		} else {
+			$url = 'http://members.mainstreampreppers.com';
+		}
+		
+		// Now add the signup url
+		$url .= '/users/signup';
+		
+		// Get some info from the session (if present) to default in the signup form
+		$session = new Application_Model_Session;
+		foreach (array('email', 'zip') as $key) {
+			$value = $session->getValue($key);
+			
+			if (!empty($value)) {
+				$url .= "/$key/$value";
+			}
+		}
+		
+		return $url;
+	}
     public function createprofileAction()
     {
         // action body
@@ -456,12 +480,14 @@ class IndexController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments<br />\n";
 			$body .= "<br />\n$mailchimpStatus";
 			
 			require_once('models/Mail.php');
 			$Mail = new Mail;
 			$Mail->send($emailTo, $subject, $body, array($email, $name));
+			$Mail->savePersonalInfoToSession(array('email' => $email, 'zip' => $zip));
 			
 			
 			// Now log it to a csv file
@@ -476,7 +502,8 @@ class IndexController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -491,7 +518,8 @@ class IndexController extends Zend_Controller_Action
 				$name,
 				$zip,
 				$date,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 			$fh = fopen($newsletterFile, 'a');
@@ -565,12 +593,14 @@ class IndexController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments<br />\n";
 			$body .= "<br />\n$mailchimpStatus";
 			
 			require_once('models/Mail.php');
 			$Mail = new Mail;
 			$Mail->send($emailTo, $subject, $body, array($email, $name));
+			$Mail->savePersonalInfoToSession(array('email' => $email, 'zip' => $zip));
 			
 			
 			// Now log it to a csv file
@@ -585,7 +615,8 @@ class IndexController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -600,7 +631,8 @@ class IndexController extends Zend_Controller_Action
 				$name,
 				$zip,
 				$date,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 			$fh = fopen($newsletterFile, 'a');
@@ -671,12 +703,14 @@ class IndexController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments<br />\n";
 			$body .= "<br />\n$mailchimpStatus";
 			
 			require_once('models/Mail.php');
 			$Mail = new Mail;
 			$Mail->send($emailTo, $subject, $body, array($email, $name));
+			$Mail->savePersonalInfoToSession(array('email' => $email, 'zip' => $zip));
 			
 			
 			// Now log it to a csv file
@@ -691,7 +725,8 @@ class IndexController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -706,7 +741,8 @@ class IndexController extends Zend_Controller_Action
 				$name,
 				$zip,
 				$date,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 			$fh = fopen($newsletterFile, 'a');
@@ -770,12 +806,14 @@ class IndexController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments<br />\n";
 			$body .= "<br />\n$mailchimpStatus";
 			
 			require_once('models/Mail.php');
 			$Mail = new Mail;
 			$Mail->send($emailTo, $subject, $body, array($email, $name));
+			$Mail->savePersonalInfoToSession(array('email' => $email, 'zip' => $zip));
 			
 			
 			// Now log it to a csv file
@@ -790,7 +828,8 @@ class IndexController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -805,7 +844,8 @@ class IndexController extends Zend_Controller_Action
 				$name,
 				$zip,
 				$date,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 			$fh = fopen($newsletterFile, 'a');
@@ -869,11 +909,13 @@ class IndexController extends Zend_Controller_Action
 			$body .= "Zip code: $zip<br />\n";
 			$body .= "Primary motivation: $primary<br />\n";
 			//$body .= "Secondary motivation: $secondaryList<br />\n";
+			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments<br />\n";
 			$body .= "<br />\n$mailchimpStatus";
 			
 			require_once('models/Mail.php');
 			$Mail = new Mail;
+			$Mail->savePersonalInfoToSession(array('email' => $email, 'zip' => $zip));
 			$Mail->send($emailTo, $subject, $body, array($email, $name));
 			
 			
@@ -889,7 +931,8 @@ class IndexController extends Zend_Controller_Action
 				$zip,
 				$primary,
 				$secondaryList,
-				$comments
+				$comments,
+				$this->getReferralCode()
 			);
 
 
@@ -904,7 +947,8 @@ class IndexController extends Zend_Controller_Action
 				$name,
 				$zip,
 				$date,
-				$mailchimpStatus
+				$mailchimpStatus,
+				$this->getReferralCode()
 			);
 
 			$fh = fopen($newsletterFile, 'a');
@@ -934,8 +978,14 @@ class IndexController extends Zend_Controller_Action
 
 	public function networkthankyou2Action()
     {
-		
+		$this->view->signupUrl = $this->getSignupUrl();
     }
+	
+	protected function getReferralCode() {
+		$session = new Application_Model_Session;
+		
+		return $session->getReferralCode();
+	}
 	
 	
 }

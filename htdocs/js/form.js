@@ -31,7 +31,11 @@ $.validator.setDefaults({
 					redirectTo = 'prepschool'
 				} else if (action == 'prepschool') {
 					redirectTo = 'prepschoolsignupthankyou'
-				} 
+				} else if (action == 'preparedness-school') {
+					redirectTo = 'prepschoolsignupthankyou2'
+				} else if (action == 'newsletter/signup') {
+					redirectTo = 'networkthankyou2'
+				}
 				
 				
 				// Redirect after one second
