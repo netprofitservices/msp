@@ -33,17 +33,17 @@
 													
 													
 													<div class="zip-stats">
-														<h2>Quick Stats For <span>Garden City, Massachusetts</span></h2>
+														<h2>Quick Stats For <span><?= $this->zip ?></span></h2>
 														
 														<div class="num">
-															<div class="digit">0</div>
-															<div class="digit">0</div>
-															<div class="digit">9</div>														
+															<? foreach ($this->prepperCountParts as $part): ?>
+															<div class="digit"><?= $part ?></div>
+															<? endforeach ?>
 														</div><!-- end num -->
 														
 														<div class="label">
 															<h3>Preppers</h3>
-															<p><b>Found within 500 Miles Radius </b><br />
+															<p><b>Found within <?= $this->range ?> Miles Radius </b><br />
 																Full details in the Member&rsquo;s Area
 															</p>														
 														</div>

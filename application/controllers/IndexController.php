@@ -979,6 +979,22 @@ class IndexController extends Zend_Controller_Action
 	public function networkthankyou2Action()
     {
 		$this->view->signupUrl = $this->getSignupUrl();
+		
+		// Get zip code from signup
+		$session = new Application_Model_Session;
+		$zip = $session->getValue('zip');
+		if (empty($zip)) $zip = '64720';
+
+		// Prepper count
+		$range = 500;
+		$countUrl = "http://members.mainstreampreppers.com/users/count/zip/$zip/range/$range";
+		$count = file_get_contents($countUrl);
+		$paddedCount = str_pad($count, 3, '0', STR_PAD_LEFT);
+		$parts = str_split($paddedCount);
+		
+		$this->view->prepperCountParts = $parts;
+		$this->view->range = $range;
+		$this->view->zip = $zip;
     }
 	
 	protected function getReferralCode() {
