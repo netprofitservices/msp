@@ -1880,6 +1880,47 @@ Mark your calendar box
 }
 
 
+/* ##############
+
+404 page
+
+############## */
+
+.content-404{
+   float: left;
+    margin-left: 30px;
+    width: 600px;
+}
+
+.title-404{
+	margin-top: -15px;
+	display:block;	
+	float:left;
+}
+
+.content-404 h1{
+	font-size: 22px;	
+}
+
+.content-404 ul{
+	margin: 25px 0	
+}
+
+
+.content-404 ul li{
+	margin: 10px 0;	
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ############## 
 
 media queries 
