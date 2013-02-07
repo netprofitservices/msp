@@ -1,0 +1,95 @@
+
+
+/* ##############################
+
+	Featured Instructors slideshow small
+	
+	####################################### */
+	
+	
+#instructors-slideshow-small {
+
+}
+
+#instructors-slideshow-small .instructor-list.simple{
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+
+#instructors-slideshow-small .instructor-list.simple li{
+	display:block;
+	padding: 5px;
+	height: 150px;
+	border:1px solid #f0f0f0;
+}
+
+
+#instructors-slideshow-small .instructor-list.simple li a{
+	display:block;	
+}
+
+#instructors-slideshow-small .instructor-list.simple .instructor-photo{
+	display:block;
+	float:left;
+	margin-right: 15px;
+	padding: 8px;
+	background: #f0f0f0;
+}
+
+#instructors-slideshow-small .instructor-list.simple .instructor-photo img{
+	text-align: center;	
+}
+
+#instructors-slideshow-small .instructor-list.simple .instructor-photo .course-num{
+	font-size: 30px;
+	color:#bebebe;
+	text-align: right;
+	font-weight: bold;
+	margin-top: 10px;	
+	display:block;
+	letter-spacing: -1px;
+	background: url(../images/icons/book-icon.png) center left no-repeat;
+}
+
+
+#instructors-slideshow-small .instructor-list.simple .instructor-name{
+	display:block;
+	float:left;
+		
+}
+
+#instructors-slideshow-small .instructor-list.simple .instructor-name span{
+	display:block;	
+}
+
+#instructors-slideshow-small .instructor-list.simple .instructor-name .co{
+	font-size: 14px;	
+	color: #858585;
+	
+}
+
+
+#instructors-slideshow-small .instructor-list.simple .instructor-name .fullname{
+	font-size: 30px;
+	margin: 10px 0 5px 0;
+	color:#0b4694;
+	text-transform:uppercase;
+	letter-spacing: -1px;
+	clear:both;
+	display:block;
+	
+}
+
+#instructors-slideshow-small .instructor-list.simple .instructor-name .brief{
+	color: #757575;
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: bold;	
+}
+
+
+
+
+
+

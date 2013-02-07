@@ -21,17 +21,46 @@
 
 
 .quicktips .sort h2{
-	font-size: 20px;
-	letter-spacing:0;
-	display:block;
-	float: left;
-	margin: 5px 10px 0 0;
+    display: block;
+    float: left;
+    font-size: 18px;
+    letter-spacing: 0;
+    margin: 14px 10px 0 0;
 }
 
 .quicktips .sort .cat-wrapper{
 		position:relative;
-		width: 210px;
-		background: url("../images/grey-down-arrow.png") no-repeat scroll 90% 45% transparent;
+		width: 240px;
+		
+		
+	float:left;
+	padding: 5px;
+	color:#222;
+	text-transform:uppercase;
+	
+	border:1px solid #c2c2c2;
+	
+	border-radius: 5px;
+	box-shadow: 0 5px 5px #eee;
+	letter-spacing: 0;
+	
+	
+			
+			
+		background: #ffffff; /* Old browsers */
+		background-image: url("../images/grey-down-arrow.png");
+		background-repeat: no-repeat;
+		background-position:   92% 45%;
+		background-image: url("../images/grey-down-arrow.png"), -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 86%); /* FF3.6+ */
+		background-image: url("../images/grey-down-arrow.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(86%,#eeeeee)); /* Chrome,Safari4+ */
+		background-image: url("../images/grey-down-arrow.png"), -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 86%); /* Chrome10+,Safari5.1+ */
+		background-image: url("../images/grey-down-arrow.png"), -o-linear-gradient(top,  #ffffff 0%,#eeeeee 86%); /* Opera 11.10+ */
+		background-image: url("../images/grey-down-arrow.png"), -ms-linear-gradient(top,  #ffffff 0%,#eeeeee 86%); /* IE10+ */
+		background-image: url("../images/grey-down-arrow.png"), linear-gradient(to bottom,  #ffffff 0%,#eeeeee 86%); /* W3C */
+		
+
+	
+	 
 }
 
 .quicktips .sort ul{
@@ -42,12 +71,13 @@
 	border:1px solid #c2c2c2;
 	padding: 10px;
 	height: 200px;
-	width: 200px;
+	width: 230px;
 	overflow:auto;	
 	
 	display:none;
 	position: absolute;
 	left: -1px;
+	z-index: 5;
 	
 		
 	background: #f7f7f7; /* Old browsers */
@@ -68,40 +98,17 @@
 }
 
 
-
-
-.cat-wrapper {
-	float:left;
-	padding: 5px;
-	color:#222;
-	text-transform:uppercase;
-	
-	border:1px solid #c2c2c2;
-	
-	border-radius: 5px;
-	box-shadow: 0 5px 5px #eee;
-	letter-spacing: 0;
-	
-	
-	background: #feffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #feffff 39%, #ededed 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(39%,#feffff), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #feffff 39%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #feffff 39%,#ededed 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #feffff 39%,#ededed 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #feffff 39%,#ededed 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-	
-}
-
+ 
 
 .cat-wrapper #show-cat{
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing:0;
 	margin: 5px;
 	display:block;
 	color:#222;
 	cursor:pointer;
+	text-decoration: none;
+	font-weight: bold;
 
 }
 
@@ -131,5 +138,139 @@
 }
 
 
+#sharethis-wrapper{
+	margin-left: 5px;
 
+}
+
+
+article.tips-detail{
+	background: #f0f0f0;
+	border:1px solid #dfdfdf;
+	padding: 10px 20px;
+	font-size: 14px;
+	line-height: 1.5;
+	clear:both;
+	margin: 35px 0;	
+	
+	position: relative;
+}
+
+
+
+article.tips-detail span.cat-title{
+	display:block;
+	width:262px;
+	height: 34px;
+	color:#5099ff;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 20px;
+	position:absolute;
+	float:left;
+	top: -13px;
+	left: -10px;	
+	
+	background: url("../images/cat-title-bg.png") top left no-repeat;
+}
+
+
+
+article.tips-detail hgroup{
+	margin: 30px 0 20px 0;	
+}
+
+
+article.tips-detail hgroup h1{
+	font-size: 18px;	
+	text-transform: none;
+}
+
+article.tips-detail hgroup h3{
+	font-size: 12px;
+	text-transform: none;	
+}
+
+
+
+
+article.tips-detail a.discussnow{
+	background:#fff;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 5px 10px;
+	font-weight: bold;	
+	text-transform: uppercase;
+	margin: 15px 0;
+	float:left;
+	display:block;
+}
+
+
+article.tips-detail .video{
+	background: #000 ;
+	position:relative;
+	border: 3px solid transparent;
+}
+
+
+article.tips-detail .video img{
+	display:block;
+	width:100%;	
+	opacity: 0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+
+
+article.tips-detail .video img.play{
+	display:block;
+	position: absolute;
+	z-index: 1;
+	left: 35%;
+	top: 25%;
+	width: 115px;
+	height: 115px;
+	opacity: 0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
+	
+   -webkit-transition:opacity 0.5s ease-in;  
+   -moz-transition:opacity 0.5s ease-in;  
+   -o-transition:opacity 0.5s ease-in;  
+   transition:opacity 0.5s ease-in;  
+	
+		
+}
+
+article.tips-detail .video:hover{
+	border-color: #d50000;	
+}
+
+article.tips-detail .video a:hover img.play{
+	opacity: 1;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+	
+	
+}
+
+
+
+/* right side widget styling */
+
+
+
+.question-header {
+	position: relative;	
+}
+.question-header img{
+	display:block;
+	float:left;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+.question-header h1{
+	padding-left: 50px;	
+}
 
