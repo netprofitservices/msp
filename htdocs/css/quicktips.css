@@ -138,6 +138,11 @@
 }
 
 
+a.red-rounded-btn-brighter.askus{
+	font-size: 30px;	
+}
+
+
 #sharethis-wrapper{
 	margin-left: 5px;
 
@@ -273,4 +278,28 @@ article.tips-detail .video a:hover img.play{
 .question-header h1{
 	padding-left: 50px;	
 }
+
+
+.quiz-cta h4{
+	text-transform: uppercase;
+}	
+
+.quiz-cta .wrapper{
+		border:1px solid #f0f0f0;
+		padding: 10px;
+		text-align: center;
+}
+
+.quiz-cta .wrapper .red-rounded-btn-brighter{
+	margin-left: 15px;	
+	font-size: 22px;
+}
+
+
+.fb-like-box{
+	margin: 15px 0;	
+}
+
+
+
 
