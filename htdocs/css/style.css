@@ -221,17 +221,26 @@ nav#top-links a:hover, nav#main-nav ul li a:hover{
 
 }
 
+nav#top-links li.loginlink{
+	margin-left: 5px;	
+}
 
-
-nav#top-links a.loginlink{
+nav#top-links li.loginlink a{
 	background: url("../images/keylock.png") no-repeat scroll 94% center #D50000;
 	color: #fff;
-	padding: 10px 29px 5px 10px;
+	padding:  7px 35px 8px 16px;
 	display:block;
 	float:right;	
 	
+	
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align: left;
+	
 	margin-top: -10px;
 	
+	  border-top: 5px solid #C60000;
 	-webkit-border-bottom-right-radius: 10px;
 	-webkit-border-bottom-left-radius: 10px;
 	-moz-border-radius-bottomright: 10px;
@@ -241,6 +250,13 @@ nav#top-links a.loginlink{
 
 }
 
+
+
+nav#top-links li.loginlink a:hover {
+    background-color: #0B4694;
+    border-top: 5px solid #02295D;
+	text-decoration: none;
+}
 
 
 nav#main-nav{
