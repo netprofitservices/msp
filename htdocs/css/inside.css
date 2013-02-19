@@ -1878,8 +1878,36 @@ Mark your calendar box
 .breadcrumbs a:hover{
 	color:	#d20000;
 }
+ 
 
 
+.need-help {
+    background: url("../images/need-help-bar-bg.gif") no-repeat scroll left center #F4F4F4;
+    border: 1px solid #F0F0F0;
+    color: #BDBDBD;
+    font-size: 14px; 
+    font-weight: bold;
+    margin: 10px 0 0;
+    padding: 10px 10px 10px 50px;
+    text-transform: uppercase;
+	clear: both;
+}
+
+.need-help.bottom{
+	margin-top: 25px;	
+}
+
+.need-help a{
+	display:block;
+	float: right;
+	margin-top: -5px;
+	font-size: 12px;
+	letter-spacing: 0;
+	font-style: normal;
+}
+
+
+ 
 /* ##############
 
 404 page

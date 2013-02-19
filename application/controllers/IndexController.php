@@ -1003,14 +1003,19 @@ class IndexController extends Zend_Controller_Action
 		return $session->getReferralCode();
 	}
 	
-	
-	
+	 
 	public function notfoundAction()
     {
 		 
     }
-	
+	 
+
+	public function quicktipsAction()
+    {
 		
+    }
+	
+ 
 }
 	
 
