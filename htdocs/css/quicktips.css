@@ -8,14 +8,41 @@
 ################################################ */	
 
 
-.quicktips .col{
-	width: 48%;
-	padding: 1%;
-	float:left;	
+/*#quicktips-wrapper{ 
+	margin: auto;	
+	width: 1000px;
 }
 
-.quicktips .sort{
+#quicktips-wrapper .col-item{
+	float:left;	
+	    width: 440px; 
+}
 
+.quicktips aside{
+	height: 1400px;	
+}*/
+
+ 
+.quicktips article.tips-detail{
+    float: left;
+    margin: 2% 1%;
+    padding: 1%;
+    width: 45%;
+}
+
+
+.quicktips aside{
+	width: 48%;
+	padding: 0 1% 1% 1%;
+	float:right;		
+} 
+
+
+
+
+.quicktips .sort{
+	margin-bottom: 25px;
+	float:left;
 }
 
 
@@ -30,7 +57,7 @@
 
 .quicktips .sort .cat-wrapper{
 		position:relative;
-		width: 240px;
+		width: 280px;
 		
 		
 	float:left;
@@ -71,7 +98,7 @@
 	border:1px solid #c2c2c2;
 	padding: 10px;
 	height: 200px;
-	width: 230px;
+	width: 280px;
 	overflow:auto;	
 	
 	display:none;
@@ -154,8 +181,7 @@ article.tips-detail{
 	border:1px solid #dfdfdf;
 	padding: 10px 20px;
 	font-size: 14px;
-	line-height: 1.5;
-	clear:both;
+	line-height: 1.5; 
 	margin: 35px 0;	
 	
 	position: relative;
