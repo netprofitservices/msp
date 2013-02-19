@@ -1879,6 +1879,26 @@ Mark your calendar box
 	color:	#d20000;
 }
 
+.content-404 {
+    float: left;
+    margin-left: 30px;
+    width: 600px;
+}
+.title-404 {
+    display: block;
+    float: left;
+    margin-top: -15px;
+}
+.content-404 h1 {
+    font-size: 22px;
+}
+.content-404 ul {
+    margin: 25px 0;
+}
+.content-404 ul li {
+    margin: 10px 0;
+}
+
 
 /* ############## 
 

@@ -1,7 +1,9 @@
 
-  <h1>We are sorry. An error occurred. Please try again or <a href="/contact">contact us</a>.</h1>
+  
 
-<? if (true): ?>
+<? if (false): ?>
+	<h1>We are sorry. An error occurred. Please try again or <a href="/contact">contact us</a>.</h1>
+
   <h2><? echo $this->message ?></h2>
 
   <? if (isset($this->exception)): ?>
@@ -20,4 +22,58 @@
   </pre>
 
   <? endif ?>
+
+<? else: ?>
+
+<div role="main" id="main-content">
+	<div class="blue-bg clear">
+		<section>   
+			<div class="wrapper">  
+				<header>
+					<h1>You did it! This is the end of the internet!</h1>                      
+				</header>
+
+
+			</div>  <!-- end wrapper -->            
+
+			<div class="ribboncorners"></div>
+
+		</section> <!-- end what-is -->           
+
+		<div class="clear"></div>
+
+
+	</div><!-- end blue-bg -->    
+
+
+	<section>
+
+		<div class="box">
+
+			<img class="title-404" alt="404. Content cannot be found" src="images/404-web-title.gif"> 
+
+			<div class="content-404">				
+				<h1>We are sorry but we cannot find what you’re looking for. <br>
+					May we suggest you to:</h1>
+
+
+					<ul>
+						<li><a href="contact" data-fancybox-type="iframe" class="fancybox">Contact Us</a> &ndash; we’d be happy to assist you!</li>
+						<li>Check our <a href="http://members.mainstreampreppers.com">Member’s Area</a> for the info you seek.</li>
+						<li>Visit our <a href="/">Homepage</a> and start again.</li>
+					</ul>
+				</div>
+
+			</div><!-- end box --> 
+
+			<div class="clear"></div>
+
+		</section>
+
+
+
+
+	</div>
+
+
 <? endif ?>
