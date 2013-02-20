@@ -17,6 +17,16 @@
     </a>
 
  </div><!-- end sticky -->
+ 
+ 
+ <script>
+ 
+$(document).ready(function() {
+ 	$('.fancybox-inline').fancybox( 
+	);
+});
+ </script>
+ 
 
 <div id="main-content" role="main">
 
@@ -33,8 +43,29 @@
 						
 						<div class="content">
 						
-							<a href="#" id="watch-natgeo"><img src="images/natgeo/watch-msp-natgeo-soon.png" 
+							<!-- use this code when video is NOT ready		--> 				
+						
+							<a href="#soon" id="watch-natgeo" class="fancybox-inline"><img src="images/natgeo/watch-msp-natgeo-soon.png" 
 							title="Watch MSP on National Geographic Channel - COMING SOON!" /></a>
+							
+							<div id="soon" style="display: none; text-align: center; padding: 10px;">
+								<h1 class="red">Response video coming soon!</h1>
+								<p>Join us today and we&rsquo;ll notify you when the video is ready!</p>
+							</div> 
+							
+							
+							<!-- use this code when video is ready 
+							
+							
+							<a href="#watch" id="watch-natgeo" class="fancybox-inline watch-natgeo">Watch Mainstream Preppers on National Geographic Now!</a>
+							
+							<div id="watch" style="display: none; text-align: center; padding: 10px;">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/9sVZM7MX9Zw" frameborder="0" allowfullscreen></iframe>
+							</div>
+							
+							-->
+							
+							
 							
 							<form id="responsevid-form" action="#">
 							

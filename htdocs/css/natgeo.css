@@ -29,6 +29,18 @@ a#watch-natgeo{
 	display:block;
 }
 
+
+a.watch-natgeo{
+	height: 55px;
+	background: url(../images/natgeo/watch-msp-natgeo.png) top center no-repeat;
+	text-indent: -9999px;
+}
+
+a.watch-natgeo:hover{
+	background-position: center bottom;	
+}
+
+
 #natgeo .wrapper .content{
 	width: 550px;
 	margin-left: 380px;	
@@ -97,7 +109,9 @@ a#watch-natgeo{
 	color: #5f5f5f;
 	font-size: 16px;
 	width: 140px;
-	margin-left: 1px;	
+	margin-left: 1px;
+	
+	border:1px solid transparent;	
 }
 
 #responsevid-form input[type="email"]{
@@ -108,6 +122,8 @@ a#watch-natgeo{
 	color: #5f5f5f;
 	font-size: 16px;	
 	width: 200px;
+	
+	border:1px solid transparent;
 }
 
 	
@@ -138,14 +154,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec0000', end
 	
 #responsevid-form input[type="submit"]:hover{
 	color:#7e0000;	
-background: #c50000; /* Old browsers */
-background: -moz-linear-gradient(top,  #c50000 0%, #ec0000 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c50000), color-stop(100%,#ec0000)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #c50000 0%,#ec0000 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c50000', endColorstr='#ec0000',GradientType=0 ); /* IE6-9 */
+	background: #c50000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c50000 0%, #ec0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c50000), color-stop(100%,#ec0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c50000 0%,#ec0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c50000', endColorstr='#ec0000',GradientType=0 ); /* IE6-9 */
+		
+}
+
+
+#responsevid-form  input.error{
+	background:#ffe3e3;
+	border:1px solid red;
+}
 	
-	}
-	
+#responsevid-form  #messageBox{
+	color: yellow;
+	font-weight: bold;	
+	font-size: 12px;
+	margin-left: 20px;	
+	margin-top: 10px;
+}
