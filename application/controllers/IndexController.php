@@ -29,6 +29,18 @@ class IndexController extends Zend_Controller_Action
 		$this->view->metaKeywords = "prepper, prepardeness, prepper training, prepper groups, preparedness training, intentional community";
 		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, a network for forming preparedness groups, and more.";
     }
+	
+	
+	
+    public function indexnatgeoAction()
+    {
+        // action body
+		$this->view->metaTitle = "Mainstream Preppers - Thriving in Good Times and Bad";
+		$this->view->metaKeywords = "prepper, prepardeness, prepper training, prepper groups, preparedness training, intentional community";
+		$this->view->metaDescription = "Mainstream Preppers offers advanced skill building in preparedness, a network for forming preparedness groups, and more.";
+    }
+	
+	
     public function insideAction()
     {
         // action body

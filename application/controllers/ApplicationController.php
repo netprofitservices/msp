@@ -40,6 +40,27 @@ class ApplicationController extends Zend_Controller_Action
 			
 			$secondaryList = implode(', ', $secondary);
 			
+			
+			// Sign them up on MailChimp
+			$merge_vars = array(
+				'FIRST' => $firstname, 
+				'LAST' => $lastname,
+				'ZIPCODE' => $zip,
+				'GROUPINGS' => array(
+					array(
+						'name' => 'MSP Contacts', 
+						'groups' => 'Retreat Group Inquiry,FREE Network'
+					)
+				)
+			);
+			
+			require_once('models/MailChimp.php');
+			$MailChimp = new MailChimp($configOptions);
+			
+			$mailchimpStatus = $MailChimp->subscribeOrUpdate($email, $merge_vars);
+			
+			
+			
 			$subject = "MSP Retreat Inquiry from $name";
 			
 			$body = "New application request from $name.<br />\n";
@@ -50,6 +71,7 @@ class ApplicationController extends Zend_Controller_Action
 			$body .= "Secondary motivation: $secondaryList<br />\n";
 			if ($referralCode = $this->getReferralCode()) $body .= "Referral code: $referralCode<br />\n";
 			$body .= "<br />\n$comments";
+			$body .= "<br />\n$mailchimpStatus";
 			
 			require_once('models/Mail.php');
 			$Mail = new Mail;
@@ -72,6 +94,7 @@ class ApplicationController extends Zend_Controller_Action
 				$primary,
 				$secondaryList,
 				$comments,
+				$mailchimpStatus,
 				$this->getReferralCode()
 			);
 

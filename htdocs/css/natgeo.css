@@ -1,0 +1,182 @@
+/* National Geographic home banner */
+
+
+
+#natgeo{
+	
+	background: url("../images/natgeo/homebanner-nationageo.jpg") center 1px  no-repeat;
+	height: 466px;
+	border:none;
+	width: 100%;
+	
+	
+}
+
+#natgeo > header{
+	display: none; 
+}	
+
+#natgeo .wrapper{
+	width: 940px;
+	margin: auto;	
+	background: none;
+	border: none;
+	color: #fff;
+	box-shadow: none;
+	
+	filter:none;
+}
+
+a#watch-natgeo{
+	display:block;
+}
+
+
+a.watch-natgeo{
+	height: 55px;
+	background: url(../images/natgeo/watch-msp-natgeo.png) top center no-repeat;
+	text-indent: -9999px;
+}
+
+a.watch-natgeo:hover{
+	background-position: center bottom;	
+}
+
+
+#natgeo .wrapper .content{
+	width: 540px;
+	margin-left: 380px;	
+	color:#fff;
+	text-align:left;
+	border: none;
+}
+
+#natgeo .wrapper .content h1{
+	color:#fff;
+	text-align:left;
+	font-size: 30px;
+	letter-spacing: -0.5px	
+}
+
+#natgeo .wrapper .content form{
+	
+	background: url(../images/darkblue50.png) center repeat;
+	border: 1px solid #1bb8ff;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+#natgeo .wrapper .content form ul{
+	font-size: 16px;	
+}
+	
+	
+#natgeo .wrapper .content form ul li{
+	margin-bottom: 10px;	
+}
+	
+	
+	
+#home-banner > header h1.plaintext{
+	background: none;
+	color:#fff;
+	font-size: 35px;
+	height: auto;
+	width: auto;
+	text-align:center;
+	text-indent: 0;
+	padding:0;
+	margin: 10px 0;
+	text-shadow: 0 3px 2px #04648f;
+}
+	
+	
+	
+.blue-bg > section#home-banner{
+	height: 220px;
+	margin-top: -100px;	
+}
+	
+	
+	
+	
+	
+/* form */
+
+#responsevid-form input[type="text"]{
+	background: #fff;
+	border:0;
+	padding: 8px;
+	float:left;
+	color: #5f5f5f;
+	font-size: 16px;
+	width: 135px;
+	margin-left: 1px;
+	
+	border:1px solid transparent;	
+}
+
+#responsevid-form input[type="email"]{
+	background: #fff;
+	border:0;
+	padding: 8px;
+	float:left;
+	color: #5f5f5f;
+	font-size: 16px;	
+	width: 190px;
+	
+	border:1px solid transparent;
+}
+
+	
+#responsevid-form input[type="submit"]{
+	display:block;
+	color:#fff;
+	text-align:center;
+	font-size: 20px;
+	font-weight:bold;
+	text-transform:uppercase;
+	
+	padding: 5px 25px;
+	border: 1px solid #490e15;
+	border-radius: 5px;
+	
+background: #ec0000; /* Old browsers */
+background: -moz-linear-gradient(top,  #ec0000 0%, #c50000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ec0000), color-stop(100%,#c50000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ec0000 0%,#c50000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ec0000 0%,#c50000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ec0000 0%,#c50000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ec0000 0%,#c50000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec0000', endColorstr='#c50000',GradientType=0 ); /* IE6-9 */
+
+	
+}
+	
+	
+#responsevid-form input[type="submit"]:hover{
+	color:#7e0000;	
+	background: #c50000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c50000 0%, #ec0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c50000), color-stop(100%,#ec0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c50000 0%,#ec0000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c50000 0%,#ec0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c50000', endColorstr='#ec0000',GradientType=0 ); /* IE6-9 */
+		
+}
+
+
+#responsevid-form  input.error{
+	background:#ffe3e3;
+	border:1px solid red;
+}
+	
+#responsevid-form  #messageBox{
+	color: yellow;
+	font-weight: bold;	
+	font-size: 12px;
+	margin-left: 20px;	
+	margin-top: 10px;
+}
