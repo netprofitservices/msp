@@ -131,7 +131,7 @@ $().ready(function() {
 	
 	
 
-$('#join-network-form input[type="text"], #join-network-form input[type="email"], #member-login-form input[type="email"],  #networkty-sign-up-prep-school input[type="text"]').each(function() {
+$('#join-network-form input[type="text"], #join-network-form input[type="email"], #member-login-form input[type="email"],  #networkty-sign-up-prep-school input[type="text"], #responsevid-form input[type="text"], #responsevid-form input[type="email"]').each(function() {
 
 	var default_value = this.value;
 
@@ -148,6 +148,11 @@ $('#join-network-form input[type="text"], #join-network-form input[type="email"]
 	});
 
 });
+	
+	
+	
+	
+	
 	
 	
 	// validate join network banner form
@@ -180,6 +185,23 @@ $('#join-network-form input[type="text"], #join-network-form input[type="email"]
 		}
 	});
 	
+	// validate nat geo response form
+	$("#responsevid-form").validate({
+		errorLabelContainer: "#messageBox",
+		wrapper: "li",
+		rules: {
+			zip:{
+				required: true,
+				minlength: 5,
+				number: true
+			}
+		},
+		messages: {	
+			emailaddress: "Please enter a valid email address",
+			zip: "Please enter a correct zip code"
+			
+		}
+	}); 
 	
 		
 	// validate join network banner form
