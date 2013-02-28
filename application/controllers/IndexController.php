@@ -32,7 +32,7 @@ class IndexController extends Zend_Controller_Action
 	
 	
 	
-    public function indexnatgeoAction()
+    public function doomsdayAction()
     {
         // action body
 		$this->view->metaTitle = "Mainstream Preppers - Thriving in Good Times and Bad";
