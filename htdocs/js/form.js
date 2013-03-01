@@ -17,6 +17,9 @@ $.validator.setDefaults({
 		fields = $(form).serialize()
 		action = $(form).attr('action')
 
+		email = $('#emailaddress').val()
+		zip = $('#zip').val()
+
 		$.post(action, fields, function(data, textStatus) {
 			if (data == 'ok') {
 				$("#form-message").removeClass("error");
@@ -27,7 +30,7 @@ $.validator.setDefaults({
 				
 				redirectTo = ''
 				// Prepschool signup redirect to prepschool
-				if (action == 'prepschoolsignup') {
+				/*if (action == 'prepschoolsignup') {
 					redirectTo = 'prepschool'
 				} else if (action == 'prepschool') {
 					redirectTo = 'prepschoolsignupthankyou'
@@ -37,12 +40,15 @@ $.validator.setDefaults({
 					redirectTo = 'networkthankyou2'
 				} else if (action == 'selfreliance') {
 					redirectTo = 'prepschoolsignupthankyou2'
-				}
+				}*/
+				
+				// In all cases we now redirect to the members app
+				redirectTo = 'http://members.mainstreampreppers.com/users/signup/next/steps/email/' + email + '/zip/' + zip
 				
 				
 				// Redirect after one second
 				if (redirectTo) {
-					setTimeout('window.location.href = "' + redirectTo + '"', 1000);
+					setTimeout('window.location.href = "' + redirectTo + '"', 500);
 				}
 				
 			} else {
