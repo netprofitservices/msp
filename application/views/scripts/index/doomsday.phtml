@@ -49,8 +49,13 @@ $(document).ready(function() {
 							title="Watch MSP on National Geographic Channel - COMING SOON!" /></a>
 							
 							<div id="soon" style="display: none; text-align: center; padding: 10px;">
-								<h1 class="red">Response video coming soon!</h1>
-								<p>Join us today and we&rsquo;ll notify you when the video is ready!</p>
+								<h1 class="red">Watch the Full Episode Here - Soon!</h1>
+								<p>The show airs on National Geographic Channel Mar 19 at 9pm EST.  
+								<br />Soon after air date, it'll be available here.  
+								<br />Plus, we'll be offering a response video.
+								<br/>In the meantime here's a preview:<br />
+								<object style="visibility: visible;" data="//media-channel.nationalgeographic.com/static-media/flash/ngplayer_v2.4.swf" class="ngs_video" id="ngs_video" type="application/x-shockwave-flash" height="374" width="610"><param value="true" name="allowfullscreen"><param value="always" name="allowscriptaccess"><param value="#000" name="bgcolor"><param value="false" name="menu"><param value="best" name="quality"><param value="noscale" name="scale"><param value="transparent" name="wmode"><param value="adenabled=true&amp;adprogramid=4a67dd6268de7&amp;caption=&amp;img=//channel.nationalgeographic.com/exposure/content/photo/photo/726513_bugged-out_epsicuaitwlfo42x7yedw6mpvtncurxrbvj6lwuht2ya6mzmafma_610x374.jpg&amp;permalink=http://channel.nationalgeographic.com/channel/doomsday-preppers/videos/bugged-out/&amp;share=false&amp;restricted=false&amp;autoplay=false&amp;siteid=mainplayer&amp;slug=http://channelhd-f.akamaihd.net/mpx/video/Nat_Geo_Channels/130/951/NDPR9847_Bugged_Out_ngc_015.flv&amp;vtitle=Bugged%20Out&amp;cuepoints=&amp;vwidth=610&amp;vheight=374" name="flashvars"></object>
+</p>
 							</div> 
 							
 							
@@ -67,29 +72,38 @@ $(document).ready(function() {
 							
 							
 							
-							<form id="responsevid-form" action="#">
+							<form id="responsevid-form" method="post" action="newsletter/signup">
 							
 								 
 								
-								<h1>View Our Response Video &amp; More!</h1>
-								
-							 
-								<ul>
-								
-									<li><b class="green">FREE ACCESS</b> to Our Prepper Network</li>
-									<li><em class="cyan"><b>Coming Very Soon</b></em>: View Our Response Video &amp;<br />Show Discussion Thread </li>
-									<li><b class="green">Bonus:</b> MSP Training Course - FREE!</li>
-								</ul>
-								
-								<input type="email" class="required" id="emailaddress" name="emailaddress" value="Enter Your Email">
-								<input type="text" class="required" id="zip" name="zip" value="Zip Code">
-								<input type="submit" name="submit" value="Join Us" class="form-btn ">
-								<div id="messageBox"></div>
-							
+								 <h1>Join our LIVE Prepper Followup!</h1>
+                                                               
+                                                       
+                                                               <ul>
+                                                                       <li><em class="cyan"><b>Tonight after Doomsday Preppers</b></em>: LIVE After Show Chat<br /> with Kevin Barber & Marjory Wildcraft</li>
+                                                                       <li><b class="green">FREE ACCESS</b> to Our Prepper Network</li>
+                                                                       <li><b class="green">Bonus:</b> MSP Training Course - FREE!</li>
+                                                               </ul>
+                                                               
+                                                               <input type="email" class="required" id="emailaddress" name="emailaddress" value="Enter Your Email">
+                                                               <input type="text" class="required" id="zip" name="zip" value="Zip Code">
+                                                               <input type="submit" name="submit" value="Join In" class="form-btn" onclick="redirect();">
+                                                               <div id="messageBox"></div>
 							
 							
 							</form>
-						
+						<script type="text/javascript" language="javascript">
+    function redirect() 
+	
+    { 
+	
+        location.href = "http://mainstreampreppers.com/live";
+    }
+	
+
+
+	
+</script>
 						
 						</div><!-- end content -->
 						

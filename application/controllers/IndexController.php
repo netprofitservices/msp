@@ -105,6 +105,24 @@ class IndexController extends Zend_Controller_Action
         // action body
 		$this->_helper->layout->setLayout('overlay');
     }
+    public function kevinbarberAction()
+    {
+		 // action body
+		$this->view->metaTitle = "Kevin Barber - Prepper - Costa Rica Prepper - Doomsday Prepper";
+		$this->view->metaKeywords = "prepper, doomsday prepper, kevin barber";
+		$this->view->metaDescription = "Kevin Barber is a Mainstream Prepper who appeared on the Doomsday Preppers Season 2 Finale.";
+    }
+	public function liveAction()
+    {
+		 // action body
+		$this->view->metaTitle = "Live Interview with Kevin Barber - Doomsday Prepper";
+		$this->view->metaKeywords = "prepper, doomsday prepper, kevin barber";
+		$this->view->metaDescription = "Kevin Barber is a Mainstream Prepper who appeared on the Doomsday Preppers Season 2 Finale.";
+    }
+		public function testpageAction()
+    {
+		 // action body
+    }
     public function missionAction()
     {
         // action body
@@ -245,6 +263,19 @@ class IndexController extends Zend_Controller_Action
         // action body
     }
     public function instructorsAction()
+    {
+        // action body
+}
+    public function instructorsprivateAction()
+    {
+        // action body
+}
+    public function instructorsprivatekeyAction()
+    {
+        // action body
+
+}
+    public function instructorsprivate2Action()
     {
         // action body
     }
